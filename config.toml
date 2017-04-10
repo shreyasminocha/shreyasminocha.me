@@ -17,7 +17,7 @@ paginate = 5
 	themecolor = "red"
 
 	# Link custom assets relative to /static
-	favicon   = "favicon.ico"
+	favicon   = "img/favicon.ico"
 	customCSS = []
 	customJS  = []
 
