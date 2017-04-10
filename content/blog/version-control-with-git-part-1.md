@@ -3,16 +3,15 @@ tags = ["git"]
 type = "post"
 date = "2017-04-03T11:46:30+05:30"
 title = "Version control with git #1"
+description = "This post is a gentle introduction to version control with git. Learn about version control, create a git repository and check its status."
 
 +++
 
-# Version control with git for total beginners #1: an introduction to git
-
-This post is the first in my "Version control with git" series. This series expects no prior experience with git or version control and mild familiarity with the command line is preferred.
+This post is the first in my "Version control with git" series. This series expects no prior experience with git or version control. Mild familiarity with the command line is preferred.
 
 ## What version control is
 
-Imagine you are working on a software project. After months of hardwork, you are able to publish the first version of your software. Soon, a bug in your software is discovered. You make the necessary ammendments. However, it turns out, the changes you just introduced break the entire program. Unfortunately, you had made no backups and now have to manually revert all your changes. 
+Imagine you are working on a software project. After months of hard work, you are able to publish the first version of your software. Soon, a bug in your software is discovered. You make the necessary amendments. However, it turns out, the changes you just introduced break the entire program. Unfortunately, you had made no backups and now have to manually revert all your changes.
 
 What can be done to avoid such a disastrous outcome? One option might be to have several versions of the same file in a directory with a structure like this:
 
