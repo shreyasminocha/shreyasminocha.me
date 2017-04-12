@@ -3,7 +3,7 @@ tags = ["programming"]
 type = "post"
 date = "2017-04-12T20:31:13+05:30"
 title = "Recursion: what, why and how"
-description = "This post introduces recursion and attempts to give the reader an intuition of why it works. Through examples and exercises, it aims to prepare the reader for coming up with solutions to common recursion questions."
+description = "This post introduces recursion and attempts to give the reader an intuition of why it works. Through examples and exercises, it aims to make the reader familiar with the structure of recursive programs"
 
 +++
 
