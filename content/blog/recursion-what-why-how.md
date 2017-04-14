@@ -49,7 +49,7 @@ Line number 6. It is clear that control reaches this statement only if `n` **doe
 
 This is in parallel to the recursive definition of the arithmetic series. We have a base case, of the first term and then, for any natural number `n`(above 1), the `n`-th term of the sequence is defined as the sum of the term before `n` and the common denominator.
 
-Very well, you may say, but how does this actually work? Indeed, at first this might seem very unintuitive, but it is extremely important to build a solid intuition for why this works. Having a look at how the computer actually executes this code might be of some help.
+Very well, you may say, but how does this actually work? Indeed, it is extremely important to build a solid intuition for why this works. Having a look at how the computer actually executes this code might be of some help.
 
 The part of the computer that executes your code has something known as a stack. This is somewhat similar to a stack of dishes, or a stack of notebooks. In the first example, the last dish that is put on to the stack is the first one that gets cleaned. Similarly, in the second example, if you are familiar with how notebooks are corrected, the last notebook that goes into the stack of notebooks(provided you don't cheat and bury it in the bottom) is the first one that gets corrected.
 
@@ -65,7 +65,7 @@ The second section shows the call we described above. The action begins here. Ou
 
 Sure, our recursive solution to this problem is less efficient than the implementation that uses the explicit formula, but this one is more elegant and similar to how most people would manually solve it. In general, depending on the situation, you may need to make the trade-off between elegance and efficiency.
 
-Hopefully, that has given you some intuition of how recursion works. But wait! We have covered the "what" and the "how" cited in the title. What about "why"? Most school textbooks come up with bad examples of recursion such as the fibonacci sequence and finding factorials. Following are some practical applications of recursion:
+Hopefully, that has given you some intuition of how recursion works. But wait! We have covered the "what" and the "how" cited in the title. What about "why"? Following are some practical applications of recursion:
 
 * Recursion can be used to come up with very elegant solutions to certain problems such as the solution of Tower of Hanoi problem.
 
