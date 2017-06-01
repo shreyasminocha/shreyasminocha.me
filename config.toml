@@ -10,7 +10,7 @@ paginate = 5
 
 [params]
 	title = "Shreyas Minocha"
-	subtitle = "Just a kid who loves tech and math"
+	subtitle = "Just a kid who loves tech"
 	copyright = "All rights reserved."
 
 	# You can choose between green, orange, red and blue.
