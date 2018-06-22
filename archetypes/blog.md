@@ -1,4 +1,3 @@
-+++
-type= "post"
-tags= ["x", "y"]
-+++
+---
+type: post
+---
