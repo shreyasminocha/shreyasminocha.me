@@ -1,11 +1,8 @@
 ---
-title: How I do my commit messages
-description: My commit message setup
-date: 2018-06-22
-tags: [programming, git]
+title: My commit message workflow
+description: Tweaks I've made to make the perfect commit message writing workflow for myself.
+tags: [git, productivity, workflow]
 ---
-
-I totally obssess over commit messages. Writing commit messages is a big deal for me. I often spend minutes staring into space trying to come up with the best way to summarize the changes a commit brings. I religiously follow [the seven rules of good commit messages](//chris.beams.io/posts/git-commit/#seven-rules). As you might have guessed, I've spent some time developing a workflow for writing commit messages.
 
 ![Commit message example](/img/commit-message-example.jpg)
 
@@ -15,7 +12,7 @@ I use Sublime Text 3 for most of my text-editing needs. I've also set it as my c
 git config --global core.editor "subl -n -w"
 ```
 
-**Note**: The above requires the `subl` command to be on your `$PATH`.
+**Note**: The above requires the you to install the `subl` command if it doesn't work out of the box. Installation instructions: [macOS](//stackoverflow.com/questions/16199581/open-sublime-text-from-terminal-in-macos) · [Linux](//askubuntu.com/a/274197) · [Windows](//stackoverflow.com/a/25577833/3363528).
 
 Earlier, I used to use [a package](//packagecontrol.io/packages/Git%20Commit%20Message%20Syntax) to provide syntax highlighting for commit messsages. However, build 3170 has brought native support for various git formats, commit message included.
 
@@ -32,6 +29,8 @@ Sublime allows you to override settings for specific syntaxes. You can edit thes
 }
 ```
 
+**Note**: VS Code fans can do it [this way](//github.com/Microsoft/vscode-docs/blob/master/docs/getstarted/tips-and-tricks.md#language-specific-settings).
+
 Somewhere on the internet, I found a template for commit messages:
 
 ```sh
@@ -43,7 +42,7 @@ Somewhere on the internet, I found a template for commit messages:
 # Provide links to any relevant tickets, articles or other resources
 ```
 
-I can't seem to remember *where* I found this, but in my attempts to trace it, I found [a blog post providing a very similar template](//codeinthehole.com/tips/a-useful-template-for-commit-messages). As it turns out, git allows you to use a text file as a template for your commit messages.
+This template makes it easier to frame commits in accordance with the seven rules I mentioned earlier. I can't seem to remember *where* I found this, but in my attempts to trace it, I found [a blog post](//codeinthehole.com/tips/a-useful-template-for-commit-messages) providing a very similar template. As it turns out, git allows you to use a text file as a template for your commit messages.
 
 ```sh
 git config --global commit.template "/Users/example/dotfiles/commit-msg-template"
@@ -75,7 +74,6 @@ Create `prepare-commit-msg` in said directory with the following content:
 ```sh
 #!/usr/bin/env bash
 
-# Author's note: If you can come up with a bash-only way to do this, please let me know.
 /usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$1"
 ```
 
@@ -91,17 +89,17 @@ Recently, I found [this really cool utility](//github.com/clns/node-commit-msg) 
 commit-msg file $1
 ```
 
-**Note**: The above requires the `commit-msg` command to be on your `$PATH`. Simply install it using `npm i -g commit-msg` manually from [source code](//github.com/clns/node-commit-msg).
+**Note**: The above requires the `commit-msg` command to be on your `$PATH`. Install it using `npm i -g commit-msg` manually from [source code](//github.com/clns/node-commit-msg).
 
 Again, make sure the script is set to be executable. The result of this hook is that the commit would abort if my commit message does not meet the criteria.
 
 ![An example of an invalid commit message](/img/failed-commit.jpg)
 
-## Further reading about commit messages
+Thanks for reading!
 
-- http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-- https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines
-- https://github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120
-- https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages
+## Further reading
 
-<!-- https://imgs.xkcd.com/comics/git_commit.png -->
+- [Tim Pope's note about commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+- [Commit guideline suggestions from Pro Git](https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
+- [Linus Torvald's note about commit messages](https://github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
+- [Commit message formatting guidelines from the Spring Project](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)
