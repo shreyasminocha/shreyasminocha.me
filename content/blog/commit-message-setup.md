@@ -1,6 +1,7 @@
 ---
 title: My commit message workflow
 description: Tweaks I've made to make the perfect commit message writing workflow for myself.
+date: 2018-06-22
 tags: [git, productivity, workflow]
 ---
 
