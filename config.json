@@ -7,20 +7,12 @@
     "params": {
         "backtotopStr": "Back to top",
         "bio": "A young developer and math lover",
-        "bitbucket": "",
         "copyright": "All rights reserved.",
-        "customCSS": [],
-        "customJS": [],
         "description": "An Indian kid who loves all things tech",
         "email": "shreyas@shreyasminocha.me",
-        "facebook": "",
         "favicon": "img/favicon.ico",
         "github": "shreyasminocha",
-        "gitlab": "",
-        "googleplus": "",
-        "instagram": "",
         "keepReadingStr": "Continue reading",
-        "linkedin": "",
         "location": "Hyderabad, India",
         "name": "Shreyas Minocha",
         "pageNotFoundTitle": "404 - Page not found",
@@ -28,8 +20,7 @@
         "stackoverflow": "3363528/shreyasminocha",
         "subtitle": "Just a kid who loves tech",
         "themecolor": "red",
-        "title": "Shreyas Minocha",
-        "twitter": ""
+        "title": "Shreyas Minocha"
     },
     "theme": "hugo-steam-theme",
     "title": "Shreyas Minocha | A young computer enthusiast"
