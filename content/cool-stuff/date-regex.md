@@ -52,10 +52,10 @@ Shouldn't match:
 ### TLDR;
 
 ```
-^((?!(?:[02468][^048]|[13579][^26])00-FEB-29)(?:19|[2-9]\d)(?!(?:[02468][^048]|[13579][^26])-FEB-29)\d\d)-(?!FEB-3[01])(?!APR-31)(?!JUN-31)(?!SEP-31)(?!NOV-31)(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)-(?!00)((?:[0-2][0-9]|3[0|1]))$
+^((?!(?:[02468][^048]|[13579][^26])00-FEB-29)(?:19|[2-9]\d)(?!(?:[02468][^048]|[13579][^26])-FEB-29)\d\d)-(?!FEB-3[01])(?!APR-31)(?!JUN-31)(?!SEP-31)(?!NOV-31)(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)-(?!00)((?:[0-2][0-9]|3[01]))$
 ```
 
-239 characters. I could probably cut it down a little more if I removed the capture groups for the components and removed `?:`'s from some groups.
+238 characters. I could probably cut it down a little more if I removed the capture groups for the components and removed `?:`'s from some groups.
 
 ### Explanation
 
@@ -103,7 +103,7 @@ This explanation is intended for people who already have familiarity with regex 
 (?!00)    // do not match a zero date
 
 (    // capture group for date
-    (?:[0-2][0-9]|3[0|1])    // 00–29 or 30–31
+    (?:[0-2][0-9]|3[01])    // 00–29 or 30–31
 )
 
 $    // end of line
