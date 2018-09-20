@@ -2,7 +2,6 @@
 title: A rather complete regex to match dates
 description: Stretching the limits of regular expressions
 date: 2018-08-16
-hide: true
 ---
 
 Inspired by a [question on StackOverflow](//stackoverflow.com/questions/51670945/php-regex-to-validate-date-format-yyyy-mmm-dd-with-leap-year-validation).
