@@ -5,10 +5,10 @@
     </header>
     <section class="post-excerpt">
         {{ if and (not .Description) (.Site.Params.useSummaryIfNoDescription)}}
-        <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Summary }}&hellip;</p></a>
+        <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Summary }}…</p></a>
         {{ else }}
         <a class="excerptlink" href="{{ .Permalink }}"><p>{{ .Description | markdownify }}</p></a>
         {{ end }}
-        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }} <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }} ≫</a></p>
     </section>
 </article>
