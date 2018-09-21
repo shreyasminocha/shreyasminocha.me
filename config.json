@@ -22,6 +22,8 @@
         "themecolor": "red",
         "title": "Shreyas Minocha"
     },
+    "useSummaryIfNoDescription": false,
+    "assetDir": "static",
     "theme": "hugo-steam-theme",
     "title": "Shreyas Minocha | A young computer enthusiast"
 }
