@@ -1,11 +1,10 @@
-+++
-tags = ["git"]
-type = "post"
-date = "2017-04-03T11:46:30+05:30"
-title = "Version control with git #1"
-description = "This post is a gentle introduction to version control with git. Learn about version control, create a git repository and check its status."
-
-+++
+---
+tags: [git]
+type: post
+date: 2017-04-03
+title: 'Version control with git #1'
+description: This post is a gentle introduction to version control with git. Learn about version control, create a git repository and check its status.
+---
 
 This post is the first in my "Version control with git" series. This series expects no prior experience with git or version control. Mild familiarity with the command line is preferred.
 

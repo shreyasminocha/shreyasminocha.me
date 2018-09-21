@@ -1,11 +1,10 @@
-+++
-tags = ["programming"]
-type = "post"
-date = "2017-04-12T20:31:13+05:30"
-title = "Recursion: what, why and how"
-description = "This post introduces recursion and attempts to give the reader an intuition of why it works. Through examples and exercises, it aims to make the reader familiar with the structure of recursive programs"
-
-+++
+---
+tags: [programming]
+type: post
+date: 2017-04-12
+title: 'Recursion: what, why and how'
+description: Attempts to give an intuition of how recursion works.
+---
 
 This post explains recursion, an easy, but tricky to grasp programming concept in a friendly, understandable manner.
 
