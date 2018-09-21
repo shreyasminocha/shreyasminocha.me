@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="{{ .Site.Params.languageCode }}">
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,6 +27,12 @@
     <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
     {{ end }}
 
-    {{ "<!-- Stylesheet for theme color -->" | safeHTML }}
     {{ partial (printf "themes/%s-theme" .Site.Params.themecolor) . }}
+
+    <script>
+        !function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},a=t.createElement(i),c=t.getElementsByTagName(i)[0],a.async=!0,a.src="/js/ga.js",c.parentNode.insertBefore(a,c)}(window,document,"galite","script")
+
+        galite('create', '{{ .Site.Params.googleAnalytics }}', 'auto');
+        galite('send', 'pageview');
+    </script>
 </head>
