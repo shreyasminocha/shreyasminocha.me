@@ -2,12 +2,19 @@
 <body class="home-template">
     {{ partial "header" . }}
     {{ partial "navigation" . }}
-    
+
     <main class="content" role="main">
     {{ block "main" . }}{{ end }}
     </main>
 
     {{ partial "footer" . }}
-    {{ partial "js" . }}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="/js/highlightjs-line-numbers.min.js"></script>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
 </body>
 </html>

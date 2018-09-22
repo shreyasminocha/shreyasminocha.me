@@ -1,7 +1,20 @@
 <footer class="site-footer">
 	<div class="inner">
-		{{ partial "social" . }}
+		<section class="footer-social" style="margin-bottom: 1em;">
+			{{ with .Site.Params.github }}
+			<a href="//github.com/{{ . }}" target="_blank" title="GitHub"><span class="icon-github"></span> <span class="hidden">GitHub</span></a>&nbsp;
+			{{ end }}
+			{{ with .Site.Params.stackoverflow }}
+			<a href="//stackoverflow.com/users/{{ . }}" target="_blank" title="Stack Overflow"><span class="icon-stackoverflow"></span> <span class="hidden">Stack Overflow</span></a>&nbsp;
+			{{ end }}
+			{{ with .Site.Params.email }}
+			<a href="mailto:{{ . }}" target="_blank" title="E-mail"><span class="icon-envelope"></span> <span class="hidden">E-mail</span></a>&nbsp;
+			{{ end }}
+			{{ with .RSSLink }}
+			<a href="{{ . }}" target="_blank" title="RSS"><span class="icon-rss"></span> <span class="hidden">RSS</span></a>
+			{{ end }}
+		</section>
 
-		<section class="copyright">&copy; {{now.Format "2006"}} <a href="{{ .Site.BaseURL }}">{{ .Site.Params.name }}</a>. {{ .Site.Params.copyright | markdownify }}</section>
+		<section class="copyright">&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Params.name }}</a>. {{ .Site.Params.copyright | markdownify }}</section>
 	</div>
 </footer>
