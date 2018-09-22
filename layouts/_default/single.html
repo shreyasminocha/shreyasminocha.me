@@ -2,11 +2,13 @@
 <article class="post">
     <header>
         <h1 class="post-title">{{ .Title }}</h1>
+        {{ if .Type | eq "post" }}
         <div class="post-meta">
             <time datetime="{{ .Date.Format "02 January 2006" }}">
                 {{ .Date.Format "02 January 2006" }}
             </time>
         </div>
+        {{ end }}
     </header>
 
     <section class="post-content">
