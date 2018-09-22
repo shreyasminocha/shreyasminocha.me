@@ -1,27 +1,20 @@
----
+title: Shreyas Minocha | A young computer enthusiast
 baseUrl: https://shreyasminocha.me
-disqusShortname: shreyasminocha
-googleAnalytics: UA-90885717-1
 languageCode: en-uk
+googleAnalytics: UA-90885717-1
 paginate: 5
+disqusShortname: shreyasminocha
+
 params:
-  backtotopStr: Back to top
-  bio: A young developer
-  copyright: All rights reserved.
-  description: An Indian kid who loves all things tech
-  email: shreyas@shreyasminocha.me
-  favicon: img/favicon.ico
-  github: shreyasminocha
-  keepReadingStr: Continue reading
-  location: Hyderabad, India
-  name: Shreyas Minocha
-  pageNotFoundTitle: 404 - Page not found
-  shareStr: Share
-  stackoverflow: 3363528/shreyasminocha
-  subtitle: Just a kid who loves tech
-  themecolor: red
-  title: Shreyas Minocha
+    title: Shreyas Minocha
+    subtitle: Just a kid who loves tech
+    description: An Indian kid who loves all things tech
+    name: Shreyas Minocha
+    bio: A young developer
+    copyright: All rights reserved.
+    email: shreyas@shreyasminocha.me
+    github: shreyasminocha
+    stackoverflow: 3363528/shreyasminocha
+
 useSummaryIfNoDescription: false
 assetDir: static
-theme: hugo-steam-theme
-title: Shreyas Minocha | A young computer enthusiast

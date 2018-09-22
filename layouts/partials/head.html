@@ -22,12 +22,10 @@
     <link rel="stylesheet" href="/css/screen.css">
     <link rel="stylesheet" href="/css/github.css">
 
-    {{ partial (printf "themes/%s-theme" .Site.Params.themecolor) . }}
+    {{ partial "themes/red-theme" . }}
 
-    {{ with .Site.Params.favicon }}
-    <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
-    <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
-    {{ end }}
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <script>
         !function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},a=t.createElement(i),c=t.getElementsByTagName(i)[0],a.async=!0,a.src="/js/ga.js",c.parentNode.insertBefore(a,c)}(window,document,"galite","script")
