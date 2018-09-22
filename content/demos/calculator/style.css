@@ -1,0 +1,330 @@
+/**
+ * fonts
+ */
+
+@font-face {
+    font-family: 'Segment7Standard';
+    src: local('Segment7Standard'),
+         url('fonts/segment7standard.otf');
+}
+
+@font-face {
+    font-family: 'Pirulen';
+    src: local('Pirulen'),
+         url('fonts/pirulen.ttf');
+}
+
+@font-face {
+    font-family: 'Eurostile Extended';
+    src: local('Eurostile Extended'),
+         url('fonts/eurostile extended.ttf');
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: local('Computer Modern'),
+         url('fonts/cmu italic.ttf');
+}
+
+@font-face {
+    font-family: 'Scientific Calculator LCD';
+    src: local('Scientific Calculator LCD'),
+         url('fonts/lcd.ttf');
+}
+
+/**
+ * calculator
+ */
+
+body {
+    background: linear-gradient(135deg, #FAD7A1 10%, #E96D71 100%);
+}
+
+.calculator {
+    background: hsl(208, 28%, 35%);
+    background: linear-gradient(to top, hsl(208, 30%, 35%), hsl(208, 30%, 40%));
+    border-bottom-left-radius: 100px 30px;
+    border-bottom-right-radius: 100px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 50px 5px hsla(0, 0%, 0%, .5);
+    color: hsl(225, 20%, 84%);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    height: 35rem;
+    left: 50%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translatex(-50%);
+    width: 18rem;
+}
+
+.logo, .model, .svpam {
+    font-size: 90%;
+}
+
+/* "CASIO" */
+.logo {
+    font-family: 'Eurostile Extended', Impact;
+    text-transform: uppercase;
+}
+
+/* "fx-82MS" */
+.model {
+    float: right;
+    font-family: 'Computer Modern';
+    font-style: italic;
+}
+
+/* "SVPAM" */
+.svpam {
+    color: hsl(353, 50%, 70%);
+    display: inline-block;
+    font-family: 'Pirulen';
+    margin-top: .75em;
+    text-align: center;
+    width: 100%;
+}
+
+.screen {
+    background: hsl(190, 20%, 88%);
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px black;
+    color: black;
+    height: 4rem;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.screen .input {
+    font-family: 'Scientific Calculator LCD', monospace;
+    font-size: 1rem;
+    left: 12px;
+    position: relative;
+    top: 12px;
+}
+
+.screen .main-display {
+    display: block;
+    font-family: 'Segment7Standard', monospace;
+    font-size: 2rem;
+    overflow-x: hidden;
+    padding: .4rem;
+    position: absolute;
+    text-align: right;
+    width: 275.2px;
+}
+
+button {
+    border: 0 white none;
+    box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+    box-sizing: border-box;
+    color: hsl(225, 20%, 84%);
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+.modifiers {
+    margin: 1.5rem 0 1.75rem 0;
+}
+
+.modifiers button {
+    background: hsl(221, 14%, 66%);
+    background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+    border-radius: 15px;
+    height: 1.25rem;
+    margin-right: .75rem;
+    position: relative;
+    width: 2.35rem;
+}
+
+.modifiers button::before,
+.modifiers button::after {
+    text-transform: uppercase;
+}
+
+.mode::before,
+.on::before {
+    color: hsl(225, 20%, 84%);
+}
+
+.shift {
+    left: 0;
+}
+
+.alpha {
+    top: 5px;
+}
+
+.mode {
+    float: right;
+    top: 11px;
+}
+
+.on {
+    float: right;
+    margin-right: .5em!important;
+    right: 0;
+}
+
+.shift::before { content: "Shift"; }
+.alpha::after { content: "Alpha"; }
+.mode::before { content: "Mode"; left: -9px }
+.mode::after { content: "CLR"; right: -9px; color: hsl(34, 68%, 72%); }
+.on::before { content: "ON"; }
+
+.replay {
+    background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+    border-radius: 125px;
+    box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+    font-size: 9px;
+    height: 70px;
+    left: 38%;
+    line-height: 70px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 30%;
+    vertical-align: middle;
+    width: 78px;
+}
+
+button.nav {
+    background: none;
+    box-shadow: none;
+    position: absolute;
+}
+
+.function-keys {
+    margin: 1.5rem 0 .75rem 0;
+}
+
+.function-keys button {
+    background: hsl(198, 39%, 23%);
+    background: linear-gradient(to top, hsl(198, 39%, 23%), hsl(198, 39%, 28%));
+    border-radius: 5px;
+    font-size: small;
+    height: 1.5rem;
+    width: 2.25rem;
+}
+
+.function-keys td {
+    padding-bottom: 1rem;
+    padding-right: .25rem;
+}
+
+.basic-keys button {
+    background: hsl(221, 14%, 66%);
+    background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+    border-radius: 3px 3px 7px 7px;
+    height: 1.75rem;
+    width: 2.5rem;
+}
+
+.basic-keys td {
+    padding-bottom: 1rem;
+    padding-right: .25rem;
+}
+
+.basic-keys tr:last-child td {
+    padding-bottom: 0;
+}
+
+button.pink {
+    background: hsl(353, 50%, 70%);
+    background: linear-gradient(to top, hsl(353, 50%, 70%), hsl(353, 50%, 75%));
+}
+
+button::before, button::after {
+    font-size: 9px;
+    position: absolute;
+    top: -13px;
+    width: 100%;
+}
+
+/* shift */
+button::before {
+    color: hsl(34, 68%, 72%);
+    left: 0;
+    text-align: left;
+}
+
+/* alpha */
+button::after {
+    color: hsl(353, 50%, 70%);
+    right: 0;
+    text-align: right;
+}
+
+/* for when a key has only one special purpose */
+.center-shift::before, .center-alpha::after {
+    text-align: center;
+}
+
+/* all the special purposes */
+.del::before { content: "INS"; }
+.ac::before { content: "OFF"; }
+.reciprocal::before { content: "x!"; }
+.combin::before { content: "nPr"; }
+.pol::before { content: "Rec("; }
+.pol::after { content: ":"; }
+.cube::before { content: "\221b"; }
+.frac::before { content: "d/c"; }
+.pow::before { content: "ˣ \221A" }
+.log::before { content: "10 ˣ"; }
+.ln::before { content: "e ˣ"; }
+.ln::after { content: "e"; }
+.minus::before { content: ""; }
+.minus::after { content: "A"; }
+.deg::before { content: "\2190"; }
+.deg::after { content: "B"; }
+.hyp::after { content: "C"; }
+.sin::before { content: "sin \207b\b9"; }
+.cos::before { content: "cos \207b\b9"; }
+.tan::before { content: "tan \207b\b9"; }
+.sin::after { content: "D"; }
+.cos::after { content: "E"; }
+.tan::after { content: "F"; }
+.rcl::before { content: "STO"; }
+.eng::before { content: "\2190"; }
+.close::paren:after { content: "X"; }
+.comma::before { content: ";"; }
+.comma::after { content: "Y"; }
+.mem-plus::before { content: "M-"; }
+.mem-plus::after { content: "M"; }
+.zero::before { content: "Rnd"; }
+.period::before { content: "Ran#"; }
+.exp::before { content: "\03c0"; }
+.ans::before { content: "DRG\25ba"; }
+.equals::before { content: "%"; }
+.one::before { content: "S-SUM"; font-size: 8px; top: -10px }
+.two::before { content: "S-VAR"; font-size: 8px; top: -10px }
+
+/* jazzy 'x' */
+/* .reciprocal, .square {} */
+
+button span.sup {
+    font-size: xx-small;
+    vertical-align: super;
+}
+
+.sub {
+    font-size: xx-small;
+    vertical-align: bottom;
+}
+
+.xxs {
+    font-size: xx-small;
+}
