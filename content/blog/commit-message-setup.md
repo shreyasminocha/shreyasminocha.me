@@ -6,7 +6,7 @@ tags: [git, productivity, workflow]
 type: post
 ---
 
-![Commit message example](/img/commit-message-example.jpg)
+![Commit message example](/img/commit-message-setup/commit-message-example.jpg)
 
 I use Sublime Text 3 for most of my text-editing needs. I've also set it as my core editor.
 
@@ -95,7 +95,7 @@ commit-msg file $1
 
 Again, make sure the script is set to be executable. The result of this hook is that the commit would abort if my commit message does not meet the criteria.
 
-![An example of an invalid commit message](/img/failed-commit.jpg)
+![An example of an invalid commit message](/img/commit-message-setup/failed-commit.jpg)
 
 Thanks for reading!
 
