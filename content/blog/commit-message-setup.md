@@ -81,7 +81,7 @@ Create `prepare-commit-msg` in said directory with the following content:
 
 Make sure the hook is set to be executable with `chmod +x`. Now that pesky help notice will bother you no more.
 
-![Relevant xkcd](/img/uninformative-messages.png)
+![Relevant xkcd](/img/commit-message-setup/uninformative-messages.png)
 
 Recently, I found [this really cool utility](//github.com/clns/node-commit-msg) which allows you to validate commit messages from the command line. I use a modified form of the utility in a [global `commit-msg` hook](//git-scm.com/docs/githooks#_commit_msg) to automatically validate every commit I make. Create `commit-msg` in your global git hooks directory:
 
