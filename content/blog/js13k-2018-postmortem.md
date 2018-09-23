@@ -16,7 +16,7 @@ Out of my excitement for the competition, I spent some days running up to the co
 
 I quite liked the theme “offline” and I spent around three days  brainstorming and looking for inspiration.
 
-![Brainstorming](/img/js13k-postmortem/brainstorming.jpeg)
+![Brainstorming](/img/js13k-2018-postmortem/brainstorming.jpeg)
 
 Eventually, I settled on an idea: an exploratory game with the objective is to look for WiFi networks in the wild and complete download and upload goals. I spent the rest of the week making some notes about my game’s features, gameplay etc. This being my first time creating a game or even working with HTML5 Canvas, I had no idea how feasible my plans would be in terms of time. Moreover, as a first time code golf game jam entrant, I couldn’t estimate how much code I would be able to fit into the thirteen kilobyte[^1] limit. In retrospect, I should have started coding earlier and figured out the finer details along the way.
 
@@ -42,7 +42,7 @@ While school, studies and my lack of time management resulted in my entry not li
 
 I’d like to shout out to the lovely people on the [JS13k Slack](//js13kgames.slack.com), especially @herebefrogs, @xem, @end3r, @the_coder, @madmarcel, @udxs and @kamyl (I’m very sorry if I’ve missed someone out). You assisted, motivated and encouraged me. At first, your knowledge intimated me but later it inspired me. To be honest, I wouldn’t have got this far without you guys.
 
-![Love you all](/img/js13k-postmortem.jpeg)
+![Love you all](/img/js13k-2018-postmortem/love-you-all.jpeg)
 
 You can find my [submitted entry](//2018.js13kgames.com/entries/wifihunt) on [the competition’s website](//2018.js13kgames.com) and the [source code](//github.com/shreyasminocha/WiFiHunt)(which unfortunately isn't as neat as I'd like it to be at the moment) on [Github](//github.com).
 
@@ -56,7 +56,7 @@ I might continue working on this game a while later. I’ll update this post wit
 - Final source code size (compressed): 20351 bytes
 - Final source code size (uncompressed): 44 kilobytes
 
-![Additions/Deletions](/img/additions-deletions.jpeg)
+![Additions/Deletions](/img/js13k-2018-postmortem/additions-deletions.jpeg)
 
 ## Commit log
 
