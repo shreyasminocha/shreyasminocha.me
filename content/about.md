@@ -1,5 +1,4 @@
 ---
-date: 2018-08-15
 title: About me
 url: about
 hide: true
