@@ -1,10 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.languageCode }}">
+
 {{ partial "head" . }}
-<body class="home-template">
+
+<body>
     {{ partial "header" . }}
-    {{ partial "navigation" . }}
 
     <main class="content" role="main">
-    {{ block "main" . }}{{ end }}
+        {{ block "main" . }}
+        {{ end }}
     </main>
 
     {{ partial "footer" . }}

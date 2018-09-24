@@ -106,7 +106,7 @@ h1 {
   padding: 0;
 }
 #site-head,
-.content,
+main,
 a.archive-link,
 .article-nav,
 .terms-list {
@@ -126,6 +126,32 @@ article.preview p.readmore {
   text-transform: uppercase;
   font-weight: 400;
 }
+
+a, a:visited {
+  color: #f05948;
+}
+
+.pagination a {
+  color: #f05948;
+}
+
+.gist .gist-file .gist-meta a:visited {
+  color: #f05948!important;
+}
+
+a:focus, a:hover {
+  color: #c62310;
+}
+
+h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {
+  color: #c62310;
+}
+
+.older-posts:hover, .newer-posts:hover {
+  color: #c62310;
+}
+
+
 /* === Header === */
 #blog-logo {
   display: block;
@@ -322,6 +348,7 @@ footer.post-footer {
 
 footer section.footer-social [class^="icon-"] {
   font-size: 1.75em;
+  margin-right: 0.75em;
 }
 /* === Navigation and Pagination === */
 nav {
@@ -661,10 +688,6 @@ hr {
 
 section.footer-social {
   margin-bottom: 1em!important;
-}
-
-section.footer-social a {
-  margin-right: 1em;
 }
 
 section.post-content {
