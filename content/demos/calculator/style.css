@@ -4,32 +4,37 @@
 
 @font-face {
     font-family: 'Segment7Standard';
-    src: local('Segment7Standard'),
-         url('fonts/segment7standard.otf');
+    src:
+        local('Segment7Standard'),
+        url('fonts/segment7standard.otf');
 }
 
 @font-face {
     font-family: 'Pirulen';
-    src: local('Pirulen'),
-         url('fonts/pirulen.ttf');
+    src:
+        local('Pirulen'),
+        url('fonts/pirulen.ttf');
 }
 
 @font-face {
     font-family: 'Eurostile Extended';
-    src: local('Eurostile Extended'),
-         url('fonts/eurostile extended.ttf');
+    src:
+        local('Eurostile Extended'),
+        url('fonts/eurostile extended.ttf');
 }
 
 @font-face {
     font-family: 'Computer Modern';
-    src: local('Computer Modern'),
-         url('fonts/cmu italic.ttf');
+    src:
+        local('Computer Modern'),
+        url('fonts/cmu italic.ttf');
 }
 
 @font-face {
     font-family: 'Scientific Calculator LCD';
-    src: local('Scientific Calculator LCD'),
-         url('fonts/lcd.ttf');
+    src:
+        local('Scientific Calculator LCD'),
+        url('fonts/lcd.ttf');
 }
 
 /**
@@ -56,33 +61,35 @@ body {
     padding: 1.5rem;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translatex(-50%);
+    transform: translateY(-50%) translateX(-50%);
     width: 18rem;
 }
 
-.logo, .model, .svpam {
+.logo,
+.model,
+.svpam {
     font-size: 90%;
 }
 
-/* "CASIO" */
+/* 'CASIO' */
 .logo {
     font-family: 'Eurostile Extended', Impact;
     text-transform: uppercase;
 }
 
-/* "fx-82MS" */
+/* 'fx-82MS' */
 .model {
     float: right;
     font-family: 'Computer Modern';
     font-style: italic;
 }
 
-/* "SVPAM" */
+/* 'SVPAM' */
 .svpam {
     color: hsl(353, 50%, 70%);
     display: inline-block;
     font-family: 'Pirulen';
-    margin-top: .75em;
+    margin-top: 0.75em;
     text-align: center;
     width: 100%;
 }
@@ -110,7 +117,7 @@ body {
     font-family: 'Segment7Standard', monospace;
     font-size: 2rem;
     overflow-x: hidden;
-    padding: .4rem;
+    padding: 0.4rem;
     position: absolute;
     text-align: right;
     width: 275.2px;
@@ -145,7 +152,7 @@ td {
     background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
     border-radius: 15px;
     height: 1.25rem;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     position: relative;
     width: 2.35rem;
 }
@@ -179,16 +186,16 @@ td {
     right: 0;
 }
 
-.shift::before { content: "Shift"; }
-.alpha::after { content: "Alpha"; }
-.mode::before { content: "Mode"; left: -9px }
-.mode::after { content: "CLR"; right: -9px; color: hsl(34, 68%, 72%); }
-.on::before { content: "ON"; }
+.shift::before { content: 'Shift'; }
+.alpha::after { content: 'Alpha'; }
+.mode::before { content: 'Mode'; left: -9px }
+.mode::after { content: 'CLR'; right: -9px; color: hsl(34, 68%, 72%); }
+.on::before { content: 'ON'; }
 
 .replay {
     background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
     border-radius: 125px;
-    box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+    box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, 0.75);
     font-size: 9px;
     height: 70px;
     left: 38%;
@@ -208,7 +215,7 @@ button.nav {
 }
 
 .function-keys {
-    margin: 1.5rem 0 .75rem 0;
+    margin: 1.5rem 0 0.75rem 0;
 }
 
 .function-keys button {
@@ -222,7 +229,7 @@ button.nav {
 
 .function-keys td {
     padding-bottom: 1rem;
-    padding-right: .25rem;
+    padding-right: 0.25rem;
 }
 
 .basic-keys button {
@@ -247,7 +254,8 @@ button.pink {
     background: linear-gradient(to top, hsl(353, 50%, 70%), hsl(353, 50%, 75%));
 }
 
-button::before, button::after {
+button::before,
+button::after {
     font-size: 9px;
     position: absolute;
     top: -13px;
@@ -269,51 +277,49 @@ button::after {
 }
 
 /* for when a key has only one special purpose */
-.center-shift::before, .center-alpha::after {
+.center-shift::before,
+.center-alpha::after {
     text-align: center;
 }
 
 /* all the special purposes */
-.del::before { content: "INS"; }
-.ac::before { content: "OFF"; }
-.reciprocal::before { content: "x!"; }
-.combin::before { content: "nPr"; }
-.pol::before { content: "Rec("; }
-.pol::after { content: ":"; }
-.cube::before { content: "\221b"; }
-.frac::before { content: "d/c"; }
-.pow::before { content: "ˣ \221A" }
-.log::before { content: "10 ˣ"; }
-.ln::before { content: "e ˣ"; }
-.ln::after { content: "e"; }
-.minus::before { content: ""; }
-.minus::after { content: "A"; }
-.deg::before { content: "\2190"; }
-.deg::after { content: "B"; }
-.hyp::after { content: "C"; }
-.sin::before { content: "sin \207b\b9"; }
-.cos::before { content: "cos \207b\b9"; }
-.tan::before { content: "tan \207b\b9"; }
-.sin::after { content: "D"; }
-.cos::after { content: "E"; }
-.tan::after { content: "F"; }
-.rcl::before { content: "STO"; }
-.eng::before { content: "\2190"; }
-.close::paren:after { content: "X"; }
-.comma::before { content: ";"; }
-.comma::after { content: "Y"; }
-.mem-plus::before { content: "M-"; }
-.mem-plus::after { content: "M"; }
-.zero::before { content: "Rnd"; }
-.period::before { content: "Ran#"; }
-.exp::before { content: "\03c0"; }
-.ans::before { content: "DRG\25ba"; }
-.equals::before { content: "%"; }
-.one::before { content: "S-SUM"; font-size: 8px; top: -10px }
-.two::before { content: "S-VAR"; font-size: 8px; top: -10px }
-
-/* jazzy 'x' */
-/* .reciprocal, .square {} */
+.del::before { content: 'INS'; }
+.ac::before { content: 'OFF'; }
+.reciprocal::before { content: 'x!'; }
+.combin::before { content: 'nPr'; }
+.pol::before { content: 'Rec('; }
+.pol::after { content: ':'; }
+.cube::before { content: '\221b'; }
+.frac::before { content: 'd/c'; }
+.pow::before { content: 'ˣ \221A'; }
+.log::before { content: '10 ˣ'; }
+.ln::before { content: 'e ˣ'; }
+.ln::after { content: 'e'; }
+.minus::before { content: ''; }
+.minus::after { content: 'A'; }
+.deg::before { content: '\2190'; }
+.deg::after { content: 'B'; }
+.hyp::after { content: 'C'; }
+.sin::before { content: 'sin \207b\b9'; }
+.cos::before { content: 'cos \207b\b9'; }
+.tan::before { content: 'tan \207b\b9'; }
+.sin::after { content: 'D'; }
+.cos::after { content: 'E'; }
+.tan::after { content: 'F'; }
+.rcl::before { content: 'STO'; }
+.eng::before { content: '\2190'; }
+.close::paren:after { content: 'X'; }
+.comma::before { content: ';'; }
+.comma::after { content: 'Y'; }
+.mem-plus::before { content: 'M-'; }
+.mem-plus::after { content: 'M'; }
+.zero::before { content: 'Rnd'; }
+.period::before { content: 'Ran#'; }
+.exp::before { content: '\03c0'; }
+.ans::before { content: 'DRG\25ba'; }
+.equals::before { content: '%'; }
+.one::before { content: 'S-SUM'; font-size: 8px; top: -10px }
+.two::before { content: 'S-VAR'; font-size: 8px; top: -10px }
 
 button span.sup {
     font-size: xx-small;

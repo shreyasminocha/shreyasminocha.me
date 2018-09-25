@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Params.languageCode }}">
+<html lang='{{ .Site.Params.languageCode }}'>
 
-{{ partial "head" . }}
+{{ partial 'head' . }}
 
 <body>
-    {{ partial "header" . }}
+    {{ partial 'header' . }}
 
-    <main class="content" role="main">
-        {{ block "main" . }}
+    <main class='content' role='main'>
+        {{ block 'main' . }}
         {{ end }}
     </main>
 
-    {{ partial "footer" . }}
+    {{ partial 'footer' . }}
 </body>
 </html>

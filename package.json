@@ -1,0 +1,22 @@
+{
+  "name": "shreyasminocha.me",
+  "version": "0.0.0",
+  "description": "Source code for my website",
+  "main": "layouts/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyasminocha/shreyasminocha.me.git"
+  },
+  "author": "Shreyas Minocha",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/shreyasminocha/shreyasminocha.me/issues"
+  },
+  "homepage": "https://github.com/shreyasminocha/shreyasminocha.me#readme",
+  "devDependencies": {
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
