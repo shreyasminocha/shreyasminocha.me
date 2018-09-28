@@ -308,7 +308,7 @@ button::after {
 .tan::after { content: 'F'; }
 .rcl::before { content: 'STO'; }
 .eng::before { content: '\2190'; }
-.close::paren:after { content: 'X'; }
+.close-paren:after { content: 'X'; }
 .comma::before { content: ';'; }
 .comma::after { content: 'Y'; }
 .mem-plus::before { content: 'M-'; }
