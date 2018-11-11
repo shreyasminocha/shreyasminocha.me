@@ -1,6 +1,5 @@
 title: Shreyas Minocha | A young computer enthusiast
 baseUrl: https://shreyasminocha.me
-languageCode: en-uk
 googleAnalytics: UA-90885717-1
 paginate: 5
 disqusShortname: shreyasminocha
@@ -13,6 +12,7 @@ params:
     email: shreyas@shreyasminocha.me
     github: shreyasminocha
     stackoverflow: 3363528/shreyasminocha
+    languageCode: en-uk
 
 useSummaryIfNoDescription: false
 assetDir: static
