@@ -16,7 +16,7 @@ git config --global core.editor "subl -n -w"
 
 **Note**: The above requires the you to install the `subl` command if it doesn't work out of the box. Installation instructions: [macOS](//stackoverflow.com/questions/16199581/open-sublime-text-from-terminal-in-macos) · [Linux](//askubuntu.com/a/274197) · [Windows](//stackoverflow.com/a/25577833/3363528).
 
-Earlier, I used to use [a package](//packagecontrol.io/packages/Git%20Commit%20Message%20Syntax) to provide syntax highlighting for commit messsages. However, build 3170 has brought native support for various git formats, commit message included.
+Earlier, I used to use [a package](//packagecontrol.io/packages/Git%20Commit%20Message%20Syntax) to provide syntax highlighting for commit messages. However, build 3170 has brought native support for various git formats, commit message included.
 
 Sublime allows you to override settings for specific syntaxes. You can edit these from ‹Preferences› → ‹Settings – Syntax Specific›. Here's my `Git Commit.sublime-settings` file:
 
