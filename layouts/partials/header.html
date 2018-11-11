@@ -1,4 +1,4 @@
-<header id='site-head'>
+<header id='site-head' role='banner'>
 	{{ with .Site.Params.title }}
 	<h1 class='blog-title'><a href='{{ $.Site.BaseURL }}'>{{ . | markdownify }}</a></h1>
 	{{ end }}
