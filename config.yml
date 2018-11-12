@@ -17,3 +17,7 @@ params:
 useSummaryIfNoDescription: false
 assetDir: static
 publishDir: rendered
+
+blackfriday:
+    noreferrerLinks: true
+    nofollowLinks: true
