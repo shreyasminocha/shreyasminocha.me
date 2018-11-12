@@ -2,6 +2,7 @@
 <article>
     <header>
         <h1>{{ .Title }}</h1>
+
         {{ if .Type | eq "post" }}
         <time datetime='{{ .Date.Format "02 January 2006" }}'>
             {{ .Date.Format "02 January 2006" }}
@@ -14,32 +15,22 @@
     </section>
 
     {{ if .Type | eq "post" }}
-    <section style='padding-bottom:60px;'>
-        <div>
-            <span> </span>
-            {{ range .Params.tags }}
-                {{ $url := printf "tags/%s" ( . | urlize) }}
-                <a href='{{ $url | absURL }}'>{{ . }}</a>
-            {{ end }}
-        </div>
-    </section>
+        {{ range .Params.tags }}
+            {{ $url := printf "tags/%s" ( . | urlize) }}
+            <a href='{{ $url | absURL }}'>{{ . }}</a>
+    {{ end }}
 
-    {{ partial "commento" . }}
+    {{ if .Type | eq "post" }}
+        {{ partial "commento" . }}
+    {{ end }}
 
-    <section>
-        <p>
-            <a href='#site-head'>☝︎︎</a>
-            <a href='#site-head'> Back to top</a>
-        </p>
-    </section>
+    <address>
+        <img></img>
+        <span>Shreyas Minocha</span>
+        <p>{{  .Site.Params.bio | markdownify }}</p>
+    </address>
 
-    <footer>
-        <section>
-            <div style='background: url("/img/avatar.jpg");'></div>
-            <h4>Shreyas Minocha</h4>
-            <p>{{  .Site.Params.bio | markdownify }}</p>
-        </section>
-    </footer>
     {{ end }}
 </article>
+
 {{ end }}

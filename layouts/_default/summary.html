@@ -1,14 +1,14 @@
 <article>
     <header>
-        <h1><a href='{{ .Permalink }}'>{{ .Title }}</a></h1>
+        <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
 
-        <div>
-            <time datetime='{{ .Date.Format "02 January 2006" }}'>{{ .Date.Format "02 January 2006" }}</time>
-        </div>
+        <time datetime='{{ .Date.Format "02 January 2006" }}'>
+            {{ .Date.Format "02 January 2006" }}
+        </time>
     </header>
 
     <section>
-        <a href='{{ .Permalink }}'><p>{{ .Description | markdownify }}</p></a>
-        <p><a href='{{ .Permalink }}'>Continue reading ≫</a></p>
+        <p>{{ .Description | markdownify }}</p>
+        <p><a href='{{ .Permalink }}'>Continue reading</a></p>
     </section>
 </article>

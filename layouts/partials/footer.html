@@ -1,26 +1,24 @@
 <footer role='contentinfo'>
-	<div>
-		<section>
-			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' title='GitHub'>
-				<span hidden>GitHub</span>
-			</a>
+	<ul>
+		<li>
+			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' rel="noreferrer nofollower" title='GitHub'>Github</a>
+		</li>
 
-			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' title='Stack Overflow'>
-				<span hidden>Stack Overflow</span>
-			</a>
+		<li>
+			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' rel="noreferrer nofollower" title='Stack Overflow'>Stack Overflow</a>
+		</li>
 
-			<a href='mailto:{{ .Site.Params.email }}' target='_blank' title='E-mail'>
-				<span hidden>E-mail</span>
-			</a>
+		<li>
+			<a href='mailto:{{ .Site.Params.email }}' target='_blank' rel="noreferrer nofollower" title='E-mail'>E-mail</a>
+		</li>
 
-			<a href='{{ .RSSLink }}' target='_blank' title='RSS'>
-				<span hidden>RSS</span>
-			</a>
-		</section>
+		<li>
+			<a href='{{ .RSSLink }}' target='_blank' rel="noreferrer nofollower" title='RSS'>RSS</a>
+		</li>
+	</ul>
 
-		<section>
-			&copy; {{ now.Format "2006" }}
-			<a href='/'>Shreyas Minocha</a>. All rights reserved.
-		</section>
-	</div>
+	<p>
+		&copy; {{ now.Format "2006" }}
+		<a href='/'>Shreyas Minocha</a>. All rights reserved.
+	</p>
 </footer>
