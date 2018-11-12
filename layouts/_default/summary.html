@@ -1,14 +1,14 @@
-<article class='preview'>
+<article>
     <header>
-        <h1 class='post-title'><a href='{{ .Permalink }}'>{{ .Title }}</a></h1>
+        <h1><a href='{{ .Permalink }}'>{{ .Title }}</a></h1>
 
-        <div class='post-meta'>
+        <div>
             <time datetime='{{ .Date.Format "02 January 2006" }}'>{{ .Date.Format "02 January 2006" }}</time>
         </div>
     </header>
 
-    <section class='post-excerpt'>
-        <a class='excerptlink' href='{{ .Permalink }}'><p>{{ .Description | markdownify }}</p></a>
-        <p class='readmore'><a href='{{ .Permalink }}'>Continue reading ≫</a></p>
+    <section>
+        <a href='{{ .Permalink }}'><p>{{ .Description | markdownify }}</p></a>
+        <p><a href='{{ .Permalink }}'>Continue reading ≫</a></p>
     </section>
 </article>
