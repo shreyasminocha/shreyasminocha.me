@@ -1,0 +1,82 @@
+:root {
+    --background: hsl(200, 19%, 18%);
+    --foreground: hsl(180, 100%, 97%);
+    --lineHighlight: hsl(0, 0%, 0%);
+    --comments: hsl(199, 18%, 40%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --red: hsl(350, 100%, 66%);
+    --orange: hsl(14, 90%, 70%);
+    --yellow: hsl(39, 100%, 71%);
+    --green: hsl(84, 66%, 73%);
+    --cyan: hsl(197, 100%, 77%);
+    --blue: hsl(221, 100%, 75%);
+    --paleblue: hsl(197, 31%, 77%);
+    --purple: hsl(276, 68%, 75%);
+    --brown: hsl(10, 40%, 60%);
+    --pink: hsl(357, 81%, 69%);
+    --violet: hsl(308, 30%, 62%);
+}
+
+.chroma { color: var(--foreground); background-color: var(--background); }
+.chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+.chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+.chroma .hl { display: block; width: 100%;background-color: var(--lineHighlight)) }
+.chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+.chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+.chroma .k { font-style: italic; color: var(--cyan) }
+.chroma .kc { color: var(--red) }
+.chroma .kd { color: var(--purple); font-style: italic }
+.chroma .kn { color: var(--yellow) }
+.chroma .kp { font-style: italic; color: var(--cyan) }
+.chroma .kr { font-style: italic; color: var(--cyan) }
+.chroma .kt { color: var(--paleblue)) }
+.chroma .na { color: var(--orange) }
+.chroma .nb { color: #8be9fd; font-style: italic }
+.chroma .nc { color: var(--blue) }
+.chroma .nf { color: var(--blue) }
+.chroma .nl { color: #8be9fd; font-style: italic }
+.chroma .nt { color: var(--cyan) }
+.chroma .nv { color: var(--foreground); font-style: italic }
+.chroma .vc { color: var(--foreground); font-style: italic }
+.chroma .vg { color: var(--foreground); font-style: italic }
+.chroma .vi { color: var(--foreground); font-style: italic }
+.chroma .s { color: var(--green) }
+.chroma .sa { color: var(--green) }
+.chroma .sb { color: var(--green) }
+.chroma .sc { color: var(--green) }
+.chroma .dl { color: var(--green) }
+.chroma .sd { color: var(--green) }
+.chroma .s2 { color: var(--green) }
+.chroma .se { color: var(--green) }
+.chroma .sh { color: var(--green) }
+.chroma .si { color: var(--green) }
+.chroma .sx { color: var(--green) }
+.chroma .sr { color: var(--cyan) }
+.chroma .s1 { color: var(--green) }
+.chroma .ss { color: var(--green) }
+.chroma .m { color: var(--orange) }
+.chroma .mb { color: var(--orange) }
+.chroma .mf { color: var(--orange) }
+.chroma .mh { color: var(--orange) }
+.chroma .mi { color: var(--orange) }
+.chroma .il { color: var(--orange) }
+.chroma .mo { color: var(--orange) }
+.chroma .o { color: var(--purple) }
+.chroma .ow { color: var(--cyan) }
+.chroma .c { font-style: italic; color: var(--comments) }
+.chroma .ch { color: var(--comments) }
+.chroma .cm { color: var(--comments) }
+.chroma .c1 { color: var(--comments) }
+.chroma .cs { color: var(--comments) }
+.chroma .cp { color: var(--comments) }
+.chroma .cpf { color: var(--comments) }
+.chroma .gd { color: var(--red)) }
+.chroma .ge { text-decoration: underline }
+.chroma .gh { font-weight: bold }
+.chroma .gi { font-weight: bold }
+.chroma .go { color: var(--black) }
+.chroma .gu { font-weight: bold }
+.chroma .gl { text-decoration: underline }
+.chroma .p { color: var(--cyan) }

@@ -21,3 +21,6 @@ publishDir: rendered
 blackfriday:
     noreferrerLinks: true
     nofollowLinks: true
+
+pygmentsCodeFences: true
+pygmentsUseClasses: true
