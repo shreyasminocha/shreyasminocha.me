@@ -3,7 +3,7 @@
     <header>
         <h1>{{ .Title }}</h1>
 
-        {{ if .Type | eq "post" }}
+        {{ if .Type | eq "blog" }}
         <time datetime='{{ .Date.Format "02 January 2006" }}'>
             {{ .Date.Format "02 January 2006" }}
         </time>
@@ -14,13 +14,13 @@
         {{ .Content }}
     </section>
 
-    {{ if .Type | eq "post" }}
+    {{ if .Type | eq "blog" }}
         {{ range .Params.tags }}
             {{ $url := printf "tags/%s" ( . | urlize) }}
             <a href='{{ $url | absURL }}'>{{ . }}</a>
     {{ end }}
 
-    {{ if .Type | eq "post" }}
+    {{ if .Type | eq "blog" }}
         {{ partial "commento" . }}
     {{ end }}
 

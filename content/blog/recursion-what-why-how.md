@@ -3,7 +3,6 @@ title: 'Recursion: what, why and how'
 date: 2017-04-12
 description: Attempts to give an intuition of how recursion works.
 tags: [programming]
-type: post
 ---
 
 This post explains recursion, an easy, but tricky to grasp programming concept in a friendly, understandable manner.

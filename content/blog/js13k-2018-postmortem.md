@@ -3,7 +3,6 @@ title: JS13kGames 2018 Postmorten
 description: A reflection on my experiences participating in JS13kGames 2018
 date: 2018-09-23
 tags: [js13kgames, reflection]
-type: post
 ---
 
 As you’ll find out, the phrase “[postmortem](https://www.merriam-webster.com/dictionary/postmortem)” is quite apt for this write-up.
