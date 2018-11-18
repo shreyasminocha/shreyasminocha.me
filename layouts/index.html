@@ -1,15 +1,23 @@
-{{ define "main" }}
-    <p>
-        Hey! I am a {{ sub (int (now.Format "2006")) 2002 }} year-old male residing in India. I am <em>extremely</em> passionate about computers as well as technology in general. I <em>love</em> to contribute to the <a href='http://www.github.com/shreyasminocha' title='github'>open source community</a>. I have some experience in front-end development and am currently self-learning Node.js. Since you're here, check out my projects, or spend some time reading <a href='/blog' title='blog'>my blog</a>. If you'd like to get in touch, find contact details in the footer or on my <a href='/about' title='About'>about page</a>.
-    </p>
+<!doctype html>
+<html lang='{{ .Site.Params.languageCode }}'>
 
-    <h2>Projects</h2>
-    <p>
-        You can find most of my projects on <a href='//github.com/shreyasminocha'>my Github profile</a>.
-    </p>
+{{ partial "head" . }}
 
-    <h2>Blog</h2>
-    <p>
-      I also occasionally update my blog with interesting nit-bits of information about technology, math and other stuff I enjoy and explore. Check it out <a href='/blog' title='blog'>here</a>!
-    </p>
-{{ end }}
+<body class='index'>
+    <main>
+        <header role='banner'>
+            {{ with .Site.Params.title }}
+            <a href='{{ $.Site.BaseURL }}' class="hero">{{ . | markdownify }}</a>
+            {{ end }}
+
+            <nav>
+                <ul>
+                    <li><a href='/'>/</a></li>
+                    <li><a href='/about'>/about</a></li>
+                    <li><a href='/blog'>/blog</a></li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+</body>
+</html>
