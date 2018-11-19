@@ -20,15 +20,15 @@
         {{ .Content }}
     </section>
 
+    <address>
+        <img src="/img/avatar.jpg" alt="Shreyas' Avatar"></img>
+        <p>Shreyas Minocha</p>
+        <p>{{  .Site.Params.bio | markdownify }}</p>
+    </address>
+
     {{ if .Type | eq "blog" }}
         {{ partial "commento" . }}
     {{ end }}
-
-    <address>
-        <img></img>
-        <span>Shreyas Minocha</span>
-        <p>{{  .Site.Params.bio | markdownify }}</p>
-    </address>
 
     {{ end }}
 </article>
