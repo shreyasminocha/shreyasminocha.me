@@ -1,9 +1,13 @@
 {{ define "main" }}
-	{{ $paginator := .Paginate .Data.Pages }}
+    <ol>
+        {{ $paginator := .Paginate .Data.Pages }}
 
-    {{ range $paginator.Pages }}
-        {{ .Render "summary" }}
-    {{ end }}
+        {{ range $paginator.Pages }}
+            <li>
+                {{ .Render "summary" }}
+            </li>
+        {{ end }}
+    </ol>
 
     {{ partial "pagination" . }}
 {{ end }}
