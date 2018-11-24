@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <ol>
+    <ol class="item-list">
         {{ $paginator := .Paginate .Data.Pages }}
 
         {{ range $paginator.Pages }}
