@@ -9,10 +9,12 @@ params:
     description: An Indian kid who loves all things tech
     name: Shreyas Minocha
     bio: A young developer
-    email: shreyas@shreyasminocha.me
+    languageCode: en-uk
     github: shreyasminocha
     stackoverflow: 3363528/shreyasminocha
-    languageCode: en-uk
+    email: shreyas@shreyasminocha.me
+    devto: shreyasminocha
+    codepen: shreyasminocha
 
 useSummaryIfNoDescription: false
 assetDir: static

@@ -1,0 +1,352 @@
+:root {
+    --body-color: hsl(0, 0%, 40%);
+    --h1-color: black;
+    --h2-color: hsl(0, 0%, 20%);
+    --h3-color: hsl(0, 0%, 35%);
+    --accent: bisque;
+    --link-normal: hsl(230, 50%, 50%);
+    --link-visited: hsl(260, 50%, 50%);
+    --link-hover: hsl(230, 95%, 50%);
+    --heading-font: 'Fira Code';
+    --body-font: 'Charter';
+}
+
+body {
+    font-size: 1rem;
+    color: var(--body-color);
+    font-family: var(--body-font);
+    line-height: 1.35;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 570px;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures contextual;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    margin-top: 0;
+    position: relative;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.602em;
+    color: var(--h1-color);
+}
+
+h2 {
+    font-size: 1.424em;
+    color: var(--h2-color);
+}
+
+h3 {
+    font-size: 1.266em;
+    color: var(--h3-color);
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+a {
+    transition: ease-in-out all 0.25s;
+}
+
+a:link {
+    color: var(--link-normal);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover,
+a:active {
+    color: var(--link-hover);
+}
+
+hr {
+    margin: 2em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+pre {
+    overflow-x: scroll;
+    padding: 10px;
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+svg {
+    fill: currentColor;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+td,
+th {
+    border-bottom: 0.1rem solid #e1e1e1;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+td:first-child,
+th:first-child {
+    padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+    padding-right: 0;
+}
+
+header[role = 'banner'] a,
+.tags li a {
+    text-decoration: none;
+}
+
+.tags::before {
+    content: '';
+    display: inline-block;
+    background-image: url('/img/icons/tags.svg');
+    width: 1.25rem;
+    height: 1rem;
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+}
+
+header[role = 'banner'] {
+    margin: 5em 0;
+    text-align: center;
+}
+
+header[role = 'banner'] .hero {
+    color: var(--h1-color);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-weight: 600;
+    background-color: bisque;
+    padding: 0.25em;
+    transition: color, background-color ease-in-out 0.25s;
+}
+
+header[role = 'banner'] .hero:hover {
+    background-color: white;
+    color: var(--h1-color);
+}
+
+.title-with-meta {
+    margin-bottom: 2em;
+}
+
+.title-with-meta h1,
+.title-with-meta h2 {
+    margin-bottom: 0.25em;
+}
+
+.title-with-meta time {
+    --margin-right: 1em;
+
+    margin-right: var(--margin-right);
+}
+
+.title-with-meta time::before {
+    content: '';
+    display: inline-block;
+    background-image: url('/img/icons/calendar.svg');
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+
+.title-with-meta ul {
+    list-style: none;
+    display: inline;
+    padding-left: 0;
+}
+
+.title-with-meta ul li {
+    display: inline;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 3px;
+    padding: 0.1em 0.5em;
+}
+
+.item-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.item-list li {
+    margin-bottom: 3em;
+}
+
+footer[role = 'contentinfo'] {
+    text-align: center;
+    margin: 5em 0 2.5em;
+}
+
+footer[role = 'contentinfo'] ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer[role = 'contentinfo'] ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+footer[role = 'contentinfo'] ul li:last-child {
+    margin-right: 0;
+}
+
+footer[role = 'contentinfo'] ul li a {
+    text-decoration: none;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+}
+
+address {
+    text-align: center;
+    margin: 2em 0;
+    font-style: italic;
+}
+
+address img {
+    width: 3em;
+    border-radius: 50%;
+    margin-bottom: 0.75em;
+}
+
+address p {
+    margin: 0;
+}
+
+figure {
+    max-width: 100%;
+    margin: 1em 0;
+}
+
+figure figcaption {
+    margin-top: 0.5em;
+}
+
+figure figcaption p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.item-list .title-with-meta {
+    margin-bottom: 1em;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination span {
+    margin: 0 1.5em;
+}
+
+.index header[role = 'banner'] {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.index header[role = 'banner'] .hero {
+    font-size: 2em;
+}
+
+@media (min-width: 500px) {
+    :root {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 760px) {
+    body {
+        width: 100%;
+    }
+
+    .single h2::before,
+    .single h3::before,
+    .single h4::before {
+        position: absolute;
+        left: -3rem;
+        text-align: right;
+        opacity: 0.25;
+    }
+
+    .single h2::before {
+        content: '##';
+    }
+
+    .single h3::before {
+        content: '###';
+    }
+
+    .single h4::before {
+        content: '####';
+    }
+}
+
+.index nav {
+    margin-top: 2em;
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    font-size: 1.2em;
+}
