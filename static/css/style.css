@@ -1,20 +1,41 @@
 :root {
-    --body-color: hsl(0, 0%, 40%);
-    --h1-color: black;
-    --h2-color: hsl(0, 0%, 20%);
-    --h3-color: hsl(0, 0%, 35%);
-    --accent: bisque;
-    --link-normal: hsl(230, 50%, 50%);
-    --link-visited: hsl(260, 50%, 50%);
-    --link-hover: hsl(230, 95%, 50%);
+    --light-background-color: white;
+    --light-body-color: hsl(0, 0%, 40%);
+    --light-h1-color: black;
+    --light-h2-color: hsl(0, 0%, 20%);
+    --light-h3-color: hsl(0, 0%, 35%);
+    --light-accent: bisque;
+    --light-link-normal: hsl(230, 50%, 50%);
+    --light-link-visited: hsl(260, 50%, 50%);
+    --light-link-hover: hsl(230, 95%, 50%);
+    --light-tag-background: hsl(0, 0%, 95%);
+
+    --background-color: var(--light-background-color);
+    --body-color: var(--light-body-color);
+    --h1-color: var(--light-h1-color);
+    --h2-color: var(--light-h2-color);
+    --h3-color: var(--light-h3-color);
+    --accent: var(--light-accent);
+    --link-normal: var(--light-link-normal);
+    --link-visited: var(--light-link-visited);
+    --link-hover: var(--light-link-hover);
+    --tag-background: var(--light-tag-background);
+
+    --transparent: hsla(0, 0%, 0%, 0);
+    --page-title-font: 'Lato';
     --heading-font: 'Fira Code';
     --body-font: 'Charter';
+    --h1-size: 1.602em;
+    --h2-size: 1.424em;
+    --h3-size: 1.266em;
+    --h4-size: 1.125em;
 }
 
 body {
     font-size: 1rem;
     color: var(--body-color);
     font-family: var(--body-font);
+    background-color: var(--background-color);
     line-height: 1.35;
     width: 95%;
     margin: 0 auto;
@@ -35,22 +56,22 @@ h5 {
 
 h1 {
     margin-top: 0;
-    font-size: 1.602em;
+    font-size: var(--h1-size);
     color: var(--h1-color);
 }
 
 h2 {
-    font-size: 1.424em;
+    font-size: var(--h2-size);
     color: var(--h2-color);
 }
 
 h3 {
-    font-size: 1.266em;
+    font-size: var(--h3-size);
     color: var(--h3-color);
 }
 
 h4 {
-    font-size: 1.125em;
+    font-size: var(--h4-size);
 }
 
 a {
@@ -169,15 +190,15 @@ header[role = 'banner'] .hero {
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Lato';
+    font-family: var(--page-title-font);
     font-weight: 600;
-    background-color: bisque;
+    background-color: var(--accent);
     padding: 0.25em;
     transition: color, background-color ease-in-out 0.25s;
 }
 
 header[role = 'banner'] .hero:hover {
-    background-color: white;
+    background-color: var(--transparent);
     color: var(--h1-color);
 }
 
@@ -191,9 +212,7 @@ header[role = 'banner'] .hero:hover {
 }
 
 .title-with-meta time {
-    --margin-right: 1em;
-
-    margin-right: var(--margin-right);
+    margin-right: 1em;
 }
 
 .title-with-meta time::before {
@@ -214,7 +233,7 @@ header[role = 'banner'] .hero:hover {
 
 .title-with-meta ul li {
     display: inline;
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--tag-background);
     border-radius: 3px;
     padding: 0.1em 0.5em;
 }
@@ -348,5 +367,5 @@ figure figcaption p {
     margin-top: 2em;
     font-family: var(--heading-font);
     font-weight: lighter;
-    font-size: 1.2em;
+    font-size: var(--h3-size);
 }
