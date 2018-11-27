@@ -1,24 +1,32 @@
+<!-- TODO: Use a partial to minimize repetition  -->
 <footer role='contentinfo'>
 	<ul>
 		<li>
-			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' rel="noreferrer nofollower" title='GitHub'>Github</a>
+			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' rel="noreferrer nofollower" title='GitHub'><img src="/img/icons/github.svg" alt=""></a>
 		</li>
 
 		<li>
-			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' rel="noreferrer nofollower" title='Stack Overflow'>Stack Overflow</a>
+			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' rel="noreferrer nofollower" title='Stack Overflow'><img src="/img/icons/stackoverflow.svg" alt=""></a>
 		</li>
 
 		<li>
-			<a href='mailto:{{ .Site.Params.email }}' target='_blank' rel="noreferrer nofollower" title='E-mail'>E-mail</a>
+			<a href='mailto:{{ .Site.Params.email }}' target='_blank' rel="noreferrer nofollower" title='E-mail'><img src="/img/icons/email.svg" alt=""></a>
 		</li>
 
 		<li>
-			<a href='{{ .RSSLink }}' target='_blank' rel="noreferrer nofollower" title='RSS'>RSS</a>
+			<a href='{{ .RSSLink }}' target='_blank' rel="noreferrer nofollower" title='RSS'><img src="/img/icons/rss.svg" alt=""></a>
+		</li>
+
+		<li>
+			<a href='//dev.to/{{ .Site.Params.devto }}' target='_blank' rel="noreferrer nofollower" title='DEV.to'><img src="/img/icons/devto.svg" alt=""></a>
+		</li>
+
+		<li>
+			<a href='//codepen.io/{{ .Site.Params.codepen }}' target='_blank' rel="noreferrer nofollower" title='Codepen'><img src="/img/icons/codepen.svg" alt=""></a>
 		</li>
 	</ul>
 
 	<p>
-		&copy; {{ now.Format "2006" }}
-		<a href='/'>Shreyas Minocha</a>. All rights reserved.
+		&copy; {{ now.Format "2006" }} <a href='/'>Shreyas Minocha</a>. All rights reserved.
 	</p>
 </footer>
