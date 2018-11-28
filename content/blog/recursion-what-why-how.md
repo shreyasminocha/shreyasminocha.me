@@ -32,7 +32,7 @@ function arithmeticSequence(n, firstTerm, d) {
     if(n == 1) {
         return firstTerm;
     } else {
-  	    return arithmeticSequence(n - 1, firstTerm, d) + d;
+        return arithmeticSequence(n - 1, firstTerm, d) + d;
     }
 }
 ```
@@ -51,11 +51,11 @@ Very well, you may say, but how does this actually work? Indeed, it is extremely
 
 The part of the computer that executes your code has something known as a stack. This is somewhat similar to a stack of dishes, or a stack of notebooks. In the first example, the last dish that is put on to the stack is the first one that gets cleaned. Similarly, in the second example, if you are familiar with how notebooks are corrected, the last notebook that goes into the stack of notebooks(provided you don't cheat and bury it in the bottom) is the first one that gets corrected.
 
-![Stack of books](/img/recursion-what-why-how/stack-of-books.jpg)
+{{< figure src="/img/recursion-what-why-how/stack-of-books.jpg" alt="Stack of books" caption="The call stack is analogous to a stack of books" >}}
 
 Your machine maintains a stack of function calls. Let us understand this with our original example. Let us say that the `main` function of our program makes the call  `arithmeticSequence(3, 0, 5)`. As you might have figured, this translates to "find the third term of the arithmetic sequence whose first term is `0` and the common difference is `5`". Let us visualize the stack of function calls.
 
-![Recursion call stack visualization](/img/recursion-what-why-how/recursion-call-stack.png)
+{{< figure src="/img/recursion-what-why-how/recursion-call-stack.png" alt="A visualisation of a call stack" caption="Call stack during recursion" >}}
 
 The first section of the image visualizes the stack before the function call to `arithmeticSequence()` was made. There is only one function on the stack, that is, `main`.
 
@@ -66,7 +66,6 @@ Sure, our recursive solution to this problem is less efficient than the implemen
 Hopefully, that has given you some intuition of how recursion works. But wait! We have covered the "what" and the "how" cited in the title. What about "why"? Following are some practical applications of recursion:
 
 * Recursion can be used to come up with very elegant solutions to certain problems such as the solution of Tower of Hanoi problem.
-
 
 * DFS(Depth-first-search) algorithm also makes use of recursion. It's applications include finding solutions to mazes, and many others in the field of graph theory.
 * Traversing over all files in a directory and it's child directories is also a problem that demands a recursive algorithm.
@@ -79,14 +78,14 @@ You are not required, but encouraged to try the following exercises out to furth
 2. Write a recursive function accept *one integer as a parameter* and return a binary string. You might want to look up operator overloading or default parameters, depending on your programming language of choice.
 3. Accept an integer `n` and print out permutations of letters from a to the `n`-th alphabet. For example, `n=3` would give the output(order doesn't matter):
 
-```
+```txt
 bca cba cab acb bac abc
 ```
 
-The third exercise is from [here](//introcs.cs.princeton.edu/java/23recursion/). If you wish to do some additional reading on this topic, [this](//introcs.cs.princeton.edu/java/23recursion/) might be a great starting point.
+Try the third exercise on [Princeton's IntroCS' page](//introcs.cs.princeton.edu/java/23recursion/). That page is also a great starting point for more reading about this topic.
 
 ## Conclusion
 
 Hopefully you have gained a good understanding of what recursion is, how it works, and are confident to write recursive solutions to common questions such as the recursive fibonacci sequence. We also looked at some practical uses of recursion. Hope you enjoyed!
 
-![Recursion meme](/img/recursion-what-why-how/recursion-meme.jpg)
+{{< src="/img/recursion-what-why-how/recursion-meme.jpg" alt="Recursion meme" caption="Yo dawg, I heard…" >}}
