@@ -111,7 +111,7 @@ $    // end of line
 
 I didn't explain the "clever hack" for leap year detection above. I'll do that now.
 
-All two digit multiples of 4 are either an even digit followed by one of `0`, `4`, `8` or an odd digit followed by one of `2` and `6`. Since we're using a negative lookahead to check for invalid years, we negate this condition to arrive at `[02468][^048]|[13579][^26]`. This pattern is used twice. Once for the first two digits of the year (because `XY00` years are leap only when `XY` is a multiple of 4) and once for the last two digits of the year (because a year is not leap if it’s last two digits are not divisible by four).
+All two digit multiples of 4 are either an even digit followed by one of `0`, `4`, `8` or an odd digit followed by one of `2` and `6`. Since we're using a negative lookahead to check for invalid years, we negate this condition to arrive at `[02468][^048]|[13579][^26]`. This pattern is used twice. Once for the first two digits of the year (because `XY00` years are leap only when `XY` is a multiple of 4) and once for the last two digits of the year (because a year is not leap if its last two digits are not divisible by four).
 
 -------
 

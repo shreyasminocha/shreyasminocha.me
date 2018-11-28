@@ -1,5 +1,5 @@
 ---
-title: JS13kGames 2018 Postmorten
+title: JS13kGames 2018 Postmortem
 description: A reflection on my experiences participating in JS13kGames 2018
 date: 2018-09-23
 tags: [js13kgames, reflection]
