@@ -88,4 +88,4 @@ Try the third exercise on [Princeton's IntroCS' page](//introcs.cs.princeton.edu
 
 Hopefully you have gained a good understanding of what recursion is, how it works, and are confident to write recursive solutions to common questions such as the recursive fibonacci sequence. We also looked at some practical uses of recursion. Hope you enjoyed!
 
-{{< src="/img/recursion-what-why-how/recursion-meme.jpg" alt="Recursion meme" caption="Yo dawg, I heard…" >}}
+{{< figure src="/img/recursion-what-why-how/recursion-meme.jpg" alt="Recursion meme" caption="Yo dawg, I heard…" >}}
