@@ -102,7 +102,7 @@ Thanks for reading!
 
 ## Further reading
 
-- [Tim Pope's note about commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-- [Commit guideline suggestions from Pro Git](https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
-- [Linus Torvald's note about commit messages](https://github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
-- [Commit message formatting guidelines from the Spring Project](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)
+- [Tim Pope's note about commit messages](//tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+- [Commit guideline suggestions from Pro Git](//www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
+- [Linus Torvald's note about commit messages](//github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
+- [Commit message formatting guidelines from the Spring Project](//github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)

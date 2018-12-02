@@ -1,11 +1,11 @@
 ---
-title: JS13kGames 2018 Postmorten
+title: JS13kGames 2018 Postmortem
 description: A reflection on my experiences participating in JS13kGames 2018
 date: 2018-09-23
 tags: [js13kgames, reflection]
 ---
 
-As you’ll find out, the phrase “[postmortem](https://www.merriam-webster.com/dictionary/postmortem)” is quite apt for this write-up.
+As you’ll find out, the phrase “[postmortem](//www.merriam-webster.com/dictionary/postmortem)” is quite apt for this write-up.
 
 {{< figure src="/img/js13k-2018-postmortem/wifihunt.jpeg" alt="Screenshot of WifiHunt" caption="The game in action" >}}
 

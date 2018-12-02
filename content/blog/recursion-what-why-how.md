@@ -27,7 +27,7 @@ Now, the idea of the recursive definition is, that the `n`-th term of the series
 
 Let us now, get our hands dirty with code and write a recursive function(if you aren't familiar with functions, please look them up online and get familiar with accepting parameters and returning values before continuing) to find the `n`-th term of an arithmetic sequence, given the first term and the common difference. Here's the pseudocode:
 
-```javascript
+```js
 function arithmeticSequence(n, firstTerm, d) {
     if(n == 1) {
         return firstTerm;
@@ -88,4 +88,4 @@ Try the third exercise on [Princeton's IntroCS' page](//introcs.cs.princeton.edu
 
 Hopefully you have gained a good understanding of what recursion is, how it works, and are confident to write recursive solutions to common questions such as the recursive fibonacci sequence. We also looked at some practical uses of recursion. Hope you enjoyed!
 
-{{< src="/img/recursion-what-why-how/recursion-meme.jpg" alt="Recursion meme" caption="Yo dawg, I heard…" >}}
+{{< figure src="/img/recursion-what-why-how/recursion-meme.jpg" alt="Recursion meme" caption="Yo dawg, I heard…" >}}
