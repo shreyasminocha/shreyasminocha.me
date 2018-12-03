@@ -12,10 +12,6 @@
     <meta name='author' content='Shreyas Minocha'>
     <meta name='description' content='{{ .Site.Params.description }}'>
 
-    {{ if .RSSLink }}
-    <link href='{{ .RSSLink }}' rel='feed' type='application/rss+xml' title='{{ .Site.Title }}'/>
-    {{ end }}
-
     <link rel='shortcut icon' href='/img/logo/favicon.ico'>
 
     {{ $normalize := resources.Get "css/normalize.css" | minify }}
@@ -30,6 +26,10 @@
 
     {{ $manifest := resources.Get "/manifest.json" | minify }}
     <link rel="manifest" href="{{ $manifest.RelPermalink }}">
+
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+    {{ end -}}
 
     <script>
         if('serviceWorker' in navigator) {
