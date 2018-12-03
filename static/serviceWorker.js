@@ -7,10 +7,10 @@ self.addEventListener('install', (e) => {
             return cache
                 .addAll([
                     '/',
-                    '/css/normalize.css',
-                    '/css/style.css',
-                    '/css/fonts.css',
-                    '/css/syntax.css',
+                    '/css/normalize.min.css',
+                    '/css/style.min.css',
+                    '/css/fonts.min.css',
+                    '/css/syntax.min.css',
                     '/fonts/charter.woff',
                     '/fonts/charter-bold.woff',
                     '/fonts/charter-italic.woff',
