@@ -34,8 +34,7 @@
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register('/serviceWorker.js')
-                .then(() => { console.log("Service Worker Registered"); });
+                .register('/serviceWorker.js');
         }
     </script>
 </head>
