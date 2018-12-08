@@ -3,7 +3,6 @@ title: A rather complete regex to match dates
 description: Stretching the limits of regular expressions.
 date: 2018-08-16
 tags: [regex, programming]
-type: post
 ---
 
 Inspired by a [question on StackOverflow](//stackoverflow.com/questions/51670945/php-regex-to-validate-date-format-yyyy-mmm-dd-with-leap-year-validation).
@@ -52,7 +51,7 @@ Shouldn't match:
 
 ### TLDR;
 
-```
+```txt
 ^((?!(?:[02468][^048]|[13579][^26])00-FEB-29)(?:19|[2-9]\d)(?!(?:[02468][^048]|[13579][^26])-FEB-29)\d\d)-(?!FEB-3[01])(?!APR-31)(?!JUN-31)(?!SEP-31)(?!NOV-31)(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)-(?!00)((?:[0-2][0-9]|3[01]))$
 ```
 
@@ -112,7 +111,7 @@ $    // end of line
 
 I didn't explain the "clever hack" for leap year detection above. I'll do that now.
 
-All two digit multiples of 4 are either an even digit followed by one of `0`, `4`, `8` or an odd digit followed by one of `2` and `6`. Since we're using a negative lookahead to check for invalid years, we negate this condition to arrive at `[02468][^048]|[13579][^26]`. This pattern is used twice. Once for the first two digits of the year (because `XY00` years are leap only when `XY` is a multiple of 4) and once for the last two digits of the year (because a year is not leap if it’s last two digits are not divisible by four).
+All two digit multiples of 4 are either an even digit followed by one of `0`, `4`, `8` or an odd digit followed by one of `2` and `6`. Since we're using a negative lookahead to check for invalid years, we negate this condition to arrive at `[02468][^048]|[13579][^26]`. This pattern is used twice. Once for the first two digits of the year (because `XY00` years are leap only when `XY` is a multiple of 4) and once for the last two digits of the year (because a year is not leap if its last two digits are not divisible by four).
 
 -------
 

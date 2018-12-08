@@ -1,30 +1,32 @@
-<footer class='site-footer'>
-	<div class='inner'>
-		<section class='footer-social' style='margin-bottom: 1em;'>
-			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' title='GitHub'>
-				<span class='icon-github'></span>
-				<span class='hidden'>GitHub</span>
-			</a>
+<!-- TODO: Use a partial to minimize repetition  -->
+<footer role='contentinfo'>
+	<ul>
+		<li>
+			<a href='//github.com/{{ .Site.Params.github }}' target='_blank' rel="noreferrer nofollower" title='GitHub'><img src="/img/icons/github.svg" alt=""></a>
+		</li>
 
-			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' title='Stack Overflow'>
-				<span class='icon-stackoverflow'></span>
-				<span class='hidden'>Stack Overflow</span>
-			</a>
+		<li>
+			<a href='//stackoverflow.com/users/{{ .Site.Params.stackoverflow }}' target='_blank' rel="noreferrer nofollower" title='Stack Overflow'><img src="/img/icons/stackoverflow.svg" alt=""></a>
+		</li>
 
-			<a href='mailto:{{ .Site.Params.email }}' target='_blank' title='E-mail'>
-				<span class='icon-envelope'></span>
-				<span class='hidden'>E-mail</span>
-			</a>
+		<li>
+			<a href='mailto:{{ .Site.Params.email }}' target='_blank' rel="noreferrer nofollower" title='E-mail'><img src="/img/icons/email.svg" alt=""></a>
+		</li>
 
-			<a href='{{ .RSSLink }}' target='_blank' title='RSS'>
-				<span class='icon-rss'></span>
-				<span class='hidden'>RSS</span>
-			</a>
-		</section>
+		<li>
+			<a href='{{ .RSSLink }}' target='_blank' rel="noreferrer nofollower" title='RSS'><img src="/img/icons/rss.svg" alt=""></a>
+		</li>
 
-		<section class='copyright'>
-			&copy; {{ now.Format "2006" }}
-			<a href='/'>Shreyas Minocha</a>. All rights reserved.
-		</section>
-	</div>
+		<li>
+			<a href='//dev.to/{{ .Site.Params.devto }}' target='_blank' rel="noreferrer nofollower" title='DEV.to'><img src="/img/icons/devto.svg" alt=""></a>
+		</li>
+
+		<li>
+			<a href='//codepen.io/{{ .Site.Params.codepen }}' target='_blank' rel="noreferrer nofollower" title='Codepen'><img src="/img/icons/codepen.svg" alt=""></a>
+		</li>
+	</ul>
+
+	<p>
+		&copy; {{ now.Format "2006" }} <a href='/'>Shreyas Minocha</a>. All rights reserved.
+	</p>
 </footer>

@@ -3,10 +3,9 @@ title: My commit message workflow
 description: Tweaks I've made to make the perfect commit message writing workflow for myself.
 date: 2018-06-22
 tags: [git, productivity, workflow]
-type: post
 ---
 
-![Commit message example](/img/commit-message-setup/commit-message-example.jpg)
+{{< figure src="/img/commit-message-setup/commit-message-example.jpg" alt="My commit message workflow" caption="My commit message workflow" >}}
 
 I use Sublime Text 3 for most of my text-editing needs. I've also set it as my core editor.
 
@@ -81,7 +80,7 @@ Create `prepare-commit-msg` in said directory with the following content:
 
 Make sure the hook is set to be executable with `chmod +x`. Now that pesky help notice will bother you no more.
 
-![Relevant xkcd](/img/commit-message-setup/uninformative-messages.png)
+{{< figure src="/img/commit-message-setup/uninformative-messages.png" alt="Xkcd about uninformative commit messages" caption="Every other project 😂" >}}
 
 Recently, I found [this really cool utility](//github.com/clns/node-commit-msg) which allows you to validate commit messages from the command line. I use a modified form of the utility in a [global `commit-msg` hook](//git-scm.com/docs/githooks#_commit_msg) to automatically validate every commit I make. Create `commit-msg` in your global git hooks directory:
 
@@ -97,11 +96,13 @@ Again, make sure the script is set to be executable. The result of this hook is 
 
 ![An example of an invalid commit message](/img/commit-message-setup/failed-commit.jpg)
 
+{{< figure src="/img/commit-message-setup/uninformative-messages.png" alt="An example of a failing commit message" caption="A failing commit message" >}}
+
 Thanks for reading!
 
 ## Further reading
 
-- [Tim Pope's note about commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-- [Commit guideline suggestions from Pro Git](https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
-- [Linus Torvald's note about commit messages](https://github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
-- [Commit message formatting guidelines from the Spring Project](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)
+- [Tim Pope's note about commit messages](//tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+- [Commit guideline suggestions from Pro Git](//www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
+- [Linus Torvald's note about commit messages](//github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
+- [Commit message formatting guidelines from the Spring Project](//github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)

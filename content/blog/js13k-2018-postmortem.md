@@ -3,12 +3,11 @@ title: JS13kGames 2018 Postmortem
 description: A reflection on my experiences participating in JS13kGames 2018
 date: 2018-09-23
 tags: [js13kgames, reflection]
-type: post
 ---
 
-As you’ll find out, the phrase “[postmortem](https://www.merriam-webster.com/dictionary/postmortem)” is quite apt for this write-up.
+As you’ll find out, the phrase “[postmortem](//www.merriam-webster.com/dictionary/postmortem)” is quite apt for this write-up.
 
-![In action](/img/js13k-2018-postmortem/wifihunt.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/wifihunt.jpeg" alt="Screenshot of WifiHunt" caption="The game in action" >}}
 
 I finally managed to participate this year.
 
@@ -16,7 +15,7 @@ Out of my excitement for the competition, I spent some days running up to the co
 
 I quite liked the theme “offline” and I spent around three days  brainstorming and looking for inspiration.
 
-![Brainstorming](/img/js13k-2018-postmortem/brainstorming.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/brainstorming.jpeg" caption="Brainstorming" alt="A Mindmap of my initial ideas" >}}
 
 Eventually, I settled on an idea: an exploratory game with the objective is to look for WiFi networks in the wild and complete download and upload goals. I spent the rest of the week making some notes about my game’s features, gameplay etc. This being my first time creating a game or even working with HTML5 Canvas, I had no idea how feasible my plans would be in terms of time. Moreover, as a first time code golf game jam entrant, I couldn’t estimate how much code I would be able to fit into the thirteen kilobyte[^1] limit. In retrospect, I should have started coding earlier and figured out the finer details along the way.
 
@@ -30,9 +29,9 @@ In the final week, I made way too many compromises to meet the deadline. The fir
 
 I was working on the game till five minutes before the deadline and submitted just two minutes short of the deadline. I didn’t even get to test the game or have someone play it in front of me. This was another one of my biggest mistakes. I didn't even know if my game is beatable! Next time I’ll try to get my game to a stage where it is “playable” a bit early on so that my entry can benefit more from others’ feedback.
 
-![Ryan's feedback](/img/js13k-2018-postmortem/ryan's-feedback.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/ryan's-feedback.jpeg" caption="Ryan's feedback on my game" >}}
 
-![Jupi's feedback](/img/js13k-2018-postmortem/jupi's-feedback.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/jupi's-feedback.jpeg" caption="Jupi's replies on Slack" >}}
 
 > TFW you install `advzip` thinking that you’ll shave-off some last bytes and feel good about yourself but you end up not even completing your game.
 >
@@ -42,7 +41,7 @@ While school, studies and my lack of time management resulted in my entry not li
 
 I’d like to shout out to the lovely people on the [JS13k Slack](//js13kgames.slack.com), especially @herebefrogs, @xem, @end3r, @the_coder, @madmarcel, @udxs and @kamyl (I’m very sorry if I’ve missed someone out). You assisted, motivated and encouraged me. At first, your knowledge intimated me but later it inspired me. To be honest, I wouldn’t have got this far without you guys.
 
-![Love you all](/img/js13k-2018-postmortem/love-you-all.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/love-you-all.jpeg" caption="Thanks for the help!" alt="Asking for advice on the Slack" >}}
 
 You can find my [submitted entry](//2018.js13kgames.com/entries/wifihunt) on [the competition’s website](//2018.js13kgames.com) and the [source code](//github.com/shreyasminocha/WiFiHunt)(which unfortunately isn't as neat as I'd like it to be at the moment) on [Github](//github.com).
 
@@ -56,7 +55,7 @@ I might continue working on this game a while later. I’ll update this post wit
 - Final source code size (compressed): 20351 bytes
 - Final source code size (uncompressed): 44 kilobytes
 
-![Additions/Deletions](/img/js13k-2018-postmortem/additions-deletions.jpeg)
+{{< figure src="/img/js13k-2018-postmortem/additions-deletions.jpeg" caption="Additions and deletions per week" alt="Addition/deletion statistics from Github" >}}
 
 ## Commit log
 
@@ -64,7 +63,7 @@ I might continue working on this game a while later. I’ll update this post wit
 git log --before '13 Sep' --reverse --date=format:'%d %b' --pretty=format:'%cd  %s'
 ```
 
-<pre style="height: 20em; overflow-y: scroll">
+```txt
 17 Aug  Initial commit
 24 Aug  Update ESLint configuration
 24 Aug  Prototype keyboard controls
@@ -130,6 +129,6 @@ git log --before '13 Sep' --reverse --date=format:'%d %b' --pretty=format:'%cd  
 13 Sep  Fix a critical bug
 13 Sep  Implement tree rotation
 13 Sep  Add some more networks
-</pre>
+```
 
 [^1]: Technically, the limit is thirteen kibibytes. [1 kilobyte = 1000 bytes while 1 kibibyte = 1024 bytes](//wikipedia.org/en/Binary_prefix).

@@ -5,37 +5,36 @@
 
     <meta name='HandheldFriendly' content='True'>
     <meta name='MobileOptimized' content='320'>
+    <meta name='theme-color' content='#2966A3'>
 
     <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
 
     <meta name='author' content='Shreyas Minocha'>
     <meta name='description' content='{{ .Site.Params.description }}'>
 
-    {{ if .RSSLink }}
-    <link href='{{ .RSSLink }}' rel='feed' type='application/rss+xml' title='{{ .Site.Title }}'/>
-    {{ end }}
+    <link rel='shortcut icon' href='/img/logo/favicon.ico'>
 
-    <link rel='shortcut icon' href='/favicon.ico'>
-    <link rel='stylesheet' href='/css/normalize.css'>
-    <link rel='stylesheet' href='/css/fonts.css'>
-    <link rel='stylesheet' href='/css/screen.css'>
-    <link rel='stylesheet' href='/css/github.css'>
+    {{ $normalize := resources.Get "css/normalize.css" | minify }}
+    {{ $fonts := resources.Get "css/fonts.css" | minify }}
+    {{ $style := resources.Get "css/style.css" | minify }}
+    {{ $syntax := resources.Get "css/syntax.css" | minify }}
 
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
-    <link rel='icon' type='image/x-icon' href='/favicon.ico'>
+    <link rel='stylesheet' href='{{ $normalize.RelPermalink }}'>
+    <link rel='stylesheet' href='{{ $fonts.RelPermalink }}'>
+    <link rel='stylesheet' href='{{ $style.RelPermalink }}'>
+    <link rel='stylesheet' href='{{ $syntax.RelPermalink }}'>
 
-    <script src='/js/highlight.min.js'></script>
-    <script src='/js/highlightjs-line-numbers.min.js'></script>
+    {{ $manifest := resources.Get "/manifest.json" | minify }}
+    <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 
-    <script>
-        hljs.initHighlightingOnLoad();
-        hljs.initLineNumbersOnLoad();
-    </script>
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+    {{ end -}}
 
     <script>
-        !function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},a=t.createElement(i),c=t.getElementsByTagName(i)[0],a.async=!0,a.src='/js/ga.js',c.parentNode.insertBefore(a,c)}(window,document,'galite','script')
-
-        galite('create', '{{ .Site.Params.googleAnalytics }}', 'auto');
-        galite('send', 'pageview');
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/serviceWorker.js');
+        }
     </script>
 </head>

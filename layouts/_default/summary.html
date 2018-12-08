@@ -1,14 +1,20 @@
-<article class='preview'>
-    <header>
-        <h1 class='post-title'><a href='{{ .Permalink }}'>{{ .Title }}</a></h1>
+<article>
+    <header class="title-with-meta">
+        <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
 
-        <div class='post-meta'>
-            <time datetime='{{ .Date.Format "02 January 2006" }}'>{{ .Date.Format "02 January 2006" }}</time>
-        </div>
+        {{ if .Type | eq "blog" }}
+        <time datetime='{{ .Date.Format "02 January 2006" }}'>
+            {{ .Date.Format "02 January, 2006" }}
+        </time>
+
+        <ul class="tags">
+            {{ range .Params.tags }}
+                {{ $url := printf "tags/%s" ( . | urlize) }}
+                    <li><a href='{{ $url | absURL }}'>{{ . }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
     </header>
 
-    <section class='post-excerpt'>
-        <a class='excerptlink' href='{{ .Permalink }}'><p>{{ .Description | markdownify }}</p></a>
-        <p class='readmore'><a href='{{ .Permalink }}'>Continue reading ≫</a></p>
-    </section>
+    <p>{{ .Description | markdownify }}</p>
 </article>
