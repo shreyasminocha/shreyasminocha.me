@@ -14,12 +14,12 @@
 
     <link rel='shortcut icon' href='/img/logo/favicon.ico'>
 
-    {{ $normalize := resources.Get "css/normalize.css" | minify }}
+    {{ $sanitize := resources.Get "css/sanitize.css" | minify }}
     {{ $fonts := resources.Get "css/fonts.css" | minify }}
     {{ $style := resources.Get "css/style.css" | minify }}
     {{ $syntax := resources.Get "css/syntax.css" | minify }}
 
-    <link rel='stylesheet' href='{{ $normalize.RelPermalink }}'>
+    <link rel='stylesheet' href='{{ $sanitize.RelPermalink }}'>
     <link rel='stylesheet' href='{{ $fonts.RelPermalink }}'>
     <link rel='stylesheet' href='{{ $style.RelPermalink }}'>
     <link rel='stylesheet' href='{{ $syntax.RelPermalink }}'>
