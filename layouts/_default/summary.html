@@ -2,6 +2,7 @@
     <header class="title-with-meta">
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
+        <!-- TODO: Remove duplication of meta info code  -->
         {{ if .Type | eq "blog" }}
         <time datetime='{{ .Date.Format "02 January 2006" }}'>
             {{ .Date.Format "02 January, 2006" }}

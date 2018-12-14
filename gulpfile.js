@@ -31,7 +31,7 @@ gulp.task('img', () => {
         .pipe(imagemin())
         .pipe(gulp.dest('static/img'));
 
-    // TODO: check widths
+    // TODO: Check widths
 });
 
 gulp.task('default', gulp.parallel('css', 'js', 'img'));
