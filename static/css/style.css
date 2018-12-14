@@ -163,8 +163,8 @@ th:last-child {
     padding-right: 0;
 }
 
-header[role = 'banner'] a,
-.tags li a {
+.tags a,
+header[role = 'banner'] a {
     text-decoration: none;
 }
 

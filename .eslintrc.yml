@@ -1,0 +1,8 @@
+---
+extends: shreyasminocha
+
+parserOptions:
+    ecmaVersion: 2018
+
+env:
+    browser: true
