@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang='{{ .Site.Params.languageCode }}'>
+<html lang="{{ .Site.Params.languageCode }}">
 
 {{ partial "head" . }}
 
-<body class='index'>
+<body class="index">
     <main>
-        <header role='banner'>
+        <header role="banner">
             {{ with .Site.Params.title }}
-            <a href='{{ $.Site.BaseURL }}' class="hero">{{ . | markdownify }}</a>
+            <a href="{{ $.Site.BaseURL }}" class="hero">{{ . | markdownify }}</a>
             {{ end }}
 
             <nav>
                 <ul>
-                    <li><a href='/'>/</a></li>
-                    <li><a href='/about'>/about</a></li>
-                    <li><a href='/blog'>/blog</a></li>
+                    <li><a href="/">/</a></li>
+                    <li><a href="/about">/about</a></li>
+                    <li><a href="/blog">/blog</a></li>
                 </ul>
             </nav>
         </header>

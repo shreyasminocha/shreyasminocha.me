@@ -11,7 +11,7 @@
             <ul class="tags">
                 {{ range .Params.tags }}
                     {{ $url := printf "tags/%s" ( . | urlize) }}
-                        <li><a href='{{ $url | absURL }}'>{{ . }}</a></li>
+                        <li><a href="{{ $url | absURL }}">{{ . }}</a></li>
                 {{ end }}
             </ul>
         {{ end }}
@@ -22,7 +22,7 @@
     </section>
 
     <address>
-        <img src="/img/avatar.jpg" alt="Shreyas' Avatar"></img>
+        <img src="/img/avatar.jpg" alt="Shreyas' Avatar"/>
         <p>Shreyas Minocha</p>
         <p>{{  .Site.Params.bio | markdownify }}</p>
     </address>
