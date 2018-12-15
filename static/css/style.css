@@ -376,3 +376,7 @@ figure figcaption p {
     font-weight: lighter;
     font-size: var(--h3-size);
 }
+
+.commento-root .commento-button.commento-login-button {
+    width: 60px;
+}
