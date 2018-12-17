@@ -4,6 +4,7 @@ const stylelint = require('gulp-stylelint');
 const resize = require('gulp-image-resize');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+const size = require('gulp-size');
 
 gulp.task('html', () => {
     // TODO
@@ -49,8 +50,20 @@ gulp.task('img-optim', () => {
         .pipe(gulp.dest('static/img'));
 });
 
-gulp.task('default', gulp.parallel(
-    'css',
-    'js',
-    gulp.series('img-resize', 'img-optim')
+gulp.task('size', () => {
+    return gulp.src('static/**')
+        .pipe(size({
+            showFiles: true,
+            showTotal: false,
+            gzip: true
+        }));
+});
+
+gulp.task('default', gulp.series(
+    gulp.parallel(
+        'css',
+        'js',
+        gulp.series('img-resize', 'img-optim'),
+    ),
+    'size'
 ));
