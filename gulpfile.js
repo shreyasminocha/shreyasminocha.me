@@ -27,7 +27,7 @@ gulp.task('md', () => {
 });
 
 gulp.task('img', () => {
-    return gulp.src('static/img/*')
+    return gulp.src('static/img/**')
         .pipe(imagemin())
         .pipe(gulp.dest('static/img'));
 
