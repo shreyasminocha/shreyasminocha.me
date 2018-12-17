@@ -1,4 +1,4 @@
-const version = '0.0.0';
+const version = '1.0.0';
 const cacheName = `shreyasminocha.me-${version}`;
 
 self.addEventListener('install', (e) => {
@@ -7,7 +7,7 @@ self.addEventListener('install', (e) => {
             return cache
                 .addAll([
                     '/',
-                    '/css/normalize.min.css',
+                    '/css/sanitize.min.css',
                     '/css/style.min.css',
                     '/css/fonts.min.css',
                     '/css/syntax.min.css',
