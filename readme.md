@@ -81,49 +81,6 @@ git submodule update
 hugo -s $TMP_DIR -d $WEB_DIR --cleanDestinationDir --minify
 ```
 
-Nginx configuration:
-
-```nginx
-$ cat /etc/nginx/sites-enabled/shreyasminocha.me
-server {
-    listen 443 ssl http2 default_server;
-    listen [::]:443 ssl http2 default_server;
-
-    root /var/www/shreyasminocha.me;
-    index index.html;
-    server_name shreyasminocha.me www.shreyasminocha.me;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    location ~* \.(jpg|jpeg|png|gif|ico)$ {
-        expires 30d;
-    }
-
-    location ~* \.(css|js)$ {
-        expires 7d;
-    }
-
-    ssl on;
-    ssl_certificate /etc/letsencrypt/live/shreyasminocha.me/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/shreyasminocha.me/privkey.pem;
-
-    gzip on;
-    gzip_types application/javascript image/* text/css;
-    gunzip on;
-}
-
-server {
-    listen 0.0.0.0:80;
-
-    server_name shreyasminocha.me www.shreyasminocha.me;
-    rewrite ^ https://$host$request_uri? permanent;
-}
-```
-
-I've enabled http/2. I've also set up https with a key generated using Let's Encrypt. The final `server` directive redirects all http requests to their https equivalent with a permanent redirect.
-
 ## License
 
 Source code is licensed under the [MIT license](//tldrlegal.com/license/mit-license).
