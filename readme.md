@@ -60,7 +60,7 @@ origin  ssh://<host>/home/shreyasminocha/shreyasminocha.me (push)
 origin  https://github.com/shreyasminocha/shreyasminocha.me (push)
 ```
 
-The bare respository has a post-receive hook that creates a copy of the files of the repo in a temporary directory, runs `hugo` on the copy and stores the generated file in a directory which nginx expects files to be in.
+The bare repository has a post-receive hook that creates a copy of the files of the repo in a temporary directory, runs `hugo` on the copy and stores the generated file in a directory which the server expects files to be in.
 
 ```sh
 $ cat shreyasminocha.me.git/hooks/post-receive
