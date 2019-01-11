@@ -380,3 +380,12 @@ figure figcaption p {
 .commento-root .commento-button.commento-login-button {
     width: 60px;
 }
+
+.error {
+    margin-top: 2em;
+}
+
+.error .human {
+    margin: 0 auto;
+    display: block;
+}

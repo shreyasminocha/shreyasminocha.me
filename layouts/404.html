@@ -1,9 +1,16 @@
 <!doctype html>
+<html lang="{{ .Site.Params.languageCode }}">
+    {{ partial "head" . }}
 
-{{ define "main" }}
-<article>
-    <header>
-    <h1>404 — Page not found</h1>
-    </header>
-</article>
-{{ end }}
+    <body class="error">
+        <main>
+            <img src="/img/human.svg" alt="Human" class="human">
+
+            <div class="text">
+                <h1>You seem to have lost your way, traveller.</h1>
+
+                <p>The page you were looking for either disappeared or never existed. Keep calm, it's probably not your fault. Want to go <a href="/">home</a>?</p>
+            </div>
+        </main>
+    </body>
+</html>
