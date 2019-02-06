@@ -5,11 +5,11 @@ date: 2018-08-16
 tags: [regex, programming]
 ---
 
-Inspired by a [question on StackOverflow](//stackoverflow.com/questions/51670945/php-regex-to-validate-date-format-yyyy-mmm-dd-with-leap-year-validation).
+Inspired by a (now deleted) question on StackOverflow.
 
 Someone on StackOverflow was attempting to match dates with a regular expression in PHP. I decided to take on the task of constructing this regex for fun.
 
-This post is a slightly longer version of [my answer to the question](//stackoverflow.com/questions/51670945/php-regex-to-validate-date-format-yyyy-mmm-dd-with-leap-year-validation/51671510#51671510).
+This post is a slightly longer version of my answer to the question.
 
 ## Problem statement
 
