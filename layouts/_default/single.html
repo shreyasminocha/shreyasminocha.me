@@ -28,9 +28,7 @@
         <p>{{  .Site.Params.bio | markdownify }}</p>
     </address>
 
-    {{ if .Type | eq "blog" }}
-        {{ partial "commento" . }}
-    {{ end }}
+    {{ template "_internal/disqus.html" . }}
 </article>
 
 {{ end }}
