@@ -176,6 +176,7 @@ header[role = 'banner'] a {
     height: 1rem;
     background-size: cover;
     vertical-align: text-bottom;
+    margin-right: 0.5em;
 }
 
 article img {
@@ -226,6 +227,7 @@ header[role = 'banner'] .hero:hover {
     height: 1rem;
     background-size: cover;
     vertical-align: text-bottom;
+    margin-right: 0.5em;
 }
 
 .title-with-meta ul {
@@ -239,6 +241,7 @@ header[role = 'banner'] .hero:hover {
     background-color: var(--tag-background);
     border-radius: 3px;
     padding: 0.1em 0.5em;
+    margin-right: 1.5em;
 }
 
 .title-with-meta a {
