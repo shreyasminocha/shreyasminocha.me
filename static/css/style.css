@@ -241,7 +241,11 @@ header[role = 'banner'] .hero:hover {
     background-color: var(--tag-background);
     border-radius: 3px;
     padding: 0.1em 0.5em;
-    margin-right: 1.5em;
+    margin-right: 0.5em;
+}
+
+.title-with-meta ul li:last-child {
+    margin-right: 0;
 }
 
 .title-with-meta a {
