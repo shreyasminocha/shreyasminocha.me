@@ -234,6 +234,7 @@ header[role = 'banner'] .hero:hover {
     list-style: none;
     display: inline;
     padding-left: 0;
+    line-height: 1.75;
 }
 
 .title-with-meta ul li {
