@@ -128,6 +128,10 @@ nav ul li {
     margin-right: 1em;
 }
 
+nav ul li a {
+    display: inline-block;
+}
+
 nav ul li:last-child {
     margin-right: 0;
 }
