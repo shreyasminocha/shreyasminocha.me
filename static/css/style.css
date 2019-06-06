@@ -345,6 +345,11 @@ figure figcaption p {
     font-size: 2em;
 }
 
+
+.index nav.subdomains {
+    font-size: 85%;
+}
+
 @media (min-width: 500px) {
     :root {
         font-size: 1.125rem;
