@@ -1,6 +1,6 @@
 ---
-title: A Catchy Title
+title: {{ replace .Name "-" " " | title }}
 description: A succinct description.
-date: 1971-01-01
+date: {{ .Date }}
 tags: [all, sorts, of, stuff]
 ---
