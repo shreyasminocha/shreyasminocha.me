@@ -66,6 +66,8 @@ h1 {
 h2 {
     font-size: var(--h2-size);
     color: var(--h2-color);
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
