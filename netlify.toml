@@ -2,6 +2,38 @@
     publish = "rendered"
     command = "hugo --gc --minify"
 
+[[headers]]
+    for = "/*"
+
+    [headers.values]
+        Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+        X-Frame-Options = "SAMEORIGIN"
+        X-XSS-Protection = "1; mode=block"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy = "same-origin"
+
+        # Feature-Policy = """
+            # geolocation 'none';
+            # midi 'none';
+            # notifications 'none';
+            # push 'none';
+            # sync-xhr 'none';
+            # microphone 'none';
+            # camera 'none';
+            # magnetometer 'none';
+            # gyroscope 'none';
+            # speaker 'none';
+            # vibrate 'none';
+            # fullscreen 'none';
+            # payment 'none';
+        # """
+
+        # Content-Security-Policy = """
+            # default-src https: data:;
+            # script-src https://*.shreyasminocha.me:* https://shreyasminocha.me:* 'unsafe-inline';
+            # style-src https: 'unsafe-inline';
+        # """
+
 [context.production.environment]
     HUGO_VERSION = "0.55.6"
     HUGO_ENV = "production"
