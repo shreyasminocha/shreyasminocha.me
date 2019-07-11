@@ -2,6 +2,16 @@
     publish = "rendered"
     command = "hugo --gc --minify"
 
+[[redirects]]
+    from = "https://www.shreyasminocha.me/*"
+    to = "https://shreyasminocha.me/:splat"
+    force = "true"
+
+[[redirects]]
+    from = "https://shreyasminocha.netlify.com/*"
+    to = "https://shreyasminocha.me/:splat"
+    force = "true"
+
 [[headers]]
     for = "/*"
 
