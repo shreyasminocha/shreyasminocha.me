@@ -5,12 +5,12 @@
 [[redirects]]
     from = "https://www.shreyasminocha.me/*"
     to = "https://shreyasminocha.me/:splat"
-    force = "true"
+    force = true
 
 [[redirects]]
     from = "https://shreyasminocha.netlify.com/*"
     to = "https://shreyasminocha.me/:splat"
-    force = "true"
+    force = true
 
 [[headers]]
     for = "/*"
