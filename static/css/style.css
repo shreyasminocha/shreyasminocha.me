@@ -271,6 +271,8 @@ header[role = 'banner'] .hero:hover {
 footer[role = 'contentinfo'] {
     text-align: center;
     margin: 5em 0 2.5em;
+    opacity: 0.55;
+    font-size: smaller;
 }
 
 footer[role = 'contentinfo'] ul {
@@ -290,9 +292,12 @@ footer[role = 'contentinfo'] ul li:last-child {
 footer[role = 'contentinfo'] ul li a {
     text-decoration: none;
     content: '';
-    width: 1rem;
-    height: 1rem;
     background-size: cover;
+}
+
+footer[role = 'contentinfo'] ul li a img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 address {
