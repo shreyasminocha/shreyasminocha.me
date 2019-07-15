@@ -401,10 +401,6 @@ figure figcaption p {
     font-size: var(--h3-size);
 }
 
-.commento-root .commento-button.commento-login-button {
-    width: 60px;
-}
-
 .error {
     margin-top: 2em;
 }
