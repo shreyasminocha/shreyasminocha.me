@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://shreyasminocha.me/sitemap.xml
+
+Disallow: /dev/null
