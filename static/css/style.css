@@ -360,25 +360,20 @@ figure figcaption p {
         width: 100%;
     }
 
-    .single h2::before,
-    .single h3::before,
-    .single h4::before {
+    .header-anchor {
         position: absolute;
         left: -3rem;
         text-align: right;
         opacity: 0.25;
+        text-decoration: none;
     }
 
-    .single h2::before {
-        content: '##';
-    }
-
-    .single h3::before {
-        content: '###';
-    }
-
-    .single h4::before {
-        content: '####';
+    .header-anchor:link,
+    .header-anchor:visited,
+    .header-anchor:hover,
+    .header-anchor:active,
+    .header-anchor:focus {
+        color: inherit;
     }
 }
 
