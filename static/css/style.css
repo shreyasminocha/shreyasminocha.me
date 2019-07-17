@@ -68,7 +68,7 @@ h4 {
 }
 
 a {
-    transition: ease-in-out all 0.25s;
+    transition: ease-in-out color 0.25s;
 }
 
 a:link {
@@ -80,7 +80,8 @@ a:visited {
 }
 
 a:hover,
-a:active {
+a:active,
+a:focus {
     color: var(--link-hover);
 }
 
@@ -195,7 +196,8 @@ header[role = 'banner'] .hero {
     transition: color, background-color ease-in-out 0.25s;
 }
 
-header[role = 'banner'] .hero:hover {
+header[role = 'banner'] .hero:hover,
+header[role = 'banner'] .hero:focus {
     background-color: var(--transparent);
     color: var(--h1-color);
 }
@@ -283,9 +285,9 @@ footer[role = 'contentinfo'] ul li a {
     background-size: cover;
 }
 
-footer[role = 'contentinfo'] ul li a img {
-    width: 1.5rem;
-    height: 1.5rem;
+footer[role = 'contentinfo'] ul li a svg {
+    width: 27px;
+    color: var(--body-color);
 }
 
 address {
