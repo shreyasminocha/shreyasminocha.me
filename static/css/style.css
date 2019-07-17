@@ -1,27 +1,15 @@
 :root {
     /* light theme colours */
-    --light-background-color: white;
-    --light-body-color: hsl(0, 0%, 40%);
-    --light-h1-color: black;
-    --light-h2-color: hsl(0, 0%, 20%);
-    --light-h3-color: hsl(0, 0%, 35%);
-    --light-accent: bisque;
-    --light-link-normal: hsl(230, 50%, 50%);
-    --light-link-visited: hsl(260, 50%, 50%);
-    --light-link-hover: hsl(230, 95%, 50%);
-    --light-tag-background: hsl(0, 0%, 95%);
-
-    /* current */
-    --background-color: var(--light-background-color);
-    --body-color: var(--light-body-color);
-    --h1-color: var(--light-h1-color);
-    --h2-color: var(--light-h2-color);
-    --h3-color: var(--light-h3-color);
-    --accent: var(--light-accent);
-    --link-normal: var(--light-link-normal);
-    --link-visited: var(--light-link-visited);
-    --link-hover: var(--light-link-hover);
-    --tag-background: var(--light-tag-background);
+    --background-color: white;
+    --body-color: hsl(0, 0%, 40%);
+    --h1-color: black;
+    --h2-color: hsl(0, 0%, 20%);
+    --h3-color: hsl(0, 0%, 35%);
+    --accent: bisque;
+    --link-normal: hsl(230, 50%, 50%);
+    --link-visited: hsl(260, 50%, 50%);
+    --link-hover: hsl(230, 95%, 50%);
+    --tag-background: hsl(0, 0%, 95%);
 
     /* others */
     --transparent: hsla(0, 0%, 0%, 0);
