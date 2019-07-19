@@ -2,6 +2,8 @@
 
 Source code for [my personal website](//shreyasminocha.me). Built using [hugo](//gohugo.io).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08906d39-b81a-49a1-bf88-72dcc0d24d0a/deploy-status)](https://app.netlify.com/sites/shreyasminocha/deploys)
+
 ## Structure
 
 - `archetypes`: files with standard frontmatter for each collection.
@@ -51,35 +53,7 @@ gulp
 
 ## Deployments
 
-I've set up a dual-remote for my local copy of this repo. When I push to origin, code gets pushed to both this repository and a bare repository on my VPS.
-
-```sh
-$ git remote -v
-origin  git@github.com:shreyasminocha/shreyasminocha.me.git (fetch)
-origin  ssh://<host>/home/shreyasminocha/shreyasminocha.me (push)
-origin  https://github.com/shreyasminocha/shreyasminocha.me (push)
-```
-
-The bare repository has a post-receive hook that creates a copy of the files of the repo in a temporary directory, runs `hugo` on the copy and stores the generated file in a directory which the server expects files to be in.
-
-```sh
-$ cat shreyasminocha.me.git/hooks/post-receive
-#!/bin/sh
-
-TMP_DIR=/tmp/shreyasminocha.me
-WEB_DIR=/var/www/shreyasminocha.me
-
-# remove any untracked files and directories
-git --work-tree=${TMP_DIR} clean -fd
-
-# force checkout of the latest deploy
-git --work-tree=${TMP_DIR} checkout --force
-
-cd $TMP_DIR
-ls -a
-git submodule update
-hugo -s $TMP_DIR -d $WEB_DIR --cleanDestinationDir --minify
-```
+Deployments are made using Netlify which is configured through [`netlify.toml`](netlify.toml).
 
 ## License
 
