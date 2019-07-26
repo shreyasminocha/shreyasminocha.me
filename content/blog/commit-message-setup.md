@@ -94,9 +94,7 @@ commit-msg file $1
 
 Again, make sure the script is set to be executable. The result of this hook is that the commit would abort if my commit message does not meet the criteria.
 
-![An example of an invalid commit message](/img/commit-message-setup/failed-commit.jpg)
-
-{{< figure src="/img/commit-message-setup/uninformative-messages.png" alt="An example of a failing commit message" caption="A failing commit message" >}}
+{{< figure src="/img/commit-message-setup/failed-commit.jpg" alt="An example of a failing commit message" caption="A failing commit message" >}}
 
 Thanks for reading!
 
