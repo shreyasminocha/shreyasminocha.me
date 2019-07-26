@@ -104,3 +104,11 @@ Thanks for reading!
 - [Commit guideline suggestions from Pro Git](//www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)
 - [Linus Torvald's note about commit messages](//github.com/torvalds/subsurface-for-dirk/blob/master/README#L92-L120)
 - [Commit message formatting guidelines from the Spring Project](//github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)
+
+---
+
+**Update** as of 26 July, 2019:
+
+I wrote my own utility to perform commit message validation. It resolves many issues I had with other validators. Find more details on [the GitHub repo for `seven-rule-msg`](//github.com/shreyasminocha/seven-rule-msg#readme).
+
+{{< figure src="/img/commit-message-setup/seven-rule-msg.jpg" alt="`seven-rule-msg` in action" >}}
