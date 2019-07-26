@@ -105,6 +105,10 @@ pre {
     font-size: smaller;
 }
 
+code, kbd, samp {
+    font-size: smaller;
+}
+
 ul {
     margin-top: 0;
 }
