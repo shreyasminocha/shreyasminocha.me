@@ -1,3 +1,9 @@
+* {
+    transition:
+        color ease-in-out 0.25s,
+        background ease-in-out 0.25s;
+}
+
 :root {
     /* light theme colours */
     --background-color: white;
@@ -293,6 +299,22 @@ footer[role = 'contentinfo'] ul li a {
 footer[role = 'contentinfo'] ul li a svg {
     width: 27px;
     color: var(--body-color);
+}
+
+.dark-mode-toggle {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    position: fixed;
+    opacity: 0.55;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 1px;
+    color: hsla(0, 0%, 0%, 0);
+    background: none;
+    background-image: url('/img/icons/theme-toggle.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 address {

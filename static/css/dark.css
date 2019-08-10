@@ -1,13 +1,18 @@
-:root {
-    /* dark theme colours */
+:root.dark-mode-enabled {
     --background-color: hsl(0, 0%, 10%);
     --body-color: hsl(0, 0%, 80%);
     --h1-color: hsl(0, 0%, 80%);
     --h2-color: hsl(0, 0%, 70%);
     --h3-color: hsl(0, 0%, 65%);
-    --accent: hsl(260, 53%, 70%);
+    --accent: hsl(245, 20%, 40%);
     --link-normal: hsl(230, 50%, 80%);
     --link-visited: hsl(240, 50%, 70%);
     --link-hover: hsl(230, 50%, 70%);
     --tag-background: hsl(0, 0%, 30%);
+}
+
+:root.dark-mode-enabled .title-with-meta time::before,
+:root.dark-mode-enabled .tags::before,
+:root.dark-mode-enabled .dark-mode-toggle {
+    filter: invert(100%);
 }

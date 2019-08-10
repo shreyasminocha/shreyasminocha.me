@@ -18,11 +18,13 @@
     {{ $fonts := resources.Get "css/fonts.css" | minify }}
     {{ $style := resources.Get "css/style.css" | minify }}
     {{ $syntax := resources.Get "css/syntax.css" | minify }}
+    {{ $dark := resources.Get "css/dark.css" | minify }}
 
     <link rel="stylesheet" href="{{ $sanitize.RelPermalink }}">
     <link rel="stylesheet" href="{{ $fonts.RelPermalink }}">
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <link rel="stylesheet" href="{{ $syntax.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $dark.RelPermalink }}">
 
     {{ $manifest := resources.Get "/manifest.json" | minify }}
     <link rel="manifest" href="{{ $manifest.RelPermalink }}">
@@ -32,4 +34,5 @@
     {{ end -}}
 
     <script src="/js/fathom.js"></script>
+    <script src="/js/dark.js"></script>
 </head>
