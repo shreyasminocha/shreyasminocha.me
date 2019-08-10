@@ -1,6 +1,6 @@
 ((f, a, t, h, o, m) => {
     a[h] = a[h] || function (...args) {
-        (a[h].q = a[h].q || []).push(args)
+        (a[h].q = a[h].q || []).push(args);
     };
 
     o = f.createElement('script');

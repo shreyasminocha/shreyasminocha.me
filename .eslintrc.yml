@@ -6,3 +6,6 @@ parserOptions:
 
 env:
     browser: true
+
+globals:
+    fathom: readonly

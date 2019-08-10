@@ -111,7 +111,9 @@ pre {
     font-size: smaller;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
     font-size: smaller;
 }
 
@@ -372,7 +374,6 @@ figure figcaption p {
 .index header[role = 'banner'] .hero {
     font-size: 2em;
 }
-
 
 .index nav.subdomains {
     font-size: 85%;
