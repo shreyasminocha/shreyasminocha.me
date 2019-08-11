@@ -4,7 +4,7 @@
         <h1>{{ .Title }}</h1>
 
         <!-- TODO: Remove duplication of meta info code  -->
-        {{ if .Type | eq "blog" }}
+        {{ if eq .Type "blog" }}
             <time datetime='{{ .Date.Format "02 January 2006" }}'>
                 {{ .Date.Format "02 January, 2006" }}
             </time>
@@ -25,10 +25,12 @@
     <address>
         <img src="/img/avatar.jpg" alt="Shreyas' Avatar"/>
         <p>Shreyas Minocha</p>
-        <p>{{  .Site.Params.bio | markdownify }}</p>
+        <p>{{ .Site.Params.bio | markdownify }}</p>
     </address>
 
+    {{ if eq .Type "blog" }}
     {{ template "_internal/disqus.html" . }}
+    {{ end }}
 </article>
 
 {{ end }}
