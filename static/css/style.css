@@ -5,19 +5,6 @@
 }
 
 :root {
-    /* light theme colours */
-    --background-color: white;
-    --body-color: hsl(0, 0%, 40%);
-    --h1-color: black;
-    --h2-color: hsl(0, 0%, 20%);
-    --h3-color: hsl(0, 0%, 35%);
-    --accent: bisque;
-    --link-normal: hsl(230, 50%, 50%);
-    --link-visited: hsl(260, 50%, 50%);
-    --link-hover: hsl(230, 95%, 50%);
-    --tag-background: hsl(0, 0%, 95%);
-
-    /* others */
     --transparent: hsla(0, 0%, 0%, 0);
     --page-title-font: 'Lato', 'Helvetica', 'Arial', sans-serif;
     --heading-font: 'Fira Code', 'Inconsolata', monospace;
@@ -28,7 +15,21 @@
     --h4-size: 1.125em;
 }
 
-:root.dark-mode-enabled {
+:root[data-theme = 'light'],
+:root {
+    --background-color: white;
+    --body-color: hsl(0, 0%, 40%);
+    --h1-color: black;
+    --h2-color: hsl(0, 0%, 20%);
+    --h3-color: hsl(0, 0%, 35%);
+    --accent: bisque;
+    --link-normal: hsl(230, 50%, 50%);
+    --link-visited: hsl(260, 50%, 50%);
+    --link-hover: hsl(230, 95%, 50%);
+    --tag-background: hsl(0, 0%, 95%);
+}
+
+:root[data-theme = 'dark'] {
     --background-color: hsl(0, 0%, 10%);
     --body-color: hsl(0, 0%, 80%);
     --h1-color: hsl(0, 0%, 80%);
@@ -41,12 +42,11 @@
     --tag-background: hsl(0, 0%, 30%);
 }
 
-:root.dark-mode-enabled .title-with-meta time::before,
-:root.dark-mode-enabled .tags::before,
-:root.dark-mode-enabled .dark-mode-toggle {
+:root[data-theme = 'dark'] .title-with-meta time::before,
+:root[data-theme = 'dark'] .tags::before,
+:root[data-theme = 'dark'] .dark-mode-toggle {
     filter: invert(100%);
 }
-
 
 body {
     font-size: 1rem;
@@ -113,6 +113,7 @@ a:focus {
 
 hr {
     margin: 2em 0;
+    border-bottom-width: 0.25px;
 }
 
 img {

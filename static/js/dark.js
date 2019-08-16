@@ -1,32 +1,44 @@
+const cookieAttributes = '; domain=shreyasminocha.me; path=/';
+
 window.addEventListener('DOMContentLoaded', () => {
     const root = document.querySelector('html');
     const darkModeToggle = document.querySelector('.dark-mode-toggle');
 
-    const cookies = document.cookie.split(';');
-    let isDarkEnabledViaCookie;
+    darkModeToggle.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme') || 'light';
 
-    if (cookies.filter(item => item.includes('dark-mode=true')).length) {
-        isDarkEnabledViaCookie = true;
-    }
+        if (currentTheme === 'dark') {
+            root.setAttribute('data-theme', 'light');
+            document.cookie = `theme=light; ${cookieAttributes}`;
+        } else {
+            root.setAttribute('data-theme', 'dark');
+            document.cookie = `theme=dark; ${cookieAttributes}`;
+        }
+    });
 
+    const currentTheme = root.getAttribute('data-theme') || 'light';
+    const isDarkEnabledViaCookie = isCookieSetTo('theme', 'dark');
     const doesOsPrefersDark = window.matchMedia(
         '(prefers-color-scheme: dark)'
     ).matches;
 
-    darkModeToggle.addEventListener('click', () => {
-        const isEnabled = root.classList.toggle('dark-mode-enabled');
-        const cookieAttributes = ';domain=shreyasminocha.me;path=/';
-
-        if (isEnabled) {
-            document.cookie = `dark-mode=true${cookieAttributes}`;
-        } else {
-            document.cookie = `dark-mode=false${cookieAttributes}`;
-        }
-    });
-
-    const isEnabled = root.classList.contains('dark-mode-enabled');
-
-    if (!isEnabled && (isDarkEnabledViaCookie || doesOsPrefersDark)) {
+    if (
+        currentTheme === 'light'
+        && (isDarkEnabledViaCookie || doesOsPrefersDark)
+    ) {
         darkModeToggle.click();
     }
 });
+
+
+function isCookieSetTo(key, val) {
+    const cookies = document.cookie.split(';');
+
+    for (const cookie of cookies) {
+        if (cookie === `${key}=${val}`) {
+            return true;
+        }
+    }
+
+    return false;
+}
