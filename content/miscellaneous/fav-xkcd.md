@@ -3,7 +3,7 @@ title: My favourite xkcd comics
 hide: true
 ---
 
-[xkcd](//xkcd.com) is a web comic by Randall Munroe. It's themes include programming and sarcasm. Here is a list some of my favourites. Here, I haven't used the original title text of the comics (which is often more humorous than the comic itself).
+[xkcd](//xkcd.com) is a web comic by Randall Munroe. Its themes include programming and sarcasm. Here is a list some of my favourites. Here, I haven't used the original title text of the comics (which is often more humorous than the comic itself).
 
 [![Borrow your laptop](//imgs.xkcd.com/comics/borrow_your_laptop.png)](//xkcd.com/1806)
 
