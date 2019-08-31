@@ -1,10 +1,10 @@
-title: Shreyas Minocha | Learns
+title: Shreyas Minocha's slice of the interweb
 baseUrl: https://shreyasminocha.me
 paginate: 5
 
 params:
     title: Shreyas Minocha
-    description: An Indian male who loves all things tech
+    description: 'Shreyas Minocha is: an apen source lover, an online privacy advocate, a developer, and a student. This is his little website.'
     name: Shreyas Minocha
     languageCode: en-uk
     github: shreyasminocha
