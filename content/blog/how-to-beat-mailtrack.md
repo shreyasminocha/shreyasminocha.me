@@ -7,10 +7,10 @@ tags: [privacy, tips]
 
 You're probably aware of MailTrack and other similar services that allow you to track whether the recipient of your email has read it. Several newsletters and marketing emails also come with similar forms of tracking. Through this post, I'll:
 
-1. Explain how email tracking works.
-2. Tell you how you can avoid it.
-3. Try to convince you to not use mail tracking, at least in your personal interactions.
-4. Bonus: try to convince you to use plaintext email for most intents.
+1. [Explain how email tracking works](#how-most-email-tracking-works).
+2. [Tell you how you can avoid it](#how-to-avoid-mail-tracking).
+3. [Try to convince you to not use mail tracking, at least in your personal interactions](#why-you-shouldn-t-in-my-opinion-use-mail-tracking).
+4. Bonus: [try to convince you to use plaintext email for most intents](#do-you-really-need-html-email-though).
 
 ## How (most) email tracking works
 
