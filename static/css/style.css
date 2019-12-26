@@ -342,6 +342,7 @@ footer[role = 'contentinfo'] ul li a svg {
     background-image: url('/img/icons/theme-toggle.svg');
     background-repeat: no-repeat;
     cursor: pointer;
+    display: none;
 }
 
 address {
@@ -430,6 +431,10 @@ figure figcaption p {
     .header-anchor:active,
     .header-anchor:focus {
         color: inherit;
+    }
+
+    .dark-mode-toggle {
+        display: block;
     }
 }
 
