@@ -1,32 +1,30 @@
-<!doctype html>
-<html lang="{{ .Site.Params.languageCode }}">
+{{ define "custom-stylesheets" }}
+<link rel="stylesheet" href="/css/index.css">
+{{ end }}
 
-{{ partial "head" . }}
+{{ define "header" }}
+<header role="banner">
+    {{ with .Site.Params.title }}
+    <a href="{{ $.Site.BaseURL }}" class="hero">{{ . | markdownify }}</a>
+    {{ end }}
 
-<body class="index">
-    <main>
-        <header role="banner">
-            {{ with .Site.Params.title }}
-            <a href="{{ $.Site.BaseURL }}" class="hero">{{ . | markdownify }}</a>
-            {{ end }}
+    <nav>
+        <ul>
+            <li><a href="/">/</a></li>
+            <li><a href="/about">/about</a></li>
+            <li><a href="/blog">/blog</a></li>
+            <li><a href="/miscellaneous">/miscellaneous</a></li>
+        </ul>
+    </nav>
+    <nav class="subdomains">
+        <ul>
+            <li><a href="https://wiki.shreyasminocha.me" target="_blank">wiki.shreyasminocha.me</a></li>
+            <li><a href="https://git.shreyasminocha.me" target="_blank">git.shreyasminocha.me</a></li>
+        </ul>
+    </nav>
+</header>
+{{ end }}
 
-            <nav>
-                <ul>
-                    <li><a href="/">/</a></li>
-                    <li><a href="/about">/about</a></li>
-                    <li><a href="/blog">/blog</a></li>
-                    <li><a href="/miscellaneous">/miscellaneous</a></li>
-                </ul>
-            </nav>
-            <nav class="subdomains">
-                <ul>
-                    <li><a href="https://wiki.shreyasminocha.me" target="_blank">wiki.shreyasminocha.me</a></li>
-                    <li><a href="https://git.shreyasminocha.me" target="_blank">git.shreyasminocha.me</a></li>
-                </ul>
-            </nav>
-        </header>
-    </main>
-
-    {{ partial "dark-mode-toggle" . }}
-</body>
-</html>
+{{ define "footer" }}
+<!-- No footer -->
+{{ end }}

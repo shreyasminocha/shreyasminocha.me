@@ -1,16 +1,17 @@
-<!doctype html>
-<html lang="{{ .Site.Params.languageCode }}">
-    {{ partial "head" . }}
+{{ define "header" }}
+<!-- No header -->
+{{ end }}
 
-    <body class="error">
-        <main>
-            <img src="/img/human.svg" alt="Human" class="human">
+{{ define "main" }}
+<img src="/img/human.svg" alt="Human" class="human">
 
-            <div class="text">
-                <h1>You seem to have lost your way, traveller.</h1>
+<div class="text">
+    <h1>You seem to have lost your way, traveller.</h1>
 
-                <p>The page you were looking for either disappeared or never existed. Keep calm, it's probably not your fault. Want to go <a href="/">home</a>?</p>
-            </div>
-        </main>
-    </body>
-</html>
+    <p>The page you were looking for either disappeared or never existed. Keep calm, it's probably not your fault. Want to go <a href="/">home</a>?</p>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<!-- No footer -->
+{{ end }}
