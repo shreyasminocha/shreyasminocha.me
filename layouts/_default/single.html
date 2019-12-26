@@ -22,13 +22,15 @@
         {{ partial "header-anchor" .Content }}
     </section>
 
+
+    {{ if eq .Type "blog" }}
     <address>
         <img src="/img/avatar.jpg" alt="Shreyas' Avatar"/>
         <p>Shreyas Minocha</p>
     </address>
 
-    {{ if eq .Type "blog" }}
     {{ template "_internal/disqus.html" . }}
+
     {{ end }}
 </article>
 
