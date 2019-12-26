@@ -292,6 +292,10 @@ header[role = 'banner'] .hero:focus {
     margin-bottom: 3em;
 }
 
+.header-anchor {
+    display: none;
+}
+
 footer[role = 'contentinfo'] {
     text-align: center;
     margin: 5em 0 2.5em;
@@ -417,6 +421,7 @@ figure figcaption p {
         text-align: right;
         opacity: 0.25;
         text-decoration: none;
+        display: block;
     }
 
     .header-anchor:link,
