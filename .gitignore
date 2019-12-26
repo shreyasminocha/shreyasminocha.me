@@ -1,3 +1,4 @@
-.DS_Store
-rendered
+node_modules
 resources
+.netlify
+rendered
