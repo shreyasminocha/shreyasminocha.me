@@ -293,15 +293,19 @@ header[role = 'banner'] .hero:focus {
     margin-bottom: 0.25em;
 }
 
-.title-with-meta time::before {
+.title-with-meta time::before,
+.title-with-meta .tags::before {
     content: '';
     display: inline-block;
-    background-image: url('/img/icons/calendar.svg');
-    width: 1rem;
     height: 1rem;
     background-size: cover;
-    vertical-align: text-bottom;
     margin-right: 0.5em;
+    vertical-align: -2px;
+}
+
+.title-with-meta time::before {
+    background-image: url('/img/icons/calendar.svg');
+    width: 1rem;
 }
 
 .title-with-meta .tags {
@@ -326,14 +330,8 @@ header[role = 'banner'] .hero:focus {
 }
 
 .title-with-meta .tags::before {
-    content: '';
-    display: inline-block;
     background-image: url('/img/icons/tags.svg');
     width: 1.25rem;
-    height: 1rem;
-    background-size: cover;
-    vertical-align: text-bottom;
-    margin-right: 0.5em;
 }
 
 .title-with-meta .tags li {
