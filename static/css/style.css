@@ -284,13 +284,13 @@ header[role = 'banner'] .hero:focus {
     margin-bottom: 2em;
 }
 
+.title-with-meta a {
+    text-decoration: none;
+}
+
 .title-with-meta h1,
 .title-with-meta h2 {
     margin-bottom: 0.25em;
-}
-
-.title-with-meta time {
-    margin-right: 1em;
 }
 
 .title-with-meta time::before {
@@ -304,6 +304,27 @@ header[role = 'banner'] .hero:focus {
     margin-right: 0.5em;
 }
 
+.title-with-meta .tags {
+    list-style: none;
+    display: block;
+    padding-left: 0;
+    line-height: 1.75;
+}
+
+@media (min-width: 500px) {
+    .title-with-meta .tags {
+        display: inline;
+    }
+
+    .title-with-meta time {
+        margin-right: 1em;
+    }
+
+    .title-with-meta time::before {
+        margin-right: 0.25em;
+    }
+}
+
 .title-with-meta .tags::before {
     content: '';
     display: inline-block;
@@ -315,30 +336,19 @@ header[role = 'banner'] .hero:focus {
     margin-right: 0.5em;
 }
 
-.title-with-meta .tags a {
-    text-decoration: none;
-}
-
-.title-with-meta ul {
-    list-style: none;
-    display: inline;
-    padding-left: 0;
-    line-height: 1.75;
-}
-
-.title-with-meta ul li {
+.title-with-meta .tags li {
     display: inline;
     background-color: var(--tag-background);
     border-radius: 3px;
-    padding: 0.1em 0.5em;
-    margin-right: 0.5em;
+    margin-right: 0.25em;
 }
 
-.title-with-meta ul li:last-child {
+.title-with-meta .tags li:last-child {
     margin-right: 0;
 }
 
-.title-with-meta a {
+.title-with-meta .tags li a {
+    padding: 0.1em 0.5em;
     text-decoration: none;
 }
 
