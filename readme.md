@@ -59,4 +59,4 @@ Deployments are made using Netlify which is configured through [`netlify.toml`](
 
 Source code is licensed under the [MIT license](//tldrlegal.com/license/mit-license).
 
-Website content (including blog posts) is licensed under [Attribution-NonCommercial-NoDerivatives 4.0 International](//creativecommons.org/licenses/by-nc-nd/4.0).
+Website content (including blog posts) is licensed under [Attribution-ShareAlike 4.0 International](//creativecommons.org/licenses/by-sa/4.0/).
