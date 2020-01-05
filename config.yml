@@ -25,3 +25,6 @@ blackfriday:
 
 pygmentsCodeFences: true
 pygmentsUseClasses: true
+
+ignoreFiles:
+    - content/license.md
