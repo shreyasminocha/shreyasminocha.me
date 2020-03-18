@@ -18,21 +18,15 @@
 
     <link rel="shortcut icon" href="/img/logo/favicon.ico">
 
-    {{ $sanitize := resources.Get "css/sanitize.css" | minify }}
-    {{ $fonts := resources.Get "css/fonts.css" | minify }}
-    {{ $style := resources.Get "css/style.css" | minify }}
-    {{ $syntax := resources.Get "css/syntax.css" | minify }}
-
-    <link rel="stylesheet" href="{{ $sanitize.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $fonts.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" defer>
+    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css" defer>
 
     {{ block "custom-stylesheets" . }}
     {{ end }}
 
-    {{ $manifest := resources.Get "/manifest.json" | minify }}
-    <link rel="manifest" href="{{ $manifest.RelPermalink }}">
+    <link rel="manifest" href="/manifest.json">
 
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
