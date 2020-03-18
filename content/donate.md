@@ -18,6 +18,8 @@ Your donations will probably:
 - … allow me to continue prioritizing my passions.
 - … pay for my education.
 
+{{< figure src="/img/once-again-asking.jpg" alt="I am once again asking for your financial support" >}}
+
 ## Liberapay
 
 If you wish to make recurrent donations, please do so at my [Liberapay account](https://liberapay.com/shreyasminocha).
