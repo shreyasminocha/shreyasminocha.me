@@ -28,3 +28,4 @@ pygmentsUseClasses: true
 
 ignoreFiles:
     - content/license.md
+    - content/blog/dropped
