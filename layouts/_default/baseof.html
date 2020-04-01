@@ -18,22 +18,11 @@
 
     <link rel="shortcut icon" href="/img/logo/favicon.ico">
 
-    <link rel="stylesheet" href="/css/sanitize.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/syntax.css" defer>
-
-    {{ block "custom-stylesheets" . }}
-    {{ end }}
-
     <link rel="manifest" href="/manifest.json">
 
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
     {{ end -}}
-
-    <script src="/js/fathom.js" defer></script>
-    <script src="/js/dark.js"></script>
 </head>
 {{ end }}
 
@@ -49,7 +38,6 @@
 
     {{ block "footer" . }}
     {{ partial "footer" . }}
-    {{ partial "dark-mode-toggle" . }}
     {{ end }}
 </body>
 </html>
