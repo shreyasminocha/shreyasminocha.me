@@ -13,7 +13,7 @@ Source code for [my personal website](//shreyasminocha.me). Built using [hugo](/
     - `partials`: small re-usable portions portions meant to reduce duplication across layouts.
     - `shortcodes`: similar to `partials` but meant for reuse within content.
 - `static`: static files—images, stylesheets, scripts, fonts etc
-- `config.yml`
+- `config.yml`: configuration
 
 ## Testing
 
