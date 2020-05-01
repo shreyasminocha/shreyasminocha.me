@@ -13,8 +13,6 @@ params:
     devto: shreyasminocha
     codepen: shreyasminocha
 
-disqusShortname: shreyasminocha
-
 useSummaryIfNoDescription: false
 assetDir: static
 publishDir: rendered
