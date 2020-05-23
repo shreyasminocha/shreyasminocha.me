@@ -1,4 +1,4 @@
-header[role = 'banner'] {
+header[role="banner"] {
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -7,7 +7,7 @@ header[role = 'banner'] {
     width: 100%;
 }
 
-header[role = 'banner'] .hero {
+header[role="banner"] .hero {
     font-size: 2em;
 }
 
@@ -18,6 +18,16 @@ nav {
     font-size: var(--h3-size);
 }
 
-nav.subdomains {
+nav.subdomains,
+nav.mirrors {
     font-size: 85%;
+}
+
+nav.mirrors {
+    margin-top: 5em;
+}
+
+nav.mirrors li {
+    display: block;
+    margin-bottom: 1em;
 }
