@@ -5,6 +5,7 @@ header[role="banner"] {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    padding: 0 1em;
 }
 
 header[role="banner"] .hero {
@@ -15,7 +16,7 @@ nav {
     margin-top: 2em;
     font-family: var(--heading-font);
     font-weight: lighter;
-    font-size: var(--h3-size);
+    font-size: 110%;
 }
 
 nav.subdomains,
