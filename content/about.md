@@ -22,4 +22,4 @@ This is my website. I have [a blog](/blog) here where I post tutorials and artic
 - I love parenthetical clauses (but I'm afraid I overuse them).
 - I prefer dark themes over light ones, but I'm not one to [bikeshed](//en.wiktionary.org/wiki/bikeshedding). I've been a long-time user of material themes (like [this one for VS&nbsp;Code](//material-theme.site)) for editors and terminals.
 
-That's enough about me. I would love to hear from you! If there is anything you thnk I could help you with, a cool project you would like to collab on, or if you'd like to just chat, please drop me a line at `shreyas` [at the rate of] `shreyasminocha.me`. If you're familiar with [PGP](//emailselfdefense.fsf.org/en), my public key is [`79E1D3DC`](/pgp/@shreyasminocha.me.pub).
+That's enough about me. I would love to hear from you! If there is anything you thnk I could help you with, a cool project you would like to collab on, or if you'd like to just chat, [hit me up](/contact).
