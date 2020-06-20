@@ -124,8 +124,10 @@ a:focus {
 }
 
 hr {
-    margin: 2em 0;
-    border-bottom-width: 0.25px;
+    margin: 2em auto;
+    width: 20%;
+    border: none;
+    border-top: 1px solid var(--body-color);
 }
 
 img {
