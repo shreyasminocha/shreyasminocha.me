@@ -2,8 +2,6 @@
 
 Source code for [my personal website](//shreyasminocha.me). Built using [hugo](//gohugo.io).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/08906d39-b81a-49a1-bf88-72dcc0d24d0a/deploy-status)](https://app.netlify.com/sites/shreyasminocha/deploys)
-
 ## Structure
 
 - `archetypes`: files with standard frontmatter for each collection.
@@ -53,7 +51,7 @@ gulp
 
 ## Deployments
 
-Deployments are made using Netlify which is configured through [`netlify.toml`](netlify.toml).
+Deployments are made using Vercel.
 
 ## License
 

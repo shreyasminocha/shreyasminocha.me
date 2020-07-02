@@ -1,5 +1,4 @@
 node_modules
 resources
-.netlify
-rendered
+public
 content/blog/dropped
