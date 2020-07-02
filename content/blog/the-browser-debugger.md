@@ -1,5 +1,5 @@
 ---
-title: Debugging JS with the Browser Debugger
+title: Debugging JavaScript with the Browser Debugger
 description: Finally graduating from `console.log` — an introduction to the Firefox Debugger.
 date: 2020-06-20
 tags: [programming, tutorial]
@@ -60,8 +60,6 @@ Flow controls (left to right):
 
     Toggle whether _all_ breakpoints are enabled.
 
-
-
 Let's try stepping over a couple of times.
 
 {{< figure src="/img/the-browser-debugger/paused-at-if.jpg" caption="Paused at the `if` condition" >}}
@@ -77,4 +75,3 @@ You can also add _watch expressions_ in the right sidebar. Each time program flo
 ---
 
 That's all! While not a _complete_ guide, this should be enough to get you started. I used to find the debugger intimidating, but it was easy to get the hang of it once I got my hands dirty.
-
