@@ -237,6 +237,10 @@ figure figcaption p {
     margin-bottom: 0;
 }
 
+figure figcaption .attribution {
+    font-style: normal;
+}
+
 article img {
     display: block;
     margin: 0 auto;
