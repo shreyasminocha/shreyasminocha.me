@@ -206,22 +206,6 @@ th:last-child {
     padding-right: 0;
 }
 
-address {
-    text-align: center;
-    margin: 2em 0;
-    font-style: italic;
-}
-
-address img {
-    width: 3em;
-    border-radius: 50%;
-    margin-bottom: 0.75em;
-}
-
-address p {
-    margin: 0;
-}
-
 figure {
     max-width: 100%;
     margin: 1em 0;
@@ -385,6 +369,22 @@ header[role = 'banner'] .hero:focus {
 
 .pagination span {
     margin: 0 1.5em;
+}
+
+address {
+    text-align: center;
+    margin: 4em 0;
+    font-style: italic;
+}
+
+address img {
+    width: 3em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+address p {
+    margin: 0;
 }
 
 footer[role = 'contentinfo'] {
