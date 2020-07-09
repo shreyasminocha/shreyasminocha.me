@@ -1,5 +1,8 @@
 {
     "redirects": [
         { "source": "/$", "destination": "/donate" }
-    ]
+    ],
+    "github": {
+        "silent": true
+    }
 }
