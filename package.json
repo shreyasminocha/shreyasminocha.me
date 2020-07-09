@@ -4,7 +4,8 @@
   "description": "Source code for my website",
   "main": "layouts/index.html",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "build": "hugo --minify"
   },
   "repository": {
     "type": "git",
