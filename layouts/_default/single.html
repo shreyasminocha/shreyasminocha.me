@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="single">
     <header class="title-with-meta">
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title | markdownify }}</h1>
 
         {{ partial "date-tags" . }}
     </header>
