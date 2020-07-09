@@ -2,6 +2,7 @@
     "redirects": [
         { "source": "/$", "destination": "/donate" }
     ],
+    "trailingSlash": false,
     "github": {
         "silent": true
     }
