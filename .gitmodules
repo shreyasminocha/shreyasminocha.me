@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = git@git.shreyasminocha.me:shreyasminocha/site-content.git
