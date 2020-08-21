@@ -5,7 +5,7 @@ date: 2020-08-21
 tags: [programming, git, tutorial]
 ---
 
-I used to self-host a [Gitea](https://gitea.io) instance for myself. I found, however, that I used but a fraction of what it had to offer. Git is well-equipped with tools for [running a git service on the server](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server), though. I've since implemented a simple git-with-ssh set-up with [GitList](https://gitlist.org) as the web interface.
+[Gitea](https://gitea.io)'s a great piece of software. I used to self-host a Gitea instance for myself. I found, however, that I used but a fraction of what it had to offer. Git is well-equipped with tools for [running a git service on the server](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server), though. I've since implemented a simple git-with-ssh set-up with [GitList](https://gitlist.org) as the web interface.
 
 ## Assumptions
 
