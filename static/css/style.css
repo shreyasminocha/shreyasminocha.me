@@ -149,7 +149,9 @@ pre {
 code,
 kbd,
 samp {
-    font-size: smaller;
+    font-family: var(--heading-font);
+    background: hsla(0, 0%, 90%, 0.3);
+    padding: 0.05em;
 }
 
 ul {
