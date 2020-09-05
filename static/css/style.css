@@ -123,7 +123,8 @@ a:focus {
     color: var(--link-hover);
 }
 
-.footnote-ref, .footnote-backref {
+.footnote-ref a,
+.footnote-backref a {
     text-decoration: none;
 }
 
