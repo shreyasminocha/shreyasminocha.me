@@ -123,6 +123,10 @@ a:focus {
     color: var(--link-hover);
 }
 
+.footnote-ref, .footnote-backref {
+    text-decoration: none;
+}
+
 hr {
     margin: 2em auto;
     width: 20%;
@@ -150,8 +154,19 @@ code,
 kbd,
 samp {
     font-family: var(--heading-font);
+    font-size: initial;
     background: hsla(0, 0%, 90%, 0.3);
     padding: 0.05em;
+}
+
+header code,
+header kbd,
+header samp {
+    font-size: smaller;
+}
+
+pre code {
+    background: initial;
 }
 
 ul {
