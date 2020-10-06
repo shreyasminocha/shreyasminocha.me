@@ -4,11 +4,11 @@ url: about
 hide: true
 ---
 
-Hey, I'm Shreyas. I recently graduated high school and will head to university soon.
+Hey, I'm Shreyas. I'm a freshman at Rice University and plan to major in le CS.
 
 I feel strongly about [software freedom](https://www.fsf.org/about), [digital privacy](https://ssd.eff.org), and [decentralization](https://fediverse.party/en/fediverse). I detest [surveillance capitalism](https://theintercept.com/2019/02/02/shoshana-zuboff-age-of-surveillance-capitalism) and ["big tech"](https://gafam.info). I value [digital accessibility](https://www.a11yproject.com) and have something of an eye for design.
 
-An old copy of _Learn HTML in 24 Hours_ was my gateway drug into computer things 💻. At present, I am primarily interested in the modern web stack. I'm also interested in exploring computer ethics and programming language design. My interests will probably evolve, as they should, in my time at college.
+An old copy of _Learn HTML in 24 Hours_ was my gAtEwAy dRuG into computer things 💻. At present, I am primarily interested in the modern web stack. I'm also interested in exploring computer ethics and programming language design. My interests will probably evolve, as they should, in my time at college.
 
 My preferred code editor at the moment is [VS&nbsp;Code](https://code.visualstudio.com) ([VS&nbsp;Codium](https://github.com/VSCodium/vscodium), actually).
 
