@@ -4,7 +4,7 @@ url: about
 hide: true
 ---
 
-Hey, I'm Shreyas. I'm a freshman at Rice University and plan to major in le CS.
+Hey, I'm Shreyas (/ˈʃreɪˌəs/). I'm a freshman at Rice University and plan to major in le CS.
 
 I feel strongly about [software freedom](https://www.fsf.org/about), [digital privacy](https://ssd.eff.org), and [decentralization](https://fediverse.party/en/fediverse). I detest [surveillance capitalism](https://theintercept.com/2019/02/02/shoshana-zuboff-age-of-surveillance-capitalism) and ["big tech"](https://gafam.info). I value [digital accessibility](https://www.a11yproject.com) and have something of an eye for design.
 
@@ -16,7 +16,7 @@ This is my website. I have [a blog](/blog) here where I post programming-related
 
 ## Silly trivia about me
 
-- I was born just a few months after the `9/11` tragedy.
+- I was born just a few months after `9/11`.
 - I love parenthetical clauses (but I'm afraid I overuse them).
 - I prefer dark themes over light ones, but I'm not one to [bikeshed](https://en.wiktionary.org/wiki/bikeshedding). I've been a long-time user of material themes (like [this one for VS&nbsp;Code](https://material-theme.site)) for editors and terminals.
 
