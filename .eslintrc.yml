@@ -9,6 +9,3 @@ env:
 
 rules:
     no-use-before-define: off
-
-globals:
-    fathom: readonly
