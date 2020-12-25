@@ -1,10 +1,10 @@
-title: Shreyas Minocha's slice of the interweb
+title: Shreyas Minocha
 baseUrl: https://shreyasminocha.me
-paginate: 5
+paginate: 7
 
 params:
     title: Shreyas Minocha
-    description: "Shreyas Minocha is: an open source lover, an online privacy advocate, a developer, and a student. This is his little website."
+    description: "Shreyas Minocha's little website."
     name: Shreyas Minocha
     languageCode: en-uk
     github: shreyasminocha
