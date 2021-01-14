@@ -1,6 +1,7 @@
 {
     "redirects": [
-        { "source": "/$", "destination": "/donate" }
+        { "source": "/$", "destination": "/donate" },
+        { "source": "/%E2%82%B9", "destination": "/donate" }
     ],
     "trailingSlash": false,
     "github": {
