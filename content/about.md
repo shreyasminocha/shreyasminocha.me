@@ -8,7 +8,7 @@ Hey, I'm Shreyas (/ˈʃreɪˌəs/ or shr-AY-us). I'm a freshman at Rice Universi
 
 I feel strongly about [software freedom](https://www.fsf.org/about), [digital privacy](https://ssd.eff.org), and [decentralization](https://fediverse.party/en/fediverse). I detest [surveillance capitalism](https://theintercept.com/2019/02/02/shoshana-zuboff-age-of-surveillance-capitalism) and ["big tech"](https://gafam.info). I value [digital accessibility](https://www.a11yproject.com) and have something of an eye for design.
 
-An old copy of _Learn HTML in 24 Hours_ drew me into computer things several years ago 💻. At present, I am primarily interested in the {modern,retro,alt} web stack. I'm also interested in exploring computer ethics 🛑, programming language design 👨🏽‍💻, automata theory 🤖, and cryptography 🔐. My interests will probably evolve, as they should, in my time at college.
+An old copy of _Learn HTML in 24 Hours_ drew me into computer things several years ago 💻. At present, I am primarily interested in the {modern,retro,alt} web stack. I'm also interested in exploring computer ethics, programming language design, automata theory, and cryptography. My interests will probably evolve, as they should, in my time at college.
 
 My preferred code editor at the moment is [VS&nbsp;Code](https://code.visualstudio.com) ([VS&nbsp;Codium](https://github.com/VSCodium/vscodium), actually).
 
