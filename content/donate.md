@@ -23,15 +23,9 @@ Your donations will probably:
 
 If you wish to make recurrent donations, please do so at my [Liberapay account](https://liberapay.com/shreyasminocha).
 
-## Monero
+## Other
 
-If you want to donate anonymously, you can donate to my [Monero](//www.getmonero.org) wallet.
-
-{{< figure src="/img/monero-wallet.png" alt="monero:4AMUqbfjumV4EV8GwJ2wJGGC8p8mLMEiriDTCJmu3eDH5EjoSqx7HxWYWEXrVyxfXoVcetreiBfYM9K67nPrazK6AVmDBf2" caption="My Monero wallet" width="100" >}}
-
-```
-4AMUqbfjumV4EV8GwJ2wJGGC8p8mLMEiriDTCJmu3eDH5EjoSqx7HxWYWEXrVyxfXoVcetreiBfYM9K67nPrazK6AVmDBf2
-```
+If you'd like to donate in some other way, please [get in touch](/contact).
 
 ----
 
