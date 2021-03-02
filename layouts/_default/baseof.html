@@ -32,8 +32,6 @@
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
     {{ end -}}
-
-    <script src="/js/dark.js"></script>
 </head>
 {{ end }}
 
@@ -49,7 +47,6 @@
 
     {{ block "footer" . }}
     {{ partial "footer" . }}
-    {{ partial "dark-mode-toggle" . }}
     {{ end }}
 </body>
 </html>
