@@ -151,7 +151,6 @@ code,
 kbd,
 samp {
     font-family: var(--heading-font);
-    font-size: initial;
     background: hsla(0, 0%, 90%, 0.3);
     padding: 0.05em;
 }
