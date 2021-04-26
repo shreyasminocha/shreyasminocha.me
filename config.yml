@@ -7,10 +7,6 @@ params:
     description: "Shreyas Minocha's little website."
     name: Shreyas Minocha
     languageCode: en-uk
-    github: shreyasminocha
-    stackoverflow: 3363528/shreyasminocha
-    devto: shreyasminocha
-    codepen: shreyasminocha
 
 useSummaryIfNoDescription: false
 assetDir: static
