@@ -7,13 +7,11 @@ tags: [programming, scripting]
 
 Prompted by an offhand remark about patterns in the number of users online on my CS class's [Piazza](https://en.wikipedia.org/wiki/Piazza_(web_service)) forum, I wrote a script to track just that. The hypothesis was, of course, that the number of users online spikes just before exams and homework deadlines.
 
-{{< figure src="/img/tracking-piazza-activity/online-now.png" caption="The number of online users is prominently featured in the Piazza footer" >}}
+{{< figure src="/img/piazza-activity/online-now.png" caption="The number of online users is prominently featured in the Piazza footer" >}}
 
 Conveniently, Piazza makes frontend HTTP requests to retrieve the number of users online rather than rendering it on the backend.
 
-{{< figure src="/img/tracking-piazza-activity/xhr-network-requests.png" caption="The Dev Tools 'Network' tab on Piazza" >}}
-
-{{< figure src="/img/tracking-piazza-activity/post-request-get-online-users.png" caption="The request that fetches the number of online users" >}}
+{{< figure src="/img/piazza-activity/post-request-get-online-users.png" caption="The request that fetches the number of online users" >}}
 
 The context menu on these entries allows us to copy cURL commands for these requests.
 
@@ -80,7 +78,7 @@ Unfortunately, my script broke two weeks into data collection, and all data poin
 
 Anyway, here's a plot of the data that I did collect:
 
-{{< figure src="/img/tracking-piazza-activity/comp182-piazza-activity.png" caption="Number of Users Online versus Time" >}}
+{{< figure src="/img/piazza-activity/comp182-piazza-activity.png" caption="Number of Users Online versus Time" >}}
 
 The partially-captured spike at the beginning coincides with a homework deadline. We had a homework due on March 14 and a midterm on March 15, which are probably responsible for the big spike in the middle. We received midterm solutions on 18 March and midterm grades on 22 March.
 
