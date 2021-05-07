@@ -1,0 +1,4371 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\newcommand{\diff}[1]{\mathrm{d}#1}
+\newcommand{\deriv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing other 1.35
+\use_hyperref true
+\pdf_title "11 Math Cheat Sheet"
+\pdf_author "Shreyas Minocha"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+12 Math Cheat Sheet
+\end_layout
+
+\begin_layout Author
+Shreyas Minocha
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Licensed under 
+\begin_inset CommandInset href
+LatexCommand href
+name "CC BY-SA 3.0"
+target "https://creativecommons.org/licenses/by-sa/3.0"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Relations and Functions
+\end_layout
+
+\begin_layout Section
+Relations
+\end_layout
+
+\begin_layout Subsection
+Reflexive
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aRa
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Symmetric
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aRb\implies bRa
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Transitive
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aRb\wedge bRc\implies aRc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equivalence
+\end_layout
+
+\begin_layout Standard
+If a relation is 
+\emph on
+reflexive
+\emph default
+, 
+\emph on
+symmetric
+\emph default
+ and 
+\emph on
+transitive
+\emph default
+, it is an equivalence relation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Functions
+\end_layout
+
+\begin_layout Subsection
+One-one (injection)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f(a)=f(b)\implies a=b$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is a one-one function.
+\end_layout
+
+\begin_layout Subsection
+Onto (surjection)
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ is onto if every element of 
+\begin_inset Formula $B$
+\end_inset
+
+ has a pre-image in A.
+\end_layout
+
+\begin_layout Subsection
+Bijection
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is a bijection if it is both one-one and onto.
+\end_layout
+
+\begin_layout Subsection
+Composition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(f\circ g)(x)=f(g(x))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(g\circ f)(x)=g(f(x))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inverse
+\end_layout
+
+\begin_layout Itemize
+Function must be one-one.
+\end_layout
+
+\begin_layout Itemize
+Horizontal line test.
+\end_layout
+
+\begin_layout Itemize
+Reflection in 
+\begin_inset Formula $y=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+, 
+\begin_inset Formula $f^{-1}:B\rightarrow A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(f^{-1}(x)\right)=f^{-1}\left(f(x)\right)=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Binary Operations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{Number of binary operations}=n^{n^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Properties
+\end_layout
+
+\begin_layout Subsubsection
+Commutative
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a*b=b*a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Associative
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a*(b*c)=(a*b)*c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Distributive Law
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a*(b\odot c)=(a*b)\odot(a*c)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Identity Element
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e\in S$
+\end_inset
+
+ is the identity element wrt 
+\begin_inset Formula $*$
+\end_inset
+
+ on 
+\begin_inset Formula $S$
+\end_inset
+
+ if the following holds for every 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e*x=x*e=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inverse Trigonometric Functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc^{-1}x=\sin^{-1}\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sec^{-1}x=\cos^{-1}\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cot^{-1}x=\begin{cases}
+\tan^{-1}\frac{1}{x} & x>0\\
+\pi+\tan^{-1}\frac{1}{x} & x<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{-1}(-x)=-\sin^{-1}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc^{-1}(-x)=-\csc^{-1}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan^{-1}(-x)=-\tan^{-1}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos^{-1}(-x)=\pi-\cos x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sec^{-1}(-x)=\pi-\sec x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cot^{-1}(-x)=\pi-\cot x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{-1}x+\cos^{-1}x=\frac{\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan^{-1}x+\cot^{-1}x=\frac{\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc^{-1}x+\sec^{-1}x=\frac{\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $xy<1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan^{-1}x+\tan^{-1}y=\tan^{-1}\frac{x+y}{1-xy}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $xy>-1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan^{-1}x-\tan^{-1}y=\tan^{-1}\frac{x-y}{1+xy}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $x^{2}<1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\tan^{-1}x=\tan^{-1}\frac{2x}{1-x^{2}}=\sin^{-1}\frac{2x}{1+x^{2}}=\cos^{-1}\frac{1-x^{2}}{1+x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\sin^{-1}x=\sin^{-1}\left(2x\sqrt{1-x^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cos^{-1}x=\cos^{-1}(2x^{2}-1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\sin^{-1}x=\sin^{-1}(3x-4x^{3})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\cos^{-1}x=\cos^{-1}(4x^{3}-3x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\tan^{-1}x=\tan^{-1}\frac{3x-x^{3}}{1-3x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If <conditions>,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{-1}x+\sin^{-1}y=\sin^{-1}\left(x\sqrt{1-y^{2}}+y\sqrt{1-x^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If <conditions>,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{-1}x-\sin^{-1}y=\sin^{-1}\left(x\sqrt{1-y^{2}}-y\sqrt{1-x^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos^{-1}x+\cos^{-1}y=\cos^{-1}\left(xy-\sqrt{1-x^{2}}\cdot\sqrt{1-y^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Algebra
+\end_layout
+
+\begin_layout Section
+Determinants
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}\cdot & \cdot & \cdot\\
+0 & 0 & 0\\
+\cdot & \cdot & \cdot
+\end{vmatrix}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}\longrightarrow & \longrightarrow & \longrightarrow\\
+\longrightarrow & \longrightarrow & \longrightarrow\\
+\longrightarrow & \longrightarrow & \longrightarrow
+\end{vmatrix}=\begin{vmatrix}\downarrow & \downarrow & \downarrow\\
+\downarrow & \downarrow & \downarrow\\
+\downarrow & \downarrow & \downarrow
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}a & d & \cdot\\
+b & e & \cdot\\
+c & f & \cdot
+\end{vmatrix}=-\begin{vmatrix}d & a & \cdot\\
+e & b & \cdot\\
+f & c & \cdot
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\begin{vmatrix}a & b & c\\
+a & b & c\\
+\cdot & \cdot & \cdot
+\end{vmatrix}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\begin{vmatrix}ka & kb & kc\\
+\cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot
+\end{vmatrix}=k\begin{vmatrix}a & b & c\\
+\cdot & \cdot & \cdot\\
+\cdot & \cdot & \cdot
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\begin{vmatrix}a+x & \cdot & \cdot\\
+b+y & \cdot & \cdot\\
+c+z & \cdot & \cdot
+\end{vmatrix}=\begin{vmatrix}a & \cdot & \cdot\\
+b & \cdot & \cdot\\
+c & \cdot & \cdot
+\end{vmatrix}+\begin{vmatrix}x & \cdot & \cdot\\
+y & \cdot & \cdot\\
+z & \cdot & \cdot
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}a & b & c\\
+\cdot & \cdot & \cdot\\
+g+ka & h+kb & i+kc
+\end{vmatrix}=\begin{vmatrix}a & b & c\\
+\cdot & \cdot & \cdot\\
+g & h & i
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}a+ld+mg & d & g\\
+b+le+mh & e & h\\
+c+lf+mi & f & i
+\end{vmatrix}=\begin{vmatrix}a & d & g\\
+b & e & h\\
+c & f & i
+\end{vmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{vmatrix}1 & 1 & 1\\
+a & b & c\\
+a^{3} & b^{3} & c^{3}
+\end{vmatrix}=(a-b)(b-c)(c-a)(a+b+c)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Matrices
+\end_layout
+
+\begin_layout Subsection
+Adjoint
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{adj}\begin{bmatrix}a & b\\
+c & d
+\end{bmatrix}=\begin{bmatrix}d & -b\\
+-c & a
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{adj}\begin{bmatrix}a & b & c\\
+d & e & f\\
+g & h & i
+\end{bmatrix}=\begin{bmatrix}+\begin{vmatrix}e & f\\
+h & i
+\end{vmatrix} & -\begin{vmatrix}d & f\\
+g & i
+\end{vmatrix} & +\begin{vmatrix}d & e\\
+g & h
+\end{vmatrix}\\
+-\begin{vmatrix}b & c\\
+h & i
+\end{vmatrix} & +\begin{vmatrix}a & c\\
+g & i
+\end{vmatrix} & -\begin{vmatrix}a & b\\
+g & h
+\end{vmatrix}\\
++\begin{vmatrix}b & c\\
+e & f
+\end{vmatrix} & -\begin{vmatrix}a & c\\
+d & f
+\end{vmatrix} & +\begin{vmatrix}a & b\\
+d & e
+\end{vmatrix}
+\end{bmatrix}^{'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inverse
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ has an inverse only if 
+\begin_inset Formula $A$
+\end_inset
+
+ is non-singular (
+\begin_inset Formula $|A|\neq0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{-1}=\frac{\mathrm{adj}A}{|A|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Inverse by elementary operations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=IA
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Row-wise
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Column-wise
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{i}\longleftrightarrow R_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{i}\longleftrightarrow C_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{i}\longrightarrow kR_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{i}\longrightarrow kC_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{i}\longrightarrow R_{i}+kR_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{i}\longrightarrow C_{i}+kC_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Properties
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\mathbf{\mathrm{adj}}A\right|=\left|A\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(AB)^{-1}=B^{-1}A^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(A')^{-1}=(A^{-1})'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Area of a triangle
+\end_layout
+
+\begin_layout Standard
+Vertices: 
+\begin_inset Formula $(x_{1},y_{1})$
+\end_inset
+
+, 
+\begin_inset Formula $(x_{2},y_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $(x_{3},y_{3})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta=\left|\frac{1}{2}\begin{vmatrix}x_{1} & y_{1} & 1\\
+x_{2} & y_{2} & 1\\
+x_{3} & y_{3} & 1
+\end{vmatrix}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Symmetric and skew-symmetric matrices
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\frac{1}{2}(A+A')+\frac{1}{2}(A-A')
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{1}{2}(A+A')$
+\end_inset
+
+ is symmetric and 
+\begin_inset Formula $\frac{1}{2}(A-A')$
+\end_inset
+
+ is skew-symmetric.
+\end_layout
+
+\begin_layout Subsection
+Solving equations
+\end_layout
+
+\begin_layout Subsubsection
+Conditions
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|A|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{(\mathrm{adj}}A)B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Singularity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of solutions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consistency
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|A|\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N.A.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Non-singular
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unique solution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|A|=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{(\mathrm{adj}}A)B\ensuremath{\neq0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Singular
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No solution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inconsistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{(\mathrm{adj}}A)B\ensuremath{=0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Infinitely many solutions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Consistent
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+2 variables, 2 equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a_{1}x+b_{1}y=p\\
+a_{2}x+b_{2}y=q
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}a_{1} & b_{!}\\
+a_{2} & b_{2}
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}=\begin{bmatrix}p\\
+q
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+aka 
+\begin_inset Formula $AX=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=A^{-1}\times B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+3 variables, 3 equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+a_{1}x+b_{1}y+c_{1}z=p\\
+a_{2}x+b_{2}y+c_{2}z=q\\
+a_{3}x+b_{3}y+c_{3}z=r
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}a_{1} & b_{!} & c_{!}\\
+a_{2} & b_{2} & c_{2}\\
+a_{3} & b_{3} & c_{3}
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+z
+\end{bmatrix}=\begin{bmatrix}p\\
+q\\
+r
+\end{bmatrix}
+\]
+
+\end_inset
+
+ aka 
+\begin_inset Formula $AX=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=A^{-1}\times B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Calculus
+\end_layout
+
+\begin_layout Section
+Continuity and Differentiability of Functions
+\end_layout
+
+\begin_layout Subsection
+Conditions For Continuity
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(a)$
+\end_inset
+
+ is defined
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)$
+\end_inset
+
+ exists
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lim_{x\rightarrow a}f(x)=f(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Conditions For Differentiability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Rf'(a)=\lim_{h\rightarrow0}\frac{f(a+h)-f(a)}{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Lf'(a)=\lim_{h\rightarrow0}\frac{f(a-h)-f(a)}{-h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $x=a$
+\end_inset
+
+ if 
+\begin_inset Formula $Rf'(a)=Lf'(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Differentiation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\textrm{constant})=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(x^{n})=nx^{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(e^{x})=e^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(a^{x})=a^{x}\ln a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\ln x)=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\log_{a}x)=\frac{1}{x\ln a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(uv)=u^{\prime}v+uv^{\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}\left(\frac{u}{v}\right)=\frac{vu^{\prime}-uv^{\prime}}{v^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{y}{x}=\frac{1}{\deriv{x}{y}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{y}{x}=\deriv{y}{t}\times\deriv{t}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}\left|x\right|=\frac{x}{\left|x\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\sin x)=\cos x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\cos x)=-\sin x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\tan x)=\sec^{2}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\cot x)=-\csc^{2}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\sec x)=\sec x\tan x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\csc x)=\csc x\cot x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\sin^{-1}x)=\frac{1}{\sqrt{1-x^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\cos^{-1}x)=\frac{-1}{\sqrt{1-x^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\tan^{-1}x)=\frac{1}{1+x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\cot^{-1}x)=\frac{-1}{1+x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\sec^{-1}x)=\frac{1}{|x|\sqrt{x^{2}-}1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\csc^{-1}x)=\frac{-1}{|x|\sqrt{x^{2}-}1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $y=[f(x)]^{g(x)}$
+\end_inset
+
+, take the logarithm of both sides and then differentiate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Differentiation by substitution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expression
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Substitution to perform
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}-x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put 
+\begin_inset Formula $x=a\sin t$
+\end_inset
+
+ or 
+\begin_inset Formula $x=a\cos t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}+x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put 
+\begin_inset Formula $x=a\tan t$
+\end_inset
+
+ or 
+\begin_inset Formula $x=a\cot t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{2}-a^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put 
+\begin_inset Formula $x=a\sec t$
+\end_inset
+
+ or 
+\begin_inset Formula $x=a\csc t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sqrt{\frac{a-x}{a+X}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\sqrt{\frac{a+x}{a-x}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put 
+\begin_inset Formula $x=a\cos t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a\cos x\pm b\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Put 
+\begin_inset Formula $a=r\cos\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $b=r\sin\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Indeterminate Forms of Limits
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mean Value Theorems
+\end_layout
+
+\begin_layout Subsection
+Rolle's Theorem
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ satisfies the following conditions:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is continuous in the 
+\emph on
+closed
+\emph default
+ interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is derivable in the 
+\emph on
+open
+\emph default
+ interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+… then there exists at least one real number 
+\begin_inset Formula $x=c$
+\end_inset
+
+ in the 
+\emph on
+open
+\emph default
+ interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f^{\prime}(c)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Langrange's Mean Value Theorem
+\end_layout
+
+\begin_layout Standard
+If a function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ defined in the closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ satisfies the following conditions:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is continuous in the 
+\emph on
+closed
+\emph default
+ interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is derivable in the 
+\emph on
+open
+\emph default
+ interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+… there exists at least one value of 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, in the 
+\emph on
+open
+\emph default
+ interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'(c)=\frac{f(b)-f(a)}{b-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Applications of Derivatives
+\end_layout
+
+\begin_layout Subsection
+Tangents and Normals
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=\deriv{y}{x}(x^{\prime})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y-y^{\prime}=m(x-x^{\prime})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y-y^{\prime}=-\frac{1}{m}(x-x^{\prime})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Approximations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta y=\deriv{y}{x}(x^{\prime})\times\delta x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rate Measuring
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{Rate of change of \ensuremath{y}}=\deriv{y}{x}\times\textrm{Rate of change of \ensuremath{x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{y}{x}=\deriv{y}{t}\times\deriv{t}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Monotonocity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{y}{x}\begin{cases}
+>0 & \textrm{\tan\psi\ is acute}\\
+<0 & \textrm{\tan\psi\ is obtuse}\\
+=0 & \tan\psi=\psi=0\\
+\textrm{is undefined} & \psi=90\text{°}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x)\begin{cases}
+\textrm{increasing} & f^{\prime}(x)>0\\
+\textrm{decreasing} & f^{\prime}(x)<0\\
+\textrm{constant} & f^{\prime}(x)=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Maxima and Minima
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula 
+\[
+\deriv{y}{x}=0
+\]
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minima
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maxima
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\ensuremath{\textrm{d}^{2}y}}{\textrm{dx}^{2}}>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\ensuremath{\textrm{d}^{2}y}}{\textrm{dx}^{2}}<0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\deriv{y}{x}$
+\end_inset
+
+ goes from 
+\begin_inset Formula $-$
+\end_inset
+
+ to 
+\begin_inset Formula $+$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\deriv{y}{x}$
+\end_inset
+
+ goes from 
+\begin_inset Formula $+$
+\end_inset
+
+ to 
+\begin_inset Formula $-$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Indefinite Integrals — Standard Forms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int x^{n}\diff{x}=\frac{x^{n+1}}{n+1}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int(ax+b)^{n}\diff{x}=\frac{(ax+b)^{n+1}}{(n+1)a}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\cos x\diff{x}=\sin x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sin x\diff{x}=-\cos x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sec^{2}x\diff{x}=\tan x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\csc^{2}x\diff{x}=-\cot x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\csc x\cot x\diff{x}=-\csc x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sec x\tan x\diff{x}=\sec x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\tan x\diff{x}=\ln|\sec x|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\cot x\diff{x}=\ln|\sin x|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\csc x\diff{x}=\ln|\csc x-\cot x|+C=\ln\left|\tan\frac{x}{2}\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sec x\diff{x}=\ln|\sec x+\tan x|+C=\ln\left|\tan\left(\frac{\pi}{4}+\frac{x}{2}\right)\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Indefinite Integrals — Methods of Integration
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{1}{\sqrt{1-x^{2}}}\diff{x}=\sin^{-1}x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{-1}{\sqrt{1-x^{2}}}\diff{x}=\cos^{-1}x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{1}{1+x^{2}}\diff{x}=\tan^{-1}x+C
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\frac{-1}{1+x^{2}}\diff{x}=\cot^{-1}x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{1}{|x|\sqrt{x^{2}-1}}\diff{x}=\sec^{-1}x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{-1}{|x|\sqrt{x^{2}-1}}\diff{x}=\csc^{-1}x+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int e^{x}[f(x)+f'(x)]\diff{x}=e^{x}\cdot f(x)+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int(f\cdot g)\diff{x}=f\int g\diff{x}-\int\left[f^{\prime}\int g\diff{x}\right]\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Indefinite Integrals — Special Integrals
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{\diff{x}}{x^{2}+a^{2}}=\frac{1}{a}\tan^{-1}\frac{x}{a}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{\diff{x}}{x^{2}-a^{2}}=\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{\diff{x}}{a^{2}-x^{2}}=\frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{\diff{x}}{\sqrt{x^{2}\pm a^{2}}}=\ln\left|x+\sqrt{x^{2}\pm a^{2}}\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{\diff{x}}{\sqrt{a^{2}-x^{2}}}=\sin^{-1}\frac{x}{a}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sqrt{x^{2}\pm a^{2}}\diff{x}=\frac{x}{2}\sqrt{x^{2}\pm a^{2}}\pm\frac{a^{2}}{2}\ln\left|x+\sqrt{x^{2}\pm a^{2}}\right|+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\sqrt{a^{2}-x^{2}}\diff{x}=\frac{x}{2}\sqrt{a^{2}-x^{2}}+\frac{a^{2}}{2}\sin^{-1}\frac{x}{a}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\sqrt{ax^{2}+bx+c}\diff{x}$
+\end_inset
+
+, 
+\begin_inset Formula $\int(px+q)\sqrt{ax^{2}+bx+c}\diff{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\int\frac{a\sin x+b\cos x}{c\sin x+d\cos x}\diff{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be constants.
+ If 
+\begin_inset Formula $N$
+\end_inset
+
+ is the numerator and 
+\begin_inset Formula $D$
+\end_inset
+
+ is the denominator, set:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=A(D)+B\deriv{}{x}(D)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\int\frac{x^{2}\pm1}{x^{4}+kx^{2}+1}\diff{x}$
+\end_inset
+
+ (
+\begin_inset Formula $k$
+\end_inset
+
+ may be 
+\begin_inset Formula $0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Divide numerator and denominator by 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $t=x+\frac{1}{x}$
+\end_inset
+
+ or 
+\begin_inset Formula $t=x-\frac{1}{x}$
+\end_inset
+
+ depending on which 
+\begin_inset Formula $t$
+\end_inset
+
+ gives the numerator of the resulting integrand on differentiation.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\int\frac{\diff{x}}{a+b\cos x}$
+\end_inset
+
+, 
+\begin_inset Formula $\int\frac{\diff{x}}{a+b\sin x}$
+\end_inset
+
+, 
+\begin_inset Formula $\int\frac{\diff{x}}{a\cos x+b\sin x}$
+\end_inset
+
+, 
+\begin_inset Formula $\int\frac{\diff{x}}{a\cos x+b\sin x+c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Substitute 
+\begin_inset Formula $\sin x=\frac{2\tan\frac{x}{2}}{a+\tan^{2}\frac{x}{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $\cos x=\frac{1-\tan^{2}\frac{x}{2}}{1+\tan^{2}\frac{x}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Replace 
+\begin_inset Formula $1+\tan^{2}\frac{x}{2}$
+\end_inset
+
+ in the numerator with 
+\begin_inset Formula $\sec^{2}\frac{x}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Substitute 
+\begin_inset Formula $t=\tan\frac{x}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\diff{t}=\frac{1}{2}\sec^{2}\frac{x}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\int\frac{\diff{x}}{a\cos^{2}x+b\sin^{2}x+c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{\diff{x}}{1+x^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\int\sqrt{\tan x}\diff{x}$
+\end_inset
+
+, 
+\begin_inset Formula $\int\sqrt{\cot x}\diff{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definite Integrals
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\diff{x}=\int_{a}^{b}f(t)\diff{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\diff{x}=-\int_{b}^{a}f(x)\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{a}f(x)\diff{x}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{c}f(x)\diff{x}=\int_{a}^{b}f(x)\diff{x}+\int_{b}^{c}f(x)\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\diff{x}=\int_{a}^{b}f(a+b-x)\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{a}f(x)\diff{x}=\int_{0}^{a}f(a-x)\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{2a}f(x)\diff{x}=\int_{0}^{a}f(x)\diff{x}+\int_{0}^{a}f(2a-x)\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{2a}f(x)\diff{x}=\begin{cases}
+2\int_{0}^{a}f(x)\diff{x} & f(2a-x)=f(x)\\
+0 & f(2a-x)=-f(x)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-a}^{a}f(x)\diff{x}=\begin{cases}
+2\int_{0}^{a}f(x)\diff{x} & f(-x)=f(x)\\
+0 & f(-x)=-f(x)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definite Integral as a limit of a sum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\diff{x}=\lim_{h\rightarrow0}h\left[f(a)+f(a+h)+f(a+2h)+\ldots+f(a+(n-1)h)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+nh=b-a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+2+\cdots+n=\frac{n(n+1)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1^{2}+2^{2}+\cdots+n^{2}=\frac{n(n+1)(2n+1)}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1^{3}+2^{3}+\cdots+n^{3}=\left(\frac{n(n+1)}{2}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin a+\sin(a+h)+\sin(a+2h)+\cdots+\sin\left(a+(n-1)h\right)=\frac{\sin\left\{ a+\frac{n-1}{2}h\right\} \sin\frac{nh}{2}}{\sin\frac{h}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos a+\cos(a+h)+\cos(a+2h)+\cdots+\cos\left(a+(n-1)h\right)=\frac{\cos\left\{ a+\frac{n-1}{2}h\right\} \cos\frac{nh}{2}}{\cos\frac{h}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Differential Equations
+\end_layout
+
+\begin_layout Subsection
+Variable Separable
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}=f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}=f(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}=f(x)\cdot\phi(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}=f(ax+by+c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reducible to Variable Separable
+\end_layout
+
+\begin_layout Subsection
+Homogeneous equations of first order
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}=\frac{f(x,y)}{g(x,y)}=m\left(\frac{y}{x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=vx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{y}{x}=v+x\deriv{v}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Linear equations
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\deriv{y}{x}+Py=Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{IF}=e^{\int P\diff{x}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y\cdot\mathrm{IF}=\int\left(Q\cdot\mathrm{IF}\right)\diff{x}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Probability
+\end_layout
+
+\begin_layout Section
+Probability
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset Formula 
+\[
+P(\overline{A})=1-P(A)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(A/B)=\frac{n(A\cap B)}{n(B)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(A\cap B)=P(B)\times P(A/B)=P(A)\times P(B/A)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are mutually exclusive
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(A\cap B)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are independent events
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(A/B)=P(A)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(B/A)=P(B)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset Formula 
+\[
+P(A\cap B)=P(A)\times P(B)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Geometric Progression
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a+ar+ar^{2}+\cdots=\frac{a}{1-r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bayes' Theorem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(E_{1}/A)=\frac{P(E_{!})\cdot P(A/E_{1})}{P(E_{!})\cdot P(A/E_{1})+P(E_{2})\cdot P(A/E_{2})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(E_{1}/A)=\frac{P(E_{!})\cdot P(A/E_{1})}{P(E_{!})\cdot P(A/E_{1})+P(E_{2})\cdot P(A/E_{2})+P(E_{3})\cdot P(A/E_{3})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Theoretical Probability Distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}f(x)\cdot\diff{x}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{x}=\sum_{i=1}^{n}p_{i}x_{i}=\sum_{i=1}^{n}x_{i}f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma^{2}=\sum_{i=1}^{n}p_{i}\cdot x_{i}^{2}-\overline{x}^{2}=\sum_{i=1}^{n}p_{i}(x_{i}-\overline{x})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=+\sqrt{\sigma^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Binomial Distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(r)=\binom{n}{r}q^{n-r}p^{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=np
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma^{2}=npq
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Vectors
+\end_layout
+
+\begin_layout Section
+Vectors
+\end_layout
+
+\begin_layout Section
+Vectors (Continued)
+\end_layout
+
+\begin_layout Part
+Three-Dimensional Geometry
+\end_layout
+
+\begin_layout Section
+Three-Dimensional Geometry
+\end_layout
+
+\begin_layout Section
+The Plane
+\end_layout
+
+\begin_layout Part
+Application of Integrals
+\end_layout
+
+\begin_layout Section
+Areas of a Curve
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Application of Calculus
+\end_layout
+
+\begin_layout Section
+Application of Calculus in Commerce and Economics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C(x)=F+V(X)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{AC}=\frac{C(x)}{x}=\mathrm{AFC}+\mathrm{AVC}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=px
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(x)=R(x)-C(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the break-even point (say 
+\begin_inset Formula $x_{b}$
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R(x_{b})=C(x_{b})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{MC}=\deriv{}{x}\left[C(x)\right]=\deriv{C}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{AFC}=\frac{\mathrm{TFC}}{Q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{AVC}=\frac{\mathrm{TVC}}{Q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\deriv{}{x}(\mathrm{AC})=\frac{1}{x}(\mathrm{MC}-\mathrm{AC})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\int\mathrm{MC}\cdot\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{d}=\int_{0}^{d}\mathrm{MC}\cdot\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\int\mathrm{MR}\cdot\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{d}=\int_{0}^{d}\mathrm{MR}\cdot\diff{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Linear Regression
+\end_layout
+
+\begin_layout Section
+Linear Regression
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathit{dependent}\textrm{ on }\mathit{independent}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{x}=x_{i}-\overline{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{y}=y_{i}-\overline{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+ on 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+ on 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regression line
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y-\overline{y}=b_{yx}(x-\overline{x})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x-\overline{x}=b_{xy}(y-\overline{y})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normal Equations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum y=nc+m\sum x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum x=nc+m\sum y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum xy=c\sum x+m\sum x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum xy=c\sum y+m\sum y^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regression Coefficient
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{yx}=r\frac{\sigma_{y}}{\sigma_{x}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{xy}=r\frac{\sigma_{x}}{\sigma_{y}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+When deviations are taken from the mean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{yx}=\frac{\Sigma d_{x}d_{y}}{\Sigma d_{x}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{xy}=\frac{\Sigma d_{x}d_{y}}{\Sigma d_{y}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+When deviations are taken from the assumed mean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{yx}=\frac{\Sigma d_{x}d_{y}-\frac{\Sigma d_{x}\Sigma d_{y}}{n}}{\Sigma d_{x}^{2}-\frac{\left(\Sigma d_{x}\right)^{2}}{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{xy}=\frac{\Sigma d_{x}d_{y}-\frac{\Sigma d_{x}\Sigma d_{y}}{n}}{\Sigma d_{y}^{2}-\frac{\left(\Sigma d_{y}\right)^{2}}{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+When original values are used
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{yx}=\frac{\Sigma xy-\frac{\Sigma x\Sigma y}{n}}{\Sigma x^{2}-\frac{\left(\Sigma x\right)^{2}}{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{xy}=\frac{\Sigma xy-\frac{\Sigma x\Sigma y}{n}}{\Sigma y^{2}-\frac{\left(\Sigma y\right)^{2}}{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=\pm\sqrt{b_{yx}\cdot b_{xy}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}\leq1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=\frac{\sum\left(d_{x}d_{y}\right)}{\sqrt{\sum d_{x}^{2}\times\sum d_{x}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Point of intersection of the two regression lines is 
+\begin_inset Formula $(\overline{x},\overline{y})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Linear Programming
+\end_layout
+
+\begin_layout Section
+Linear Programming
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+\start_of_appendix
+Appendices
+\end_layout
+
+\begin_layout Section
+Useful Trigonometric Formulae
+\end_layout
+
+\begin_layout Section
+Other Useful Formulae
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{3}\pm b^{3}=(a\pm b)(a^{2}+ab+b^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

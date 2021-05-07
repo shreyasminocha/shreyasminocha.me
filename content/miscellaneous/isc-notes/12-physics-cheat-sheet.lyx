@@ -1,0 +1,2800 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{siunitx}
+\newcommand{\diff}[1]{\mathrm{d}#1}
+\newcommand{\deriv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing other 1.35
+\use_hyperref true
+\pdf_title "11 Math Cheat Sheet"
+\pdf_author "Shreyas Minocha"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+12 Physics Cheat Sheet
+\end_layout
+
+\begin_layout Author
+Shreyas Minocha
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Licensed under 
+\begin_inset CommandInset href
+LatexCommand href
+name "CC BY-SA 3.0"
+target "https://creativecommons.org/licenses/by-sa/3.0"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Electrostatics
+\end_layout
+
+\begin_layout Section
+Electric Charges and Fields
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{electric current}=\frac{\textrm{charge}}{\textrm{time}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\epsilon=K\epsilon_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a vacuum, 
+\begin_inset Formula $K=1$
+\end_inset
+
+.
+ That is, 
+\begin_inset Formula $\epsilon=\epsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=k\frac{q_{1}q_{2}}{r^{2}}=\frac{1}{4\pi\epsilon}\frac{q_{1}q_{2}}{r^{2}}=\frac{1}{4\pi K\epsilon_{0}}\frac{q_{1}q_{2}}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Force on a charge due to another charge
+\end_layout
+
+\begin_layout Subsubsection
+Force acting on charge 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ due to charge 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{F_{12}}=\frac{1}{4\pi\epsilon}\frac{q_{1}q_{2}}{\overrightarrow{r_{12}}^{2}}\hat{r_{12}}=\frac{1}{4\pi\epsilon}\frac{q_{1}q_{2}}{r^{3}}\overrightarrow{r_{12}}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\overrightarrow{r_{12}}$
+\end_inset
+
+ is the position of 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula $\left|\overrightarrow{r_{12}}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Force acting on charge 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ due to charge 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{F_{21}}=\frac{1}{4\pi\epsilon}\frac{q_{1}q_{2}}{\overrightarrow{r_{21}}^{2}}\hat{r_{12}}=\frac{1}{4\pi\epsilon}\frac{q_{1}q_{2}}{r^{3}}\overrightarrow{r_{21}}=-\overrightarrow{F_{12}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\overrightarrow{r_{21}}$
+\end_inset
+
+ is the position of 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula $\left|\overrightarrow{r_{21}}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{1}=\sum_{i=2}^{n}F_{1i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{\overrightarrow{F}}{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\implies\overrightarrow{F}=q\overrightarrow{E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\sum\overrightarrow{E_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electric field intensity due to a point charge 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+E=\frac{1}{4\pi\epsilon}\frac{q}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{1}{4\pi\epsilon}\frac{q}{\overrightarrow{r}^{2}}\hat{r}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\overrightarrow{r}$
+\end_inset
+
+ is the position of the test charge with respect to 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Intensity of electric field due to a continuous charge distribution
+\end_layout
+
+\begin_layout Subsubsection
+Linear charge distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{F}=\frac{q_{0}}{4\pi\epsilon}\int_{L}\frac{\lambda l}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $2$
+\end_inset
+
+ is the position of the test charge and 
+\begin_inset Formula $1$
+\end_inset
+
+ is the position of 
+\begin_inset Formula $dL$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{1}{4\pi\epsilon}\int_{L}\frac{\lambda dl}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Surface charge distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{F}=\frac{q_{0}}{4\pi\epsilon}\int_{S}\frac{\sigma dA}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{1}{4\pi\epsilon}\int_{S}\frac{\sigma dA}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Volume charge distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{F}=\frac{q_{0}}{4\pi\epsilon}\int_{V}\frac{\rho dV}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{1}{4\pi\epsilon}\int_{V}\frac{\rho dV}{\overrightarrow{r_{21}}^{2}}\hat{r_{21}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electric dipole moment
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{p}=q\times2\overrightarrow{l}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{p}$
+\end_inset
+
+ always points from the negative charge to the positive charge.
+\end_layout
+
+\begin_layout Subsection
+Electric field intensity due to a dipole
+\end_layout
+
+\begin_layout Subsubsection
+At an axial point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{1}=\frac{1}{4\pi\epsilon}\frac{q_{1}}{(r-l)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{2}=\frac{1}{4\pi\epsilon}\frac{q_{2}}{(r+l)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=E_{1}-E_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{1}{4\pi\epsilon}\frac{2pr}{(r^{2}-l^{2})^{2}}=\frac{1}{4\pi\epsilon}\frac{2p}{r^{3}}
+\]
+
+\end_inset
+
+ if 
+\begin_inset Formula $r\gg l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+At an equatorial point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{1}=E_{2}=\frac{1}{4\pi\epsilon}\frac{q}{r^{2}+l^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=E_{1}\cos\theta+E_{2}\cos\theta=2\left[\frac{1}{4\pi\epsilon}\frac{q}{r^{2}+l^{2}}\right]\cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\theta=\frac{A}{H}=\frac{l}{\sqrt{r^{2}+l^{2}}}=\frac{l}{(r^{2}+l^{2})^{\frac{1}{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=2\left[\frac{1}{4\pi\epsilon}\frac{q}{r^{2}+l^{2}}\right]\left[\frac{l}{(r^{2}+l^{2})^{\frac{1}{2}}}\right]=\frac{1}{4\pi\epsilon}\frac{2ql}{(r^{2}+l^{2})^{\frac{3}{2}}}=\frac{1}{4\pi\epsilon}\frac{p}{(r^{2}+l^{2})^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $r\gg l$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{1}{4\pi\epsilon}\frac{p}{r^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=-\frac{1}{4\pi\epsilon}\frac{\overrightarrow{p}}{r^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+1.5.1 vs 1.5.2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E_{\mathrm{axial}}}=-2\overrightarrow{E_{\mathrm{equatorial}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Torque on a dipole in a uniform electric field
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau=qE\times2l\sin\theta=2ql\times E\sin\theta=pE\sin\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{\tau}=\overrightarrow{p}\times\overrightarrow{E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gauss' Theorem
+\end_layout
+
+\begin_layout Subsection
+Solid angles
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d\omega=\frac{dA}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 steridian is the solid angle subtendedd by a part of the surface of a
+ sphere at the centre of the sphere when the 
+\begin_inset Formula $dA=r^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega=\frac{4\pi r^{2}}{r^{2}}=\unit[4\pi]{steridian}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d\omega=\frac{dA\cos\theta}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electric flux
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{E}=\oint\overrightarrow{E}\cdot d\overrightarrow{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a plane surface of area 
+\begin_inset Formula $A$
+\end_inset
+
+ in a uniform electric field:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{E}=\oint\overrightarrow{E}\cdot d\overrightarrow{A}=\oint EdA\cos\theta=E\cos\theta\oint dA=EA\cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gauss' Theorem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{E}=\oint\overrightarrow{E}\cdot\overrightarrow{dA}=\frac{q}{\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gaussian surfaces
+\end_layout
+
+\begin_layout Standard
+A gaussian surface is an arbitrary closed surface in space through which
+ the flux of a vector field is calculated.
+\end_layout
+
+\begin_layout Itemize
+The surface must be a closed surface
+\end_layout
+
+\begin_layout Itemize
+The surface must pass through the point at which the flux is to be calculated
+\end_layout
+
+\begin_layout Itemize
+The surface must be shaped according to the symmetry of the source so that
+ the field is normal to the surface at each point and constant in magnitude.
+\end_layout
+
+\begin_layout Itemize
+The surface should not pass through any discrete charge.
+\end_layout
+
+\begin_layout Subsection
+Applications of Gauss' theorem
+\end_layout
+
+\begin_layout Subsubsection
+Electric field due to a point charge
+\end_layout
+
+\begin_layout Standard
+Gaussian surface: sphere.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{1}{4\pi\epsilon}\frac{q}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Electric field due to an infinite line of charge
+\end_layout
+
+\begin_layout Standard
+Gaussian surface: cylinder around and parallel to the line of charge.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{E}=\frac{\lambda}{2\pi\epsilon_{0}}\hat{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Electric field due to an infinite plane of charge
+\end_layout
+
+\begin_layout Standard
+Gaussian surface: surface with its length through the 
+\begin_inset Quotes eld
+\end_inset
+
+centre
+\begin_inset Quotes erd
+\end_inset
+
+ of the plane.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{\sigma}{2\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Electric field due to two infinite parallel sheets of charge
+\end_layout
+
+\begin_layout Standard
+Use results from 2.5.3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{1}=\frac{\sigma_{1}}{2\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{2}=\frac{\sigma_{2}}{2\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\pm\pm_{\mathrm{side}}}=\frac{\sigma}{\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\pm\pm_{\mathrm{mid}}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\pm\mp_{\mathrm{side}}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\pm\mp_{\mathrm{mid}}}=\frac{\sigma}{\epsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Electric field just outside a charged conductor
+\end_layout
+
+\begin_layout Standard
+Practically identical to 2.5.3.
+\end_layout
+
+\begin_layout Subsubsection
+Electric field due to a uniformly charged thin shell
+\end_layout
+
+\begin_layout Standard
+Gaussian surface:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electric Potential and Potential Energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{W}{q_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{A}-V_{B}=\frac{W}{q_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\frac{q}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\sum\frac{q_{i}}{r_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\int\frac{\sigma dl}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\int_{S}\frac{\sigma dA}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\int_{v}\frac{\rho dv}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Potential due to a dipole
+\end_layout
+
+\begin_layout Subsubsection
+At an axial point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\frac{p}{r^{2}-l^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $r\gg l$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\frac{p}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+At an equatorial point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{!}=\frac{1}{4\pi\epsilon}\frac{q}{BP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{2}=\frac{1}{4\pi\epsilon}\frac{q}{AP}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{1}+V_{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+At an arbitrary point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\frac{1}{4\pi\epsilon}\frac{p\cos\theta}{r^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Relation between E and V
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=-\frac{\diff{V}}{\diff{r}}=\frac{V_{1}-V_{2}}{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equipotential surfaces
+\end_layout
+
+\begin_layout Subsection
+Electric potential energy
+\end_layout
+
+\begin_layout Subsection
+Work done in rotating a dipole in an electric field
+\end_layout
+
+\begin_layout Subsection
+Potential energy of a dipole in an electrostatic field
+\end_layout
+
+\begin_layout Section
+Capacitors and Dielectrics
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Current Electricity
+\end_layout
+
+\begin_layout Section
+Electric Resistance and Ohm's Law
+\end_layout
+
+\begin_layout Section
+DC Circuits and Measurements
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=\frac{\diff{W}}{\diff{q}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E=V_{1}+V_{2}+V_{3}+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=E-Ir
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=R\left(\frac{E}{V}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Magnetic Effects of Current and Magnetism
+\end_layout
+
+\begin_layout Section
+Moving charges and magnetism
+\end_layout
+
+\begin_layout Section
+Torque on a current loop: Moving Coil Galvanometer
+\end_layout
+
+\begin_layout Section
+Magnetic Classification of Substances
+\end_layout
+
+\begin_layout Section
+Electromagnetic Induction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+EM Induction and Alternating Currents
+\end_layout
+
+\begin_layout Section
+Electromagnetic Induction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{B}=BA\cos\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi_{B}=\frac{FA}{Il}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e_{N=1}=-\frac{\Delta\Phi_{B}}{\Delta t}=-\frac{\diff{\Phi_{B}}}{\diff{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e=-N\frac{\Delta\Phi_{B}}{\Delta t}-N\frac{\diff{\Phi_{B}}}{\diff{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=\frac{e}{r}=\frac{N}{R}\frac{\Delta\Phi_{B}}{\Delta t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q=I\Delta t=\frac{N}{R}\Delta\Phi_{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=Bvl
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Self Induction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=\frac{N\Phi_{B}}{I}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e=-\frac{\Delta(LI)}{\Delta t}=-L\frac{\Delta I}{\Delta t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=-\frac{e\Delta t}{\Delta I}=-\frac{e}{\nicefrac{\Delta I}{\Delta t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mutual Induction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\frac{N_{2}\Phi_{2}}{I_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Alternating Current
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{0}=NBA\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{0}\sin\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin wt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=\frac{2\pi}{\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=\frac{1}{T}=\frac{\omega}{2\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{m}=\frac{2}{\pi}I_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{\mathrm{rms}}=\frac{I_{0}}{\sqrt{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Types of AC circuits
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing resistance (
+\begin_inset Formula $R$
+\end_inset
+
+) only
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{0}\sin\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing inductance (
+\begin_inset Formula $L$
+\end_inset
+
+) only
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{0}\sin\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin\left(\omega t-\frac{\pi}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{L}=\omega L=2\pi fL
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\frac{V_{0}}{X_{L}}=\frac{V_{0}}{\omega L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing capacitance (
+\begin_inset Formula $C$
+\end_inset
+
+) only
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=V_{0}\sin\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin\left(\omega t+\frac{\pi}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{C}=\frac{1}{\omega C}=\frac{1}{2\pi fC}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\frac{V_{0}}{X_{C}}=\frac{V_{0}}{\nicefrac{1}{\omega C}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin(\omega t-\Phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z=\sqrt{R^{2}+X_{L}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\frac{V_{0}}{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\sqrt{V_{R}^{2}+V_{L}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi=\tan^{-1}\left(\frac{X_{L}}{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\Phi=\frac{R}{\sqrt{R^{2}+X_{L}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{0}\sin(\omega t+\Phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z=\sqrt{R^{2}+X_{C}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{0}=\frac{V_{0}}{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V=\sqrt{V_{R}^{2}+V_{C}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi=\tan^{-1}\left(\frac{X_{C}}{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\Phi=\frac{R}{\sqrt{R^{2}+X_{C}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Circuit containing 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z=\sqrt{R^{2}+(X_{L}-X_{C})^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Phi=\tan^{-1}\left(\frac{X_{L}-X_{C}}{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Resonance
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{\mathrm{rms}}=\frac{V_{\mathrm{rms}}}{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X_{L}=X_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\omega=\frac{1}{\omega C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega_{0}=\frac{1}{\sqrt{LC}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Power
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset Formula 
+\[
+P=\textrm{Apparent power}\times\textrm{Power factor}=V_{\mathrm{rms}}I_{\mathrm{rms}}\cos\Phi=I_{\mathrm{rms}}^{2}R=\frac{1}{2}V_{0}I_{0}\cos\Phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Half Points
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Electromagnetic Waves
+\end_layout
+
+\begin_layout Section
+Electromagnetic Waves
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{D}=\epsilon_{0}\frac{\diff{\phi}}{\diff{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\oint B\diff{t}=\mu_{0}(I_{C}+I_{D})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{E^{2}\epsilon_{0}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{B^{2}}{2\mu_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{E^{2}\epsilon_{0}}{2}+\frac{B^{2}}{2\mu_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=\frac{U}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wavelength (
+\begin_inset Formula $\unit{m}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gamma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\times10^{-14}$
+\end_inset
+
+ to 
+\begin_inset Formula $1\times10^{-10}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X Rays
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\times10^{-12}$
+\end_inset
+
+ to 
+\begin_inset Formula $3\times10^{+8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ultraviolet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6\times10^{-10}$
+\end_inset
+
+ to 
+\begin_inset Formula $4\times10^{-7}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visible
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\times10^{-7}$
+\end_inset
+
+ to 
+\begin_inset Formula $7\times10^{-7}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Infrared
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8\times10^{-7}$
+\end_inset
+
+ to 
+\begin_inset Formula $5\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Micro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\times10^{-3}$
+\end_inset
+
+ to 
+\begin_inset Formula $3\times10^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Radio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\times10^{-1}$
+\end_inset
+
+ to 
+\begin_inset Formula $1\times10^{+4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Long
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5\times10^{+6}$
+\end_inset
+
+ to 
+\begin_inset Formula $6\times10^{+6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Optics
+\end_layout
+
+\begin_layout Section
+Spherical Mirrors
+\end_layout
+
+\begin_layout Section
+Refraction of Light at a Plane Interface: (Total Internal Reflectiom — Optical
+ Fibre)
+\end_layout
+
+\begin_layout Section
+Refraction of Light at Spherical Surfaces: Lenses
+\end_layout
+
+\begin_layout Section
+Refraction and Dispersion of Light Through a Prism
+\end_layout
+
+\begin_layout Section
+Optical Instruments
+\end_layout
+
+\begin_layout Subsection
+Simple Microscope
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\frac{D}{u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=1+\frac{D}{f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Relaxed eye:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\frac{D}{f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Compound Microscope
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=m_{e}\times m_{o}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=-\frac{v_{o}}{u_{o}}\left(\frac{D}{u_{e}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\frac{f_{o}}{u_{o}-f_{o}}\left(\frac{D}{u_{e}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Adjustment for clear vision:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=-\frac{v_{o}}{u_{o}}\left(1+\frac{D}{f_{e}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=v_{o}+\left|u_{e}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Refracting (Astronomical) Telescope
+\end_layout
+
+\begin_layout Subsection
+Reflecting Telescope
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=-\frac{f_{o}}{f_{e}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+l=\unit[1.22\frac{\lambda}{d}]{radian}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Wave Nature of Light: Huygens' Principle
+\end_layout
+
+\begin_layout Section
+Interference of Light
+\end_layout
+
+\begin_layout Section
+Diffraction of Light
+\end_layout
+
+\begin_layout Section
+Polarization of Light
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Dual Nature of Radiation and Matter
+\end_layout
+
+\begin_layout Section
+Photoelectric Effect
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+hv=W+E_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{k}=hv-W
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+W=hv_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{k}=hv-hv_{0}=h(v-v_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2}mv_{\mathrm{max}}^{2}=h(v-v_{0})=hc\left(\frac{1}{\lambda}-\frac{1}{\lambda_{0}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{2}mv_{\mathrm{max}}^{2}=eV_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eV_{0}=h(v-v_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{0}=\frac{h}{e}(v-v_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Matter Waves
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=\frac{h}{p}=\frac{h}{mv}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=\frac{h}{\sqrt{2mK}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{\mathrm{electron}}=\unit[\sqrt{\frac{150}{V}}\times10^{-10}]{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+X Rays
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\mathrm{max}}=\frac{eV}{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{\mathrm{min}}=\frac{hc}{eV}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{v}=a(Z-b)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Atoms and Nuclei
+\end_layout
+
+\begin_layout Section
+Atoms: Origin of Spectra
+\end_layout
+
+\begin_layout Section
+Nuclear Structure
+\end_layout
+
+\begin_layout Section
+Radioactivity
+\end_layout
+
+\begin_layout Section
+Mass energy equivalence: Nuclear energy binding
+\end_layout
+
+\begin_layout Section
+Nuclear Fission and Nuclear Fusion: Source of energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Electronic Devices
+\end_layout
+
+\begin_layout Section
+Semiconductor Electronics
+\end_layout
+
+\begin_layout Section
+Junction Diodes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{\mathrm{in}}=IR+V_{z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I=I_{Z}+I_{L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\frac{V_{in}-V_{Z}}{I_{Z}+I_{L}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Junction Transistors
+\end_layout
+
+\begin_layout Section
+Logic Gates
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Communication Systems
+\end_layout
+
+\begin_layout Section
+Communication Systems
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Constants
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k_{\mathrm{vacuum}}=\unit[9.0\times10^{9}]{Nm^{2}C^{-2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\epsilon_{0}=\unit[8.85\times10^{-12}]{C^{2}N^{-1}m^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{0}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h=\unit[6.63\times10^{-34}]{Js}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\unit[3\times10^{8}]{ms^{-1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
