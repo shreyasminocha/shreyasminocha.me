@@ -6,7 +6,7 @@ params:
     title: Shreyas Minocha
     description: "Shreyas Minocha's little website."
     name: Shreyas Minocha
-    languageCode: en-uk
+    languageCode: en-in
 
 useSummaryIfNoDescription: false
 assetDir: static
