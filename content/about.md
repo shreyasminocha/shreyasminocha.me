@@ -10,8 +10,6 @@ I feel strongly about [software freedom](https://www.fsf.org/about), [digital pr
 
 An old copy of _Learn HTML in 24 Hours_ drew me into computer things several years ago 💻. At present, I am primarily interested in the {modern,retro,alt} web stack. I'm also interested in exploring computer ethics, programming language design, automata theory, and cryptography. My interests will probably evolve, as they should, in my time at college.
 
-My preferred code editor at the moment is [VS&nbsp;Code](https://code.visualstudio.com) ([VS&nbsp;Codium](https://github.com/VSCodium/vscodium), actually).
-
 This is my website. I have [a blog](/blog) here where I post programming-related articles less frequently than I'd like. I also have a [wiki](https://wiki.shreyasminocha.me) where I try to make notes about stuff I'm learning, among other things.
 
 ## Silly trivia about me
