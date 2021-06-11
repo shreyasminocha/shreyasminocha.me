@@ -31,18 +31,29 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 
 - [OnePlus X](https://www.oneplus.com/x)[^2]
 - [LineageOS](https://lineageos.org/) 18.1 (rooted)
+- [TWRP Recovery](https://twrp.me/)
 - [Lawnchair](https://lawnchair.app/)
 - [Privacy Browser](https://www.stoutner.com/privacy-browser/)
 
+## Self-hosted
+
+See also: [bzin.ga](https://bzin.ga/).
+
+- [vaultwarden](https://github.com/dani-garcia/vaultwarden)
+- [FreshRSS](https://freshrss.github.io/FreshRSS/)
+- [Baïkal](https://sabre.io/baikal/)
+- [PrivateBin](https://privatebin.info/)
+
 ## Miscellaneous
 
-- QWERTY (with quirks), and [InScript](https://en.wikipedia.org/wiki/InScript_keyboard)
+- QWERTY (with quirks) and [InScript](https://en.wikipedia.org/wiki/InScript_keyboard)
 - [Mullvad VPN](https://mullvad.net/)
+- Self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance and [KeePassXC](https://keepassxc.org/)
 - [Disroot](https://disroot.org/) and [Riseup](https://riseup.net/)
 - [Namecheap](https://www.namecheap.com/)[^3]
 - [DigitalOcean](https://www.digitalocean.com/)[^3] and [RamNode](https://ramnode.com/)
 - [Spotify](https://www.spotify.com/)[^3]
 
-[^1]: Regret it — overpriced, and Apple.
+[^1]: Regret it — overpriced and, worse, Apple.
 [^2]: Decent phone, but it was abandoned by the manufacturer soon after release. Unfortunately, it has a very small community.
 [^3]: Not a huge fan.
