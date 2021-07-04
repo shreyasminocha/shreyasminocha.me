@@ -55,6 +55,6 @@ Deployments are made using Vercel.
 
 ## License
 
-Source code is licensed under the [MIT license](//tldrlegal.com/license/mit-license).
+Source code is licensed under the [MIT license](LICENSE).
 
-Website content (including blog posts) is licensed under [Attribution-ShareAlike 4.0 International](//creativecommons.org/licenses/by-sa/4.0/).
+Website content (including blog posts) is licensed under [Attribution-ShareAlike 4.0 International](content/license.md).
