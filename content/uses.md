@@ -18,7 +18,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 
 ## Laptop
 
-- [MacBook Pro (13-inch, Early 2015)](https://support.apple.com/kb/SP715)[^1]
+- [Framework Laptop DIY (i5-1135G7)](https://frame.work)
 - [Arch Linux](https://archlinux.org/)
 - [KDE Plasma](https://kde.org/plasma-desktop/)
 - [LibreWolf](https://librewolf-community.gitlab.io/)
@@ -29,7 +29,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 
 ## Phone
 
-- [OnePlus X](https://www.oneplus.com/x)[^2]
+- [OnePlus X](https://www.oneplus.com/x)[^1]
 - [LineageOS](https://lineageos.org/) 18.1 (rooted)
 - [TWRP Recovery](https://twrp.me/)
 - [Lawnchair](https://lawnchair.app/)
@@ -40,8 +40,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 See also: [bzin.ga](https://bzin.ga/).
 
 - [vaultwarden](https://github.com/dani-garcia/vaultwarden)
-- [FreshRSS](https://freshrss.github.io/FreshRSS/)
-- [Baïkal](https://sabre.io/baikal/)
+- [NextCloud](https://nextcloud.com/)
 - [PrivateBin](https://privatebin.info/)
 
 ## Miscellaneous
@@ -50,10 +49,10 @@ See also: [bzin.ga](https://bzin.ga/).
 - [Mullvad VPN](https://mullvad.net/)
 - Self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance and [KeePassXC](https://keepassxc.org/)
 - [Disroot](https://disroot.org/) and [Riseup](https://riseup.net/)
-- [Namecheap](https://www.namecheap.com/)[^3]
-- [DigitalOcean](https://www.digitalocean.com/)[^3] and [RamNode](https://ramnode.com/)
-- [Spotify](https://www.spotify.com/)[^3]
-
-[^1]: Regret it — overpriced and, worse, Apple.
-[^2]: Decent phone, but it was abandoned by the manufacturer soon after release. Unfortunately, it has a very small community.
-[^3]: Not a huge fan.
+- [Namecheap](https://www.namecheap.com/)[^2]
+- [RamNode](https://ramnode.com/)
+- [Spotify](https://www.spotify.com/)[^2]
+- [MoYu RS3 M 2020 3x3](https://www.thecubicle.com/products/moyu-rs3-m-2020)
+`
+[^1]: Decent phone, but it was abandoned by the manufacturer soon after release. Unfortunately, it has a very small community.
+[^2]: Not a huge fan.

@@ -4,7 +4,7 @@ url: about
 hide: true
 ---
 
-Hey, I'm Shreyas (/ˈʃreɪˌəs/ or shr-AY-us). I'm a freshman at Rice University and plan to major in le CS.
+Hey, I'm Shreyas (/ˈʃreɪˌəs/ or shr-AY-us). I'm a sophomore at Rice University and plan to major in le CS.
 
 I feel strongly about [software freedom](https://www.fsf.org/about), [digital privacy](https://ssd.eff.org), and [decentralization](https://fediverse.party/en/fediverse). I detest [surveillance capitalism](https://theintercept.com/2019/02/02/shoshana-zuboff-age-of-surveillance-capitalism) and believe in [consumer rights](https://www.defectivebydesign.org/). I value [digital accessibility](https://www.a11yproject.com) and have something of an eye for design. I also take an interest in digital archiving.
 
