@@ -3,36 +3,50 @@
 {{ end }}
 
 {{ define "header" }}
-<header role="banner">
-    {{ with .Site.Params.title }}
-    <a href="{{ $.Site.BaseURL }}" class="hero">{{ . | markdownify }}</a>
-    {{ end }}
+{{ with .Site.Params.title }}
+{{ end }}
 
+<header role="banner">
+    <div>
+        <a href="{{ $.Site.BaseURL }}" class="hero">Shreyas Minocha</a>
+    </div>
+
+        <div role="img" class="pfp"></div>
     <nav>
         <ul>
-            <li><a href="/about">/about</a></li>
-            <li><a href="/blog">/blog</a></li>
-            <li><a href="/contact">/contact</a></li>
-            <li><a href="/pgp">/pgp</a></li>
-            <li><a href="/uses">/uses</a></li>
-            <li><a href="/miscellaneous">/miscellaneous</a></li>
-        </ul>
-    </nav>
-    <nav class="related">
-        <ul>
-            <li><a href="https://refrf.shreyasminocha.me">refrf.</a></li>
-            <li><a href="https://wiki.shreyasminocha.me">wiki.</a></li>
-            <li><a href="https://uni.shreyasminocha.me">uni.</a></li>
-            <li><a href="https://git.sr.ht/~shreyasminocha/shr.cx/tree/main/item/vercel.json">shr.cx</a></li>
-            <li><a href="https://lists.sr.ht/~shreyasminocha/guestbook">guestbook</a></li>
-        </ul>
-    </nav>
-    <nav class="mirrors">
-        <ul>
-            <li><a href="gemini://shreyasminocha.me">gemini://</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/contact">contact</a></li>
+            <!-- <li><a href="#">projects</a></li> -->
+            <!-- <li><a href="#">cv</a></li> -->
+            <li><a href="/miscellaneous">misc</a></li>
+            <li><a href="/uses">setup</a></li>
         </ul>
     </nav>
 </header>
+
+<main>
+    <p>
+        {{
+            "I am a rising senior at [Rice&nbsp;University](https://www.rice.edu/) studying [Computer&nbsp;Science](https://cs.rice.edu/) and [Math](https://math.rice.edu/). My research interests include applied cryptography, software security, and systems security. I'm currently a summer research intern at the Software Security Group at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org/), where I have the pleasure of being advised by [Dr&nbsp;Marcel&nbsp;Böhme](https://mboehme.github.io/). Starting Fall 2023, I'll work with [Dr&nbsp;Nathan&nbsp;Dautenhahn](https://nathandautenhahn.com/) in the [Fierce lab](https://fierce-lab.gitlab.io/) as part of [RUSP](https://ouri.rice.edu/research-programs/rusp). Previously, I've been fortunate to work with [Dr&nbsp;Dan&nbsp;Wallach](https://www.cs.rice.edu/~dwallach/)." | markdownify
+        }}
+    </p>
+
+    <p>
+        {{
+            "Causes that are important to me include software freedom, digital privacy and anonymity, freedom of speech, consumer rights, and [data preservation](https://archive.org/details/@eabf4fdb0f7a)." | markdownify
+        }}
+    </p>
+
+    <p>
+        {{
+            "I also enjoy [speedcubing](https://www.worldcubeassociation.org/persons/2022MINO03), playing chess, and participating in CTFs with [RiceSec](https://sec.rice.edu)." | markdownify
+        }}
+    </p>
+
+    <!-- <h2>Research</h2> -->
+    <!-- <h2>Projects</h2> -->
+    <!-- <h2>Teaching</h2> -->
+</main>
 {{ end }}
 
 {{ define "footer" }}

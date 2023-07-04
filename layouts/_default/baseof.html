@@ -40,10 +40,12 @@
     {{ partial "header" . }}
     {{ end }}
 
+    {{ if not .IsHome }}
     <main>
         {{ block "main" . }}
         {{ end }}
     </main>
+    {{ end }}
 
     {{ block "footer" . }}
     {{ partial "footer" . }}

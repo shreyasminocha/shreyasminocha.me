@@ -1,34 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    max-width: 90%;
+    margin: 1rem;
+}
+
+header[role="banner"], main {
+    padding: 1rem;
+}
+
 header[role="banner"] {
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 1em;
+    text-align: left;
+    margin: unset;
 }
 
 header[role="banner"] .hero {
-    font-size: 2em;
+    font-size: unset;
+    /* background: none; */
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 1rem 0;
 }
 
 nav {
-    margin-top: 2em;
+    margin-top: 1em;
     font-family: var(--heading-font);
     font-weight: lighter;
-    font-size: 110%;
 }
 
-nav.related,
-nav.mirrors {
+nav ul li {
+    display: block;
+}
+
+nav.related {
     font-size: 85%;
 }
 
-nav.mirrors {
-    margin-top: 5em;
+main {
+    max-width: 65ch;
 }
 
-nav.mirrors li {
-    display: block;
-    margin-bottom: 1em;
+p {
+    text-align: left;
 }
