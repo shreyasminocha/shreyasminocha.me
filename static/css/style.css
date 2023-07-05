@@ -101,22 +101,18 @@ h4 {
     font-size: var(--h4-size);
 }
 
-a {
-    transition: ease-in-out color 0.25s;
-}
-
 a:link {
     color: var(--link-normal);
-}
-
-a:visited {
-    color: var(--link-visited);
 }
 
 a:hover,
 a:active,
 a:focus {
     color: var(--link-hover);
+}
+
+a:visited {
+    color: var(--link-visited);
 }
 
 a.footnote-ref,
