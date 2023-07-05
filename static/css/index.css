@@ -5,38 +5,19 @@ body {
     margin: 1rem auto;
 }
 
-@media screen and (max-width: 760px) {
-    body {
-        grid-template-columns: auto;
-    }
-
-    .pfp {
-        display: none;
-    }
-
-    body header[role="banner"] {
-        text-align: center;
-    }
-
-    nav ul li {
-        margin-right: 0;
-    }
-}
-
 header[role="banner"], main {
     padding: 1rem;
 }
 
 header[role="banner"] {
     text-align: left;
-    margin: unset;
+    margin: 0 auto;
     max-width: 450px;
 }
 
 header[role="banner"] .hero {
     font-size: unset;
     display: inline-block;
-    /* background: none; */
 }
 
 figcaption {
@@ -68,4 +49,26 @@ main {
 
 p {
     text-align: left;
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        grid-template-columns: auto;
+    }
+
+    header[role="banner"] .hero {
+        width: unset;
+    }
+
+    .pfp {
+        display: none;
+    }
+
+    header[role="banner"] {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
 }
