@@ -20,5 +20,6 @@ pygmentsCodeFences: true
 pygmentsUseClasses: true
 
 ignoreFiles:
+    - content/index.md # transcluded by layouts/index.html
     - content/license.md
     - content/blog/dropped
