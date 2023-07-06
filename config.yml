@@ -4,7 +4,7 @@ paginate: 7
 
 params:
     title: Shreyas Minocha
-    description: "Shreyas Minocha's little website."
+    description: "Shreyas Minocha's personal website."
     name: Shreyas Minocha
     languageCode: en-in
 
