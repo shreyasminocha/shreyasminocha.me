@@ -8,17 +8,27 @@ I also enjoy [speedcubing](https://www.worldcubeassociation.org/persons/2022MINO
 
 ## Projects
 
-<!-- More details coming soon -->
+<!-- Info about other projects coming soon -->
 
 - [ElectionGuard Typescript](https://github.com/danwallach/ElectionGuard-TypeScript)
-- [Yan85 emulator and (dis)assembler](https://github.com/shreyasminocha/gyan)
-- [CanvasFS](https://github.com/shreyasminocha/canvas-fs)
-- [YFS Fuse adapter](https://github.com/shreyasminocha/yfs-fuse)
-- [Regex for Regular Folk](https://refrf.dev/)
 
-<!-- ## Publications
+    TypeScript implementation of ballot encryption as specified by the [ElectionGuard SDK](https://www.electionguard.vote/).
 
-[Coming soon] -->
+    Advisor: Dr Dan Wallach
+
+- [Yan85 emulator and disassembler](https://github.com/shreyasminocha/gyan)
+
+    Emulator and disassembler for a custom architecture. Built while reverse-engineering the virtual machine binaries in [pwn.college](https://pwn.college)'s series of reversing challenges.
+
+- [CanvasFS](https://github.com/shreyasminocha/canvas-fs): A FUSE filesystem to locally browse the files in a Canvas course.
+
+- [YFS Fuse adapter](https://github.com/shreyasminocha/yfs-fuse): A FUSE adapter to interact with the filesystem format from [COMP 421](https://www.clear.rice.edu/comp421/), Rice's operating systems course.
+
+- [Regex for Regular Folk](https://refrf.dev/): A visual, example-based introduction to regular expressions.
+
+## Publications
+
+_Coming soon!_
 
 ## Teaching
 
