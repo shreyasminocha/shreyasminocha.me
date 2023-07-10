@@ -28,7 +28,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-size": "^3.0.0",
     "gulp-stylelint": "^8.0.0",
-    "stylelint": "^9.9.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^18.2.0"
   }
 }
