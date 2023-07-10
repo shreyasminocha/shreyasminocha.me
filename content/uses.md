@@ -23,21 +23,17 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 - [KDE Plasma](https://kde.org/plasma-desktop/)
 - [LibreWolf](https://librewolf-community.gitlab.io/)
     - [uBlock Origin](https://github.com/gorhill/uBlock/)
-    - [uMatrix](https://github.com/gorhill/uMatrix)
     - [Stylus](https://add0n.com/stylus.html)
     - [Awesome RSS](https://github.com/shgysk8zer0/awesome-rss)
 
 ## Phone
 
-- [OnePlus X](https://www.oneplus.com/x)[^1]
-- [LineageOS](https://lineageos.org/) 18.1 (rooted)
-- [TWRP Recovery](https://twrp.me/)
-- [Lawnchair](https://lawnchair.app/)
-- [Privacy Browser](https://www.stoutner.com/privacy-browser/)
+- Google Pixel 3
+- [LineageOS with MicroG](https://lineage.microg.org/) 18.1 (rooted)
+- [Nova Launcher](https://novalauncher.com/)
+- [Fennec F-Droid](https://f-droid.org/packages/org.mozilla.fennec_fdroid/)
 
 ## Self-hosted
-
-See also: [bzin.ga](https://bzin.ga/).
 
 - [vaultwarden](https://github.com/dani-garcia/vaultwarden)
 - [NextCloud](https://nextcloud.com/)
@@ -45,14 +41,13 @@ See also: [bzin.ga](https://bzin.ga/).
 
 ## Miscellaneous
 
-- QWERTY (with quirks) and [InScript](https://en.wikipedia.org/wiki/InScript_keyboard)
+- QWERTY and [InScript](https://en.wikipedia.org/wiki/InScript_keyboard)
 - [Mullvad VPN](https://mullvad.net/)
 - Self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance and [KeePassXC](https://keepassxc.org/)
 - [Disroot](https://disroot.org/) and [Riseup](https://riseup.net/)
-- [Namecheap](https://www.namecheap.com/)[^2]
+- [Namecheap](https://www.namecheap.com/)[^1]
 - [RamNode](https://ramnode.com/)
-- [Spotify](https://www.spotify.com/)[^2]
-- [MoYu RS3 M 2020 3x3](https://www.thecubicle.com/products/moyu-rs3-m-2020)
-`
-[^1]: Decent phone, but it was abandoned by the manufacturer soon after release. Unfortunately, it has a very small community.
-[^2]: Not a huge fan.
+- [Spotify](https://www.spotify.com/)[^1]
+- [MoYu WR M 2021 3x3](https://speedcubeshop.com/products/moyu-weilong-wr-m-2021-3x3-magnetic-lite-version)
+
+[^1]: Not a huge fan.
