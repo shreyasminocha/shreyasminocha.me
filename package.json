@@ -4,6 +4,8 @@
   "description": "Source code for my website",
   "main": "layouts/index.html",
   "scripts": {
+    "lint": "prettier --check .",
+    "fix": "prettier --write .",
     "build": "hugo --minify"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/shreyasminocha/shreyasminocha.me/issues"
   },
-  "homepage": "https://github.com/shreyasminocha/shreyasminocha.me#readme"
+  "homepage": "https://github.com/shreyasminocha/shreyasminocha.me#readme",
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
 }
