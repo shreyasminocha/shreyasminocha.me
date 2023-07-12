@@ -13,42 +13,6 @@ Source code for [my personal website](//shreyasminocha.me). Built using [hugo](/
 - `static`: static files—images, stylesheets, scripts, fonts etc
 - `config.yml`: configuration
 
-## Testing
-
-### Running a server for development
-
-```sh
-hugo serve -p <port> --disableLiveReload --noHTTPCache --buildDrafts
-```
-
-I personally use [hotel](//github.com/typicode/hotel) for managing development servers, so after
-
-```sh
-hotel add --name shreyasminocha 'hugo serve -p $PORT --disableLiveReload --noHTTPCache --buildDrafts'
-```
-
-...and some configuration, I can access my local dev server at `shreyasminocha.localhost`.
-
-### Running linters
-
-Install dev dependencies:
-
-```sh
-npm install
-```
-
-Run tests with:
-
-```sh
-npm test # Currently just runs `gulp`
-```
-
-Or more specifically, assuming you have `gulp` installed globally, run it with:
-
-```sh
-gulp
-```
-
 ## Deployments
 
 Deployments are made using Vercel.
