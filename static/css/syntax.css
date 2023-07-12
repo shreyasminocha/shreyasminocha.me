@@ -26,7 +26,7 @@
 
 .chroma .kc { color: var(--red); }
 .chroma .kn { color: var(--yellow); }
-.chroma .kt { color: var(--paleblue)); }
+.chroma .kt { color: var(--paleblue); }
 .chroma .na { color: var(--orange); }
 .chroma .nc { color: var(--blue); }
 .chroma .nf { color: var(--blue); }
@@ -60,7 +60,7 @@
 .chroma .cs { color: var(--comments); }
 .chroma .cp { color: var(--comments); }
 .chroma .cpf { color: var(--comments); }
-.chroma .gd { color: var(--red)); }
+.chroma .gd { color: var(--red); }
 .chroma .ge { text-decoration: underline; }
 .chroma .gh { font-weight: bold; }
 .chroma .gi { font-weight: bold; }
@@ -89,7 +89,7 @@
 .chroma .hl {
     display: block;
     width: 100%;
-    background-color: var(--lineHighlight));
+    background-color: var(--lineHighlight);
 }
 
 .chroma .lnt {

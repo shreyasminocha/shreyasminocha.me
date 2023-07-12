@@ -12,9 +12,12 @@
         <p>
             <small class="attribution">
                 Source:
+                {{ if .Get "attrlink"}}
                 {{ with .Get "attrlink"}}<a href="{{.}}" rel="nofollow noreferrer"> {{ end }}
                 {{ .Get "attr" | markdownify }}
-                {{ if .Get "attrlink"}}</a>{{ end }}
+                {{ else }}
+                {{ .Get "attr" | markdownify }}
+                {{ end }}
             </small>
             </p>
         {{ end }}
