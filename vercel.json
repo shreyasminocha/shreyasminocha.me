@@ -1,8 +1,5 @@
 {
-    "redirects": [
-        { "source": "/$", "destination": "/donate" },
-        { "source": "/%E2%82%B9", "destination": "/donate" }
-    ],
+    "redirects": [],
     "trailingSlash": false,
     "github": {
         "silent": true
