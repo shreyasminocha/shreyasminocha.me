@@ -1,54 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ .Site.Params.languageCode }}">
+    {{ block "head" . }}
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-{{ block "head" . }}
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="theme-color" content="#2966A3" />
 
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="theme-color" content="#2966A3">
+        <title>
+            {{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}
+        </title>
 
-    <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+        <meta name="author" content="Shreyas Minocha" />
+        <meta name="description" content="{{ .Site.Params.description }}" />
+        <meta
+            http-equiv="onion-location"
+            content="https://shreyas32dc6tvtj.onion"
+        />
 
-    <meta name="author" content="Shreyas Minocha">
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta http-equiv="onion-location" content="https://shreyas32dc6tvtj.onion">
+        <link rel="shortcut icon" href="/img/logo/favicon.ico" />
 
-    <link rel="shortcut icon" href="/img/logo/favicon.ico">
+        <link rel="stylesheet" href="/css/sanitize.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/syntax.css" defer />
 
-    <link rel="stylesheet" href="/css/sanitize.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/syntax.css" defer>
+        {{ block "custom-stylesheets" . }} {{ end }}
 
-    {{ block "custom-stylesheets" . }}
+        <link rel="manifest" href="/manifest.json" />
+
+        {{ range .AlternativeOutputFormats -}}
+        <link
+            rel="{{ .Rel }}"
+            type="{{ .MediaType.Type }}"
+            href="{{ .RelPermalink | safeURL }}"
+        />
+        {{ end -}}
+    </head>
     {{ end }}
 
-    <link rel="manifest" href="/manifest.json">
-
-    {{ range .AlternativeOutputFormats -}}
-    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
-    {{ end -}}
-</head>
-{{ end }}
-
-<body>
-    {{ block "header" . }}
-    {{ partial "header" . }}
-    {{ end }}
-
-    {{ if not .IsHome }}
-    <main>
-        {{ block "main" . }}
-        {{ end }}
-    </main>
-    {{ end }}
-
-    {{ block "footer" . }}
-    {{ partial "footer" . }}
-    {{ end }}
-</body>
+    <body>
+        {{ block "header" . }} {{ partial "header" . }} {{ end }} {{ if not
+        .IsHome }}
+        <main>{{ block "main" . }} {{ end }}</main>
+        {{ end }} {{ block "footer" . }} {{ partial "footer" . }} {{ end }}
+    </body>
 </html>

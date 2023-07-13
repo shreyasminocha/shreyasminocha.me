@@ -1,10 +1,6 @@
 {{ define "custom-stylesheets" }}
-<link rel="stylesheet" href="/css/index.css">
-{{ end }}
-
-{{ define "header" }}
-{{ with .Site.Params.title }}
-{{ end }}
+<link rel="stylesheet" href="/css/index.css" />
+{{ end }} {{ define "header" }} {{ with .Site.Params.title }} {{ end }}
 
 <header role="banner">
     <div>
@@ -12,7 +8,10 @@
     </div>
 
     <figure class="pfp">
-        <img src="/img/cmc.jpeg" alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign">
+        <img
+            src="/img/cmc.jpeg"
+            alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign"
+        />
         <figcaption>DEF CON 30, Las Vegas, US</figcaption>
     </figure>
 
@@ -28,12 +27,8 @@
     </nav>
 </header>
 
-<main>
-    {{ os.ReadFile "content/index.md" | markdownify }}
-</main>
+<main>{{ os.ReadFile "content/index.md" | markdownify }}</main>
 
-{{ end }}
-
-{{ define "footer" }}
+{{ end }} {{ define "footer" }}
 <!-- No footer -->
 {{ end }}

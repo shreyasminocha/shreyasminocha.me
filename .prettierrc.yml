@@ -1,5 +1,6 @@
+tabWidth: 4
 overrides:
-  - files:
-      - "*.html"
-    options: null
-    parser: go-template
+    - files:
+          - "*.html"
+      options: null
+      parser: go-template

@@ -6,13 +6,11 @@
         {{ partial "date-tags" . }}
     </header>
 
-    <section>
-        {{ partial "header-anchor" .Content }}
-    </section>
+    <section>{{ partial "header-anchor" .Content }}</section>
 
     {{ if eq .Type "blog" }}
     <address>
-        <img src="/img/avatar.svg" alt="Shreyas' Avatar"/>
+        <img src="/img/avatar.svg" alt="Shreyas' Avatar" />
         <p>Shreyas Minocha</p>
     </address>
     {{ end }}

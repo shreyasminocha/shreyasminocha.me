@@ -1,7 +1,11 @@
 {{ if eq .Type "blog" }}
-    <time datetime='{{ .Date.Format "02 January 2006" }}'>
-        {{ .Date.Format "02 January, 2006" }}
-    </time>
+<time datetime='{{ .Date.Format "02 January 2006" }}'>
+    {{ .Date.Format "02 January, 2006" }}
+</time>
 
-    <ul class="tags">{{ range .Params.tags }}{{ $url := printf "/tags/%s" ( . | urlize) }}<li><a href="{{ $url }}">{{ . }}</a></li>{{ end }}</ul>
+<ul class="tags">
+    {{ range .Params.tags }}{{ $url := printf "/tags/%s" ( . | urlize) }}
+    <li><a href="{{ $url }}">{{ . }}</a></li>
+    {{ end }}
+</ul>
 {{ end }}

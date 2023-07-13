@@ -1,8 +1,8 @@
 :root {
     --transparent: hsla(0, 0%, 0%, 0);
-    --page-title-font: 'Lato', 'Helvetica', 'Arial', sans-serif;
-    --heading-font: 'Fira Code', 'Inconsolata', monospace;
-    --body-font: 'Charter', 'Baskerville', 'Garamond', serif;
+    --page-title-font: "Lato", "Helvetica", "Arial", sans-serif;
+    --heading-font: "Fira Code", "Inconsolata", monospace;
+    --body-font: "Charter", "Baskerville", "Garamond", serif;
     --h1-size: 1.602em;
     --h2-size: 1.424em;
     --h3-size: 1.266em;
@@ -21,7 +21,6 @@
     --link-hover: hsl(230, 95%, 50%);
     --tag-background: hsl(0, 0%, 95%);
 }
-
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -43,7 +42,6 @@
     }
 }
 
-
 body {
     font-size: 1rem;
     color: var(--body-color);
@@ -53,7 +51,8 @@ body {
     width: 95%;
     margin: 0 auto;
     max-width: 570px;
-    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures contextual;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures
+        no-historical-ligatures contextual;
 }
 
 @media (min-width: 500px) {
@@ -239,16 +238,16 @@ article img {
     margin: 0 auto;
 }
 
-header[role = 'banner'] a {
+header[role="banner"] a {
     text-decoration: none;
 }
 
-header[role = 'banner'] {
+header[role="banner"] {
     margin: 5em 0;
     text-align: center;
 }
 
-header[role = 'banner'] .hero {
+header[role="banner"] .hero {
     color: var(--h1-color);
     font-size: 1.5em;
     text-align: center;
@@ -260,8 +259,8 @@ header[role = 'banner'] .hero {
     transition: color, background-color ease-in-out 0.25s;
 }
 
-header[role = 'banner'] .hero:hover,
-header[role = 'banner'] .hero:focus {
+header[role="banner"] .hero:hover,
+header[role="banner"] .hero:focus {
     background-color: var(--transparent);
     color: var(--h1-color);
 }
@@ -294,7 +293,7 @@ header[role = 'banner'] .hero:focus {
 
 .title-with-meta time::before,
 .title-with-meta .tags::before {
-    content: '';
+    content: "";
     display: inline-block;
     height: 1rem;
     background-size: cover;
@@ -303,7 +302,7 @@ header[role = 'banner'] .hero:focus {
 }
 
 .title-with-meta time::before {
-    background-image: url('/img/icons/calendar.svg');
+    background-image: url("/img/icons/calendar.svg");
     width: 1rem;
 }
 
@@ -329,7 +328,7 @@ header[role = 'banner'] .hero:focus {
 }
 
 .title-with-meta .tags::before {
-    background-image: url('/img/icons/tags.svg');
+    background-image: url("/img/icons/tags.svg");
     width: 1.25rem;
 }
 
@@ -396,34 +395,34 @@ address p {
     margin: 0;
 }
 
-footer[role = 'contentinfo'] {
+footer[role="contentinfo"] {
     text-align: center;
     margin: 5em 0 2.5em;
     opacity: 0.55;
     font-size: smaller;
 }
 
-footer[role = 'contentinfo'] ul {
+footer[role="contentinfo"] ul {
     list-style: none;
     padding-left: 0;
 }
 
-footer[role = 'contentinfo'] ul li {
+footer[role="contentinfo"] ul li {
     display: inline;
     margin-right: 1em;
 }
 
-footer[role = 'contentinfo'] ul li:last-child {
+footer[role="contentinfo"] ul li:last-child {
     margin-right: 0;
 }
 
-footer[role = 'contentinfo'] ul li a {
+footer[role="contentinfo"] ul li a {
     text-decoration: none;
-    content: '';
+    content: "";
     background-size: cover;
 }
 
-footer[role = 'contentinfo'] ul li a svg {
+footer[role="contentinfo"] ul li a svg {
     width: 27px;
     color: var(--body-color);
 }

@@ -5,7 +5,8 @@ body {
     margin: 1rem auto;
 }
 
-header[role="banner"], main {
+header[role="banner"],
+main {
     padding: 1rem;
 }
 
@@ -25,7 +26,8 @@ figcaption {
     font-style: italic;
 }
 
-header[role="banner"] .hero, .pfp {
+header[role="banner"] .hero,
+.pfp {
     width: 200px;
 }
 
