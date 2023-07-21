@@ -1,5 +1,7 @@
 {
-    "redirects": [],
+    "redirects": [
+        { "source": "/about", "destination": "/", "permanent": false }
+    ],
     "trailingSlash": false,
     "github": {
         "silent": true
