@@ -6,21 +6,21 @@
 @font-face {
     font-family: "Charter";
     font-display: swap;
-    src: local("Charter"), url("/fonts/charter.woff");
+    src: local("Charter"), url("/fonts/charter.woff2");
 }
 
 @font-face {
     font-family: "Charter";
     font-weight: bold;
     font-display: swap;
-    src: local("Charter Bold"), url("/fonts/charter-bold.woff");
+    src: local("Charter Bold"), url("/fonts/charter-bold.woff2");
 }
 
 @font-face {
     font-family: "Charter";
     font-style: italic;
     font-display: swap;
-    src: local("Charter Italic"), url("/fonts/charter-italic.woff");
+    src: local("Charter Italic"), url("/fonts/charter-italic.woff2");
 }
 
 @font-face {
@@ -28,7 +28,7 @@
     font-weight: bold;
     font-style: italic;
     font-display: swap;
-    src: local("Charter Bold Italic"), url("/fonts/charter-bold-italic.woff");
+    src: local("Charter Bold Italic"), url("/fonts/charter-bold-italic.woff2");
 }
 
 /*
