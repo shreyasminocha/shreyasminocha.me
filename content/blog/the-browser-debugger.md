@@ -3,6 +3,7 @@ title: Debugging JavaScript with the Browser Debugger
 description: Finally graduating from `console.log` — an introduction to the Firefox Debugger.
 date: 2020-06-20
 tags: [programming, tutorial]
+hide: true
 ---
 
 When I caught myself repeatedly re-running code, adding a `console.log` statement each time, I knew it was time to _finally_ acquaint myself with the debugger.
