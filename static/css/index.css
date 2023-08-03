@@ -53,7 +53,7 @@ p {
     text-align: left;
 }
 
-@media screen and (max-width: 760px) {
+@media print, screen and (max-width: 760px) {
     body {
         grid-template-columns: auto;
     }
@@ -68,6 +68,10 @@ p {
 
     header[role="banner"] {
         text-align: center;
+    }
+
+    main {
+        max-width: unset;
     }
 
     nav ul li {
