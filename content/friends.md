@@ -6,6 +6,7 @@ hide: true
 
 Check out these cool websites!
 
+- [Ahmed](https://alcassab.net/)
 - [Clayton](https://claytonwramsey.github.io/)
 - [commandblockguy](https://commandblockguy.xyz/)
 - [Kai M. Hung](https://kaimhung.dev/)
