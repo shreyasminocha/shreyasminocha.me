@@ -10,6 +10,7 @@ Check out these cool websites!
 - [Clayton](https://claytonwramsey.github.io/)
 - [commandblockguy](https://commandblockguy.xyz/)
 - [Kai M. Hung](https://kaimhung.dev/)
-- [SeniorMars](https://seniormars.github.io/)
+- [SeniorMars](https://seniormars.com/)
+- [Simran Kathpalia](https://simran-kathpalia.github.io/)
 - [Thomas Kaldahl](https://thomaskaldahl.com/)
 - [Wisha W.](https://wisha.page/)
