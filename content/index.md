@@ -35,6 +35,7 @@ _Coming soon!_
 - Instructor at Rice University
     - [COLL 123: _Intro to CTFs_](https://canvas.rice.edu/courses/55235) (Spring 2023)
 - Teaching Assistant at Rice University
+    - COMP 421: _Operating Systems and Concurrent Programming_ (Spring 2024)
     - COMP 318: _Concurrent Program Design_ (Fall 2023)
     - COMP 621: _Systems Software_ (Summer 2023)
     - COMP 321: _Intro to Computer Systems_ (Fall 2022, Spring 2023)
