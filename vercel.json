@@ -1,6 +1,7 @@
 {
     "redirects": [
-        { "source": "/about", "destination": "/", "permanent": false }
+        { "source": "/about", "destination": "/", "permanent": false },
+        { "source": "/pgp/:path*", "destination": "/contact/pgp/:path*" }
     ],
     "trailingSlash": false,
     "github": {
