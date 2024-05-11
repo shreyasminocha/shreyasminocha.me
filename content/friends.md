@@ -8,7 +8,7 @@ Check out these cool websites!
 
 - [Ahmed](https://alcassab.net/)
 - [Anirudh Rao](https://rao107.github.io/)
-- [Clayton](https://claytonwramsey.github.io/)
+- [Clayton](https://www.claytonwramsey.com/)
 - [commandblockguy](https://commandblockguy.xyz/)
 - [Kai M. Hung](https://kaimhung.dev/)
 - [SeniorMars](https://seniormars.com/)
