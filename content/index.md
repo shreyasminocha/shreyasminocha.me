@@ -1,6 +1,6 @@
-I am a senior at Rice&nbsp;University studying Computer&nbsp;Science and Math. My research interests include applied cryptography, systems security, and software security. I'm especially interested in privacy-enhancing technologies.
+I graduated from Rice&nbsp;University in May 2024 with a Computer&nbsp;Science major and a Math minor. My research interests include applied cryptography, systems security, and software security. I'm especially interested in privacy-enhancing technologies.
 
-I'm currently working on systems security research with [Dr&nbsp;Nathan&nbsp;Dautenhahn](https://nathandautenhahn.com/) in the [Fierce lab](https://fierce-lab.gitlab.io/) as part of [RUSP](https://ouri.rice.edu/research-programs/rusp). I was recently a summer research intern at the Software Security Group at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org/), where I had the pleasure of being advised by [Dr&nbsp;Marcel&nbsp;Böhme](https://mboehme.github.io/). Earlier, I was fortunate to work with [Dr&nbsp;Dan&nbsp;Wallach](https://www.cs.rice.edu/~dwallach/).
+In the past, I've been fortunate to work with [Dr&nbsp;Marcel&nbsp;Böhme](https://mboehme.github.io/) at [MPI-SP](https://www.mpi-sp.org/), as well as [Dr&nbsp;Dan&nbsp;Wallach](https://www.cs.rice.edu/~dwallach/) and [Dr&nbsp;Nathan&nbsp;Dautenhahn](https://nathandautenhahn.com/) at Rice.
 
 Causes that are important to me include software freedom, digital privacy and anonymity, freedom of speech, consumer rights, and [data preservation](https://archive.org/details/@eabf4fdb0f7a).
 
