@@ -6,6 +6,14 @@ Causes that are important to me include software freedom, digital privacy and an
 
 I also enjoy [speedcubing](https://www.worldcubeassociation.org/persons/2022MINO03), playing chess, and participating in CTFs with [RiceSec](https://sec.rice.edu).
 
+## Publications
+
+1. **Accounting for Missing Events in Statistical Information Leakage Analysis** (2025)
+
+    [Seongmin Lee](https://nimgnoeseel.github.io/), _Shreyas Minocha_, and [Marcel Böhme](https://mboehme.github.io/)
+
+    _47th International Conference on Software Engineering_ (ICSE 2025)
+
 ## Projects
 
 <!-- Info about other projects coming soon -->
@@ -25,10 +33,6 @@ I also enjoy [speedcubing](https://www.worldcubeassociation.org/persons/2022MINO
 - [YFS Fuse adapter](https://github.com/shreyasminocha/yfs-fuse): A FUSE adapter to interact with the filesystem format from [COMP 421](https://www.clear.rice.edu/comp421/), Rice's operating systems course.
 
 - [Regex for Regular Folk](https://refrf.dev/): A visual, example-based introduction to regular expressions.
-
-## Publications
-
-_Coming soon!_
 
 ## Teaching
 
