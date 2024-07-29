@@ -3,7 +3,7 @@ layout: ../layouts/Page.astro
 title: Stuff I Use
 ---
 
-My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://git.sr.ht/~shreyasminocha/dotfiles).
+My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://codeberg.org/shreyasminocha/dotfiles).
 
 ## Dev
 
@@ -13,7 +13,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 -   [Konsole](https://konsole.kde.org/)
 -   [fish](https://fishshell.com/)
 -   [Fira Code](https://github.com/tonsky/FiraCode)
--   [Sourcehut](https://sr.ht/)
+-   [Codeberg](https://codeberg.org/)
 
 ## Laptop
 
