@@ -1,0 +1,54 @@
+---
+import { getDataEntryById, getEntries, type DataEntryMap } from "astro:content";
+
+interface Props {
+    id: keyof DataEntryMap["papers"];
+}
+
+const { id } = Astro.props;
+
+const entry = await getDataEntryById("papers", id);
+const { title, author, parent } = entry.data;
+const authorData = await getEntries(Array.isArray(author) ? author : [author]);
+
+const SELF = "Shreyas Minocha";
+---
+
+<li>
+    <p><strong>{title}</strong></p>
+
+    <p>
+        {
+            authorData
+                .map((a) =>
+                    a.data.url && a.data.name !== SELF ? (
+                        <a href={a.data.url}>{a.data.name}</a>
+                    ) : a.data.name === SELF ? (
+                        <strong>{a.data.name}</strong>
+                    ) : (
+                        a.data.name
+                    ),
+                )
+                .flatMap((a) => [a, <>, </>])
+                .slice(0, -1)
+        }
+
+        {
+            (
+                <p>
+                    <em>
+                        {typeof parent.title === "string"
+                            ? `${parent.title}.`
+                            : `${parent.title.value} (${parent.title.short}).`}
+                    </em>
+                </p>
+            )
+        }
+    </p>
+
+    <style>
+        p {
+            margin-bottom: 0.25em;
+        }
+    </style>
+</li>

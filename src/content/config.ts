@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, reference, z } from "astro:content";
 
 const blog = defineCollection({
     type: "content",
@@ -26,4 +26,36 @@ const gaming = defineCollection({
     }),
 });
 
-export const collections = { blog, miscellaneous, gaming };
+const type = z.enum(["article", "conference"]);
+const title = z.string().or(
+    z.object({
+        value: z.string(),
+        short: z.string(),
+    }),
+);
+
+const coauthors = defineCollection({
+    type: "data",
+    schema: z.object({
+        name: z.string(),
+        url: z.optional(z.string()),
+    }),
+});
+const coauthor = reference("coauthors");
+
+const papers = defineCollection({
+    type: "data",
+    // we attempt to keep this a subset of hayagriva
+    schema: z.object({
+        type,
+        title,
+        author: coauthor.or(z.array(coauthor)),
+        date: z.coerce.date(),
+        parent: z.object({
+            type,
+            title,
+        }),
+    }),
+});
+
+export const collections = { blog, miscellaneous, gaming, papers, coauthors };

@@ -1,0 +1,15 @@
+type: article
+
+title: Accounting for Missing Events in Statistical Information Leakage Analysis
+author:
+    - seongmin-lee
+    - shreyas-minocha
+    - marcel-boehme
+
+date: 2025-04-27
+
+parent:
+    type: conference
+    title:
+        value: 47th International Conference on Software Engineering
+        short: ICSE 2025

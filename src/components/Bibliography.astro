@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import BibliographyItem from "./BibliographyItem.astro";
+
+const entries = await getCollection("papers");
+---
+
+<ol>
+    {entries.map((entry) => <BibliographyItem id={entry.id} />)}
+</ol>
+
+<style>
+    ol {
+        padding-left: 0;
+        list-style: none;
+    }
+</style>
