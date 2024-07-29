@@ -42,7 +42,8 @@ import { SITE_TITLE } from "../consts.ts";
 </html>
 
 <style>
-    body {
+    /* precedence issue with style.css. todo: why isn't this scoped? */
+    html body {
         display: grid;
         grid-template-columns: max-content auto;
         max-width: 90%;
@@ -98,7 +99,7 @@ import { SITE_TITLE } from "../consts.ts";
     }
 
     @media print, screen and (max-width: 760px) {
-        body {
+        html body {
             grid-template-columns: auto;
         }
 
