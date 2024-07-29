@@ -1,0 +1,45 @@
+---
+import renderInlineMarkdown from "../util/render-inline-md.ts";
+import DateAndTags from "../components/DateAndTags.astro";
+import Base from "./Base.astro";
+
+interface Props {
+    frontmatter?: { title: string };
+    title?: string;
+    showAuthor?: boolean;
+    date?: Date | undefined;
+    tags?: string[] | undefined;
+}
+
+const titleMd =
+    Astro.props.frontmatter?.title || Astro.props.title || "Untitled";
+const titleHtml = await renderInlineMarkdown(titleMd);
+
+const { showAuthor, date, tags } = Astro.props;
+---
+
+<Base title={titleMd}>
+    <article class="single">
+        <!-- todo: reuse PageSummary here with an h1 -->
+        <header class="title-with-meta">
+            <h1 set:html={titleHtml} />
+
+            {date || tags ? <DateAndTags {date} {tags} /> : <Fragment />}
+        </header>
+
+        <main>
+            <slot />
+        </main>
+
+        {
+            showAuthor ? (
+                <address>
+                    <img src="/img/avatar.svg" alt="Shreyas' Avatar" />
+                    <p>Shreyas Minocha</p>
+                </address>
+            ) : (
+                <Fragment />
+            )
+        }
+    </article>
+</Base>

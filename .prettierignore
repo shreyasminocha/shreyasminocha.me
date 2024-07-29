@@ -1,9 +1,3 @@
-public
 package.json
 package-lock.json
-*.md
-static/css/syntax.css
-
-# temporary
-layouts/partials/header-anchor.html
-layouts/shortcodes/img.html
+*.mp4

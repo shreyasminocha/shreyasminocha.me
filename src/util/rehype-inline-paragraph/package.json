@@ -1,0 +1,15 @@
+{
+  "name": "rehype-inline-paragraph",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "Shreyas Minocha",
+  "license": "MIT",
+  "description": "Strip the outer <p> tag",
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  }
+}

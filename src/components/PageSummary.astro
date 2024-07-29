@@ -1,0 +1,31 @@
+---
+import renderInlineMarkdown from "../util/render-inline-md.ts";
+import DateAndTags from "./DateAndTags.astro";
+
+interface Props {
+    link: string;
+    title: string;
+    description?: string | undefined;
+    date?: Date | undefined;
+    tags?: string[] | undefined;
+}
+
+const { link, title, description, date, tags } = Astro.props;
+---
+
+<article>
+    <header class="title-with-meta">
+        <h2>
+            <a href={link} set:html={await renderInlineMarkdown(title)} />
+        </h2>
+        <DateAndTags {date} {tags} />
+    </header>
+
+    {
+        description ? (
+            <p set:html={await renderInlineMarkdown(description)} />
+        ) : (
+            <Fragment />
+        )
+    }
+</article>

@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+
+import Base from "../../layouts/Base.astro";
+import PageList from "../../components/PageList.astro";
+
+const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Base title="Blog">
+    <PageList items={posts} reversed />
+</Base>

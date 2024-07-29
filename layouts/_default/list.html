@@ -1,8 +1,0 @@
-{{ define "main" }}
-<ol class="item-list" reversed>
-    {{ $paginator := .Paginate .Data.Pages }} {{ range $paginator.Pages }}
-    <li>{{ .Render "summary" }}</li>
-    {{ end }}
-</ol>
-
-{{ partial "pagination" . }} {{ end }}

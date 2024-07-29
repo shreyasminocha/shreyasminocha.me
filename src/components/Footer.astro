@@ -1,0 +1,89 @@
+---
+import SourceHut from "../media/icons/sourcehut.svg?raw";
+import GitHub from "../media/icons/github.svg?raw";
+import Wikipedia from "../media/icons/wikipedia.svg?raw";
+import OpenStreetMap from "../media/icons/openstreetmap.svg?raw";
+import InternetArchive from "../media/icons/ia.svg?raw";
+
+const today = new Date();
+---
+
+<footer role="contentinfo">
+    <!-- TODO: Use a component to minimize repetition  -->
+    <ul>
+        <li>
+            <a
+                href="https://sr.ht/~shreyasminocha"
+                target="_blank"
+                rel="noreferrer nofollower me"
+                title="~shreyasminocha on sourcehut"
+            >
+                <Fragment set:html={SourceHut} />
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://github.com/shreyasminocha"
+                target="_blank"
+                rel="noreferrer nofollower me"
+                title="@shreyasminocha on GitHub"
+            >
+                <Fragment set:html={GitHub} />
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://en.wikipedia.org/wiki/User:ShreyasMinocha"
+                target="_blank"
+                rel="noreferrer nofollower me"
+                title="User:ShreyasMinocha on English Wikipedia"
+            >
+                <Fragment set:html={Wikipedia} />
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://www.openstreetmap.org/user/श्र"
+                target="_blank"
+                rel="noreferrer nofollower me"
+                title="श्र on OpenStreetMap"
+            >
+                <Fragment set:html={OpenStreetMap} />
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://archive.org/details/@eabf4fdb0f7a"
+                target="_blank"
+                rel="noreferrer nofollower me"
+                title="@eabf4fdb0f7a on archive.org"
+            >
+                <Fragment set:html={InternetArchive} />
+            </a>
+        </li>
+    </ul>
+
+    <p>
+        &copy; 2017–{today.getFullYear()}
+        <a href="/">Shreyas Minocha</a>.
+        <a href="/blog/feed.xml" target="_blank" title="This blog's feed"
+            >Feed</a
+        >.
+    </p>
+
+    <p>
+        Content under <a
+            href="https://git.sr.ht/~shreyasminocha/shreyasminocha.me/tree/main/item/content/license.md"
+            >CC BY-SA 4.0</a
+        >. <a href="https://sr.ht/~shreyasminocha/shreyasminocha.me"
+            >Source code</a
+        > under the <a
+            href="https://git.sr.ht/~shreyasminocha/shreyasminocha.me/tree/main/item/LICENSE"
+            >MIT License</a
+        >.
+    </p>
+</footer>

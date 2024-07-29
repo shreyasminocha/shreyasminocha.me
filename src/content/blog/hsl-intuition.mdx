@@ -1,0 +1,104 @@
+---
+title: Developing an intuition for the HSL color model
+description: Attempting to make sense of the hue-saturation-lightness color model.
+date: 2020-07-05
+tags: [design]
+---
+
+import Figure from "../../components/Figure.astro";
+
+Unlike RGB and HEX, the HSL colour model is relatively easy for humans to wrap their heads around. Let's try to build that intuition!
+
+HSL—**Hue**, **Saturation**, **Lightness**.
+
+## Hue
+
+**Hue** is a value from `0` to `360`. If that reminds you of circles and degrees, you're right!
+
+<Figure
+    src="/img/hsl-intuition/hue-wheel.png"
+    alt="Hue color wheel"
+    caption="Hue color wheel with angles labelled at 30 degree intervals"
+    attribution="Sara Soueidan's post about HSL"
+    attributionLink="https://www.sarasoueidan.com/blog/hex-rgb-to-hsl"
+/>
+
+The hues at 60 degree intervals are worth memorizing. Use a mnemonic, perhaps.
+
+<Figure
+    src="/img/hsl-intuition/primary-hues.svg"
+    alt="Notable hues"
+    caption="Swatches of Red (`0`), Yellow (`60`), Green (`120`), Cyan (`180`), Blue (`240`) and Magenta (`300`). `360` is identical to `0`"
+/>
+
+> Red — Yellow — Green — Cyan — Blue — Magenta
+
+The hues between these are graded gradually, as you'd expect.
+
+## Saturation
+
+**Saturation** is a percentage. It goes from "gray" (`0%`) to "dull" to "vivid" (`100%`).
+
+> Vividness
+
+<Figure
+    src="/img/hsl-intuition/saturation-swatches.svg"
+    alt="Saturation varying from `0%` to `100%` in `10%` increments"
+    caption="Swatches of `hsl(0, x, 50%)` with `x` varying from `0%` to `100%` in `10%` increments"
+/>
+
+## Lightness
+
+**Lightness** is also a percentage. It goes from "black" (`0%`) to "neutral" (`50%`) to "white" (`100%`).
+
+> Brightness
+
+<Figure
+    src="/img/hsl-intuition/lightness-swatches.svg"
+    alt="Lightness varying from `0%` to `100%` in `10%` increments"
+    caption="Swatches of `hsl(0, 100%, x)` with `x` varying from `0%` to `100%` in `10%` increments"
+/>
+
+Keep in mind that the _neutral value_ of lightness is `50%`. Moving to the left or right takes you towards black and white respectively.
+
+## Saturation vs Lightness
+
+I sometimes find the distinction between **saturation** and **lightness** tricky.
+
+Note how _low_, _medium_, and _high_ values of saturation and lightness combine:
+
+<Figure
+    src="/img/hsl-intuition/mini-saturation-lightness.svg"
+    alt="Lightness and saturation taking the values of `25%`, `50%`, `75%` in a 3×3 matrix"
+    caption="Swatches of `hsl(0, x, y)` with `x` and `y` varying from `25%` to `75%` in `25%` increments. `x` is on the y axis, `y` is on the x axis"
+/>
+
+Here's an expanded version of this matrix:
+
+<Figure
+    src="/img/hsl-intuition/saturation-lightness.svg"
+    alt="Lightness and saturation varying from `0%` to `100%` in `10%` increments in a 11×11 matrix"
+    caption="Swatches of `hsl(0, x, y)` with `x` and `y` varying from `0%` to `100%` in `10%` increments. `x` is on the y axis, `y` is on the x axis"
+/>
+
+## Grayscale
+
+When saturation is at exactly `0`, the hue value becomes irrelevant and varying the lightness value gives you grayscale swatches!
+
+<Figure
+    src="/img/hsl-intuition/grayscale-swatches.svg"
+    alt="Lightness varying from `0%` to `100%` in `10%` increments with saturation set to `0%` and hue set to anything"
+    caption="Swatches of `hsl(*, 0%, x)` with `x` varying from `0%` to `100%` in `10%` increments"
+/>
+
+When lightness is set to `0%`, we get Black (`#000000`) regardless of hue and saturation. Similarly, when lightness is set to `100%`, we get White (`#ffffff`).
+
+<Figure
+    src="/img/hsl-intuition/black-and-white.svg"
+    alt="Lightness `0%` is black, lightness `100%` is white"
+    caption="Swatches of black and white"
+/>
+
+---
+
+Hopefully this has left you with a better intuition of how the HSL parameters affect the color they represent! Consider taking [a little quiz](https://guess-the-hsl.now.sh) I built earlier to test your grasp.

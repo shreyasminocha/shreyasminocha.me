@@ -1,0 +1,33 @@
+---
+import type { AnyEntryMap, CollectionEntry } from "astro:content";
+import PageSummary from "./PageSummary.astro";
+
+interface Props<C extends keyof AnyEntryMap, E extends CollectionEntry<C>> {
+    items: E[];
+    reversed?: boolean;
+}
+
+const { items, reversed } = Astro.props;
+---
+
+<ol class="item-list" {reversed}>
+    {
+        items.map((item: any) => {
+            const description = item.data.description || undefined;
+            const date = item.data.date || undefined;
+            const tags = item.data.tags || undefined;
+
+            return (
+                <li>
+                    <PageSummary
+                        link={`/${item.collection}/${item.slug}`}
+                        title={item.data.title}
+                        {description}
+                        {date}
+                        {tags}
+                    />
+                </li>
+            );
+        })
+    }
+</ol>

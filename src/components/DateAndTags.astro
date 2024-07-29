@@ -1,0 +1,26 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+interface Props {
+    date?: Date | undefined;
+    tags?: string[] | undefined;
+}
+
+const { date, tags } = Astro.props;
+---
+
+{date ? <FormattedDate {date} /> : <Fragment />}
+
+{
+    tags ? (
+        <ul class="tags">
+            {tags.map((tag) => (
+                <li>
+                    <a href={`/tags/${encodeURIComponent(tag)}`}>{tag}</a>
+                </li>
+            ))}
+        </ul>
+    ) : (
+        <Fragment />
+    )
+}

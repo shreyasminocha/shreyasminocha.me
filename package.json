@@ -1,25 +1,30 @@
 {
-  "name": "shreyasminocha.me",
-  "version": "0.0.0",
-  "description": "Source code for my website",
-  "main": "layouts/index.html",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "lint": "prettier --check .",
-    "fix": "prettier --write .",
-    "build": "hugo --minify"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write . **.astro",
+    "check": "prettier --check . **.astro && astro check",
+    "test": "npm run check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shreyasminocha/shreyasminocha.me.git"
+  "dependencies": {
+    "@astrojs/check": "^0.8.2",
+    "@astrojs/markdown-remark": "^5.2.0",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "astro": "^4.11.5",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "typescript": "^5.5.4"
   },
-  "author": "Shreyas Minocha",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shreyasminocha/shreyasminocha.me/issues"
-  },
-  "homepage": "https://github.com/shreyasminocha/shreyasminocha.me#readme",
   "devDependencies": {
-    "prettier": "^2.8.8",
-    "prettier-plugin-go-template": "^0.0.13"
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

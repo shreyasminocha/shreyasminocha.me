@@ -1,7 +1,13 @@
 {
     "redirects": [
         { "source": "/about", "destination": "/", "permanent": false },
-        { "source": "/pgp/:path*", "destination": "/contact/pgp/:path*" }
+        { "source": "/pgp/:path*", "destination": "/contact/pgp/:path*" },
+        {
+            "source": "/blog/index.xml",
+            "destination": "/blog/feed.xml",
+            "permanent": false
+        },
+        { "source": "/sitemap.xml", "destination": "/sitemap-index.xml" }
     ],
     "trailingSlash": false,
     "github": {

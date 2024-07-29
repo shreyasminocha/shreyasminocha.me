@@ -1,6 +1,9 @@
 tabWidth: 4
+
+plugins:
+    - prettier-plugin-astro
+
 overrides:
-    - files:
-          - "*.html"
-      options: null
-      parser: go-template
+    - files: "*.astro"
+      options:
+          parser: astro

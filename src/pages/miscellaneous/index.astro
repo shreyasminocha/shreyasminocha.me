@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+
+import Base from "../../layouts/Base.astro";
+import PageList from "../../components/PageList.astro";
+
+const pages = (await getCollection("miscellaneous")).sort((a, b) =>
+    a.slug.localeCompare(b.slug),
+);
+---
+
+<Base title="Miscellaneous">
+    <PageList items={pages} />
+</Base>
