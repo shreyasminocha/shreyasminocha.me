@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write . **.astro",
-    "check": "prettier --check . **.astro && astro check",
+    "check": "prettier --check . **.astro && markdownlint --ignore-path .gitignore src src/**.mdx && astro check",
     "test": "npm run check"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "markdownlint": "^0.34.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1"
   }

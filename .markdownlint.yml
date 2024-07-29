@@ -6,3 +6,9 @@ list-marker-space:
 
 ul-indent:
     indent: 4
+
+# for mdx, which technically isn't even supported by markdownlint
+no-inline-html: false
+
+# causes false positives with mdx comments
+no-space-in-emphasis: false

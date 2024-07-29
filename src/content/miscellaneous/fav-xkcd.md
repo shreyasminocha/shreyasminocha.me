@@ -109,4 +109,4 @@ title: My favourite xkcd comics
 
 ---
 
-Shameless plug: I once wrote an xkcd viewer as a fun side project. Check it out at https://xkcd-viewer.now.sh.
+Shameless plug: I once wrote an xkcd viewer as a fun side project. Check it out at <https://xkcd-viewer.now.sh>.

@@ -18,9 +18,9 @@ Copy Gitea's repository directory, into `git`'s home directory (usually `/home/g
 
 On your system, [generate a SSH key pair](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key) with `ssh-keygen` and append the public key (a `.pub` file) to `/home/git/.ssh/authorized_keys` on the server.
 
-Make sure the user `	git` has read-write permissions to the repos in `/home/git`.
+Make sure the user `git` has read-write permissions to the repos in `/home/git`.
 
-At this point you can probably try cloning and pushing to the server. `git@host:path/to/repo.git`. If the path does not begin with ` /`, it will be assumed to be relative to `/home/git`.
+At this point you can probably try cloning and pushing to the server. `git@host:path/to/repo.git`. If the path does not begin with `/`, it will be assumed to be relative to `/home/git`.
 
 When pushing, you'll probably run into errors if you copied Gitea's repositories folder. Gitea adds a few hooks to each repository's `hooks` directory which prevent you from pushing to them unless they're managed via Gitea. Particularly, it adds `pre-recieve`, `post-receive` and `update` hooks and you'd want to get rid of those.
 
@@ -56,13 +56,13 @@ shreyas-git:x:1002:shreyas,git
 To prevent people SSHing as `git` from doing "non-git things", you should set `git`'s shell to `git-shell`. Confirm that `git-shell` is installed. Then, if `/etc/shells` doesn't already include `git-shell`, add it:
 
 ```sh
-$ which git-shell >> /etc/shells
+which git-shell >> /etc/shells
 ```
 
 Set `git`'s shell to `git-shell`:
 
 ```sh
-$ sudo chsh git -s $(which git-shell)
+sudo chsh git -s $(which git-shell)
 ```
 
 To prevent other SSH wackiness, prefix `no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty` to the keys in `/home/git/.ssh/authorized_keys`:

@@ -56,7 +56,7 @@ Initially, I made an attempt to write a regular expression to match the outermos
 
 So now we need to figure out how to extract the choices between the parentheses, split them by the '\|' delimiter, choose one of the strings from the resulting array and replace the matched portion with the chosen string. All this while ensuring that it works with nested parentheses. I opened a [regex playground](//regexr.com) and started experimenting. Eventually, I came up with `\(([\w\-|\'\ \d]+?)\)`. I highly recommend that you play around with this regular expression in this [demo](//regexr.com/3iii6), especially if you aren't familiar with the regex syntax. Pay attention to the [capture groups there](//regexone.com/lesson/capturing_groups), we'll use them soon.
 
-We now have to write `simplify(string) ` which would accept `drifts out of sync with the (sun|moon|zodiac|(Gregorian|Mayan|lunar|iPhone) calendar|atomic clock in Colorado)`, for instance, and would return `drifts out of sync with the sun`.
+We now have to write `simplify(string)` which would accept `drifts out of sync with the (sun|moon|zodiac|(Gregorian|Mayan|lunar|iPhone) calendar|atomic clock in Colorado)`, for instance, and would return `drifts out of sync with the sun`.
 
 ```js
 /**

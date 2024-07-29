@@ -3,7 +3,7 @@ layout: ../../layouts/Page.astro
 title: Hacker's Manifesto
 ---
 
-Original: http://phrack.org/issues/7/3.html
+Original: <http://phrack.org/issues/7/3.html>
 
 ---
 
