@@ -19,7 +19,6 @@
     --link-normal: hsl(230, 50%, 50%);
     --link-visited: hsl(260, 50%, 50%);
     --link-hover: hsl(230, 95%, 50%);
-    --tag-background: hsl(0, 0%, 95%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +32,6 @@
         --link-normal: hsl(230, 50%, 80%);
         --link-visited: hsl(240, 50%, 70%);
         --link-hover: hsl(230, 50%, 70%);
-        --tag-background: hsl(0, 0%, 30%);
     }
 
     :root .title-with-meta time::before,
@@ -272,7 +270,7 @@ header[role="banner"] .hero:focus {
     padding-left: 0;
 }
 
-.item-list li {
+.item-list > li {
     margin-bottom: 3em;
 }
 
@@ -336,18 +334,16 @@ header[role="banner"] .hero:focus {
 
 .title-with-meta .tags li {
     display: inline;
-    background-color: var(--tag-background);
     border-radius: 3px;
     margin-right: 0.25em;
 }
 
-.title-with-meta .tags li:last-child {
-    margin-right: 0;
+.title-with-meta .tags li::before {
+    content: "#";
 }
 
-.title-with-meta .tags li a {
-    padding: 0.1em 0.5em;
-    text-decoration: none;
+.title-with-meta .tags li:last-child {
+    margin-right: 0;
 }
 
 .header-anchor {

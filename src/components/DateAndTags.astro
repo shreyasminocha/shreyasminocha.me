@@ -15,9 +15,7 @@ const { date, tags } = Astro.props;
     tags ? (
         <ul class="tags">
             {tags.map((tag) => (
-                <li>
-                    <a href={`/tags/${encodeURIComponent(tag)}`}>{tag}</a>
-                </li>
+                <li>{tag}</li>
             ))}
         </ul>
     ) : (
