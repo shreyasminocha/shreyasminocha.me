@@ -9,17 +9,15 @@ interface Props {
 const { date, tags } = Astro.props;
 ---
 
-{date ? <FormattedDate {date} /> : <Fragment />}
+{date && <FormattedDate {date} />}
 
 {
-    tags ? (
+    tags && (
         <ul class="tags">
             {tags.map((tag) => (
                 <li>{tag}</li>
             ))}
         </ul>
-    ) : (
-        <Fragment />
     )
 }
 

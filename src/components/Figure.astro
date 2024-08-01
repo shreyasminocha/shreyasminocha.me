@@ -27,15 +27,13 @@ const { src, alt, caption, link, attribution, attributionLink, width, height } =
         />
 
         {
-            caption || attribution ? (
+            (caption || attribution) && (
                 <figcaption>
-                    {caption ? (
+                    {caption && (
                         <p set:html={await renderInlineMarkdown(caption)} />
-                    ) : (
-                        <Fragment />
                     )}
 
-                    {attribution ? (
+                    {attribution && (
                         <p>
                             <small class="attribution">
                                 Source:
@@ -51,12 +49,8 @@ const { src, alt, caption, link, attribution, attributionLink, width, height } =
                                 )}
                             </small>
                         </p>
-                    ) : (
-                        <Fragment />
                     )}
                 </figcaption>
-            ) : (
-                <Fragment />
             )
         }
     </a>

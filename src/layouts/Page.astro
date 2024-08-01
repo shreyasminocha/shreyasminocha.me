@@ -24,13 +24,11 @@ const { showAuthor, date, tags } = Astro.props;
         </main>
 
         {
-            showAuthor ? (
+            showAuthor && (
                 <address>
                     <img src="/img/avatar.svg" alt="Shreyas' Avatar" />
                     <p>Shreyas Minocha</p>
                 </address>
-            ) : (
-                <Fragment />
             )
         }
     </article>

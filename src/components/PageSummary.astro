@@ -34,13 +34,7 @@ const titleHtml = await renderInlineMarkdown(title);
 
     <DateAndTags {date} {tags} />
 
-    {
-        description ? (
-            <p set:html={await renderInlineMarkdown(description)} />
-        ) : (
-            <Fragment />
-        )
-    }
+    {description && <p set:html={await renderInlineMarkdown(description)} />}
 </header>
 
 <style define:vars={{ marginBottom: level === 1 ? "2em" : "1em" }}>
