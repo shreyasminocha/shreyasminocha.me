@@ -5,7 +5,6 @@ interface Props {
     src: string;
     alt?: string; // todo: make this mandatory
     caption?: string;
-    link?: string; // todo: do we even use this anywhere?
     // todo: make the attribution stuff a child?
     attribution?: string;
     attributionLink?: string;
@@ -13,47 +12,45 @@ interface Props {
     height?: number;
 }
 
-const { src, alt, caption, link, attribution, attributionLink, width, height } =
+const { src, alt, caption, attribution, attributionLink, width, height } =
     Astro.props;
 ---
 
 <figure>
-    <a href={link}>
-        <img
-            {src}
-            alt={alt || caption || "Alt text coming soon, sorry"}
-            width={width?.toString()}
-            height={height?.toString()}
-        />
+    <img
+        {src}
+        alt={alt || caption || "Alt text coming soon, sorry"}
+        width={width?.toString()}
+        height={height?.toString()}
+    />
 
-        {
-            (caption || attribution) && (
-                <figcaption>
-                    {caption && (
-                        <p set:html={await renderInlineMarkdown(caption)} />
-                    )}
+    {
+        (caption || attribution) && (
+            <figcaption>
+                {caption && (
+                    <p set:html={await renderInlineMarkdown(caption)} />
+                )}
 
-                    {attribution && (
-                        <p>
-                            <small class="attribution">
-                                Source:
-                                {attributionLink ? (
-                                    <a
-                                        href={attributionLink}
-                                        rel="nofollow noreferrer"
-                                    >
-                                        {attribution}
-                                    </a>
-                                ) : (
-                                    attribution
-                                )}
-                            </small>
-                        </p>
-                    )}
-                </figcaption>
-            )
-        }
-    </a>
+                {attribution && (
+                    <p>
+                        <small class="attribution">
+                            Source:
+                            {attributionLink ? (
+                                <a
+                                    href={attributionLink}
+                                    rel="nofollow noreferrer"
+                                >
+                                    {attribution}
+                                </a>
+                            ) : (
+                                attribution
+                            )}
+                        </small>
+                    </p>
+                )}
+            </figcaption>
+        )
+    }
 </figure>
 
 <style>
