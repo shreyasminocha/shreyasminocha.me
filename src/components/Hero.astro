@@ -1,0 +1,50 @@
+---
+import { SITE_TITLE } from "../consts";
+
+interface Props {
+    width?: number;
+}
+
+const { width } = Astro.props;
+---
+
+<a href="/" class:list={[{ big: width === undefined }]}>
+    {SITE_TITLE}
+</a>
+
+<style define:vars={{ width: width ? `${width}px` : "unset" }}>
+    a {
+        color: var(--h1-color);
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: var(--page-title-font);
+        font-weight: 600;
+        background-color: var(--accent);
+        padding: 0.25em;
+        transition:
+            color,
+            background-color ease-in-out 0.25s;
+    }
+
+    .big {
+        font-size: 1.5em;
+    }
+
+    :not(.big) {
+        display: inline-block;
+        width: var(--width);
+    }
+
+    a:hover,
+    a:focus {
+        background-color: var(--transparent);
+        color: var(--h1-color);
+    }
+
+    @media print, screen and (max-width: 760px) {
+        header[role="banner"] .hero {
+            width: unset;
+        }
+    }
+</style>

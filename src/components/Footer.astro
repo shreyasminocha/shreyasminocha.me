@@ -87,3 +87,37 @@ const today = new Date();
         >.
     </p>
 </footer>
+
+<style>
+    footer {
+        text-align: center;
+        margin: 5em 0 2.5em;
+        opacity: 0.55;
+        font-size: smaller;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    li a {
+        text-decoration: none;
+        content: "";
+        background-size: cover;
+    }
+
+    li a :global(svg) {
+        width: 27px;
+        color: var(--body-color);
+    }
+</style>

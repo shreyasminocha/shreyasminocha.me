@@ -1,5 +1,9 @@
 ---
 import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
+import Figure from "../components/Figure.astro";
+import Nav from "../components/Nav.astro";
+
 import { SITE_TITLE } from "../consts.ts";
 ---
 
@@ -8,31 +12,17 @@ import { SITE_TITLE } from "../consts.ts";
 
     <body>
         <header role="banner">
-            <div>
-                <a href="/" class="hero">Shreyas Minocha</a>
-            </div>
+            <Hero width={200} />
 
-            <figure class="pfp">
-                <img
-                    src="/img/cmc.jpeg"
-                    alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign"
-                    width="200"
-                    height="150"
-                />
-                <figcaption>DEF CON 30, Las Vegas, US</figcaption>
-            </figure>
+            <Figure
+                src="/img/cmc.jpeg"
+                alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign"
+                width={200}
+                height={150}
+                caption="DEF CON 30, Las Vegas, US"
+            />
 
-            <nav>
-                <ul>
-                    <li><a href="/blog">blog</a></li>
-                    <li><a href="/contact">contact</a></li>
-                    <!-- <li><a href="#">projects</a></li> -->
-                    <li><a href="/cv/cv.pdf">cv</a></li>
-                    <li><a href="/miscellaneous">misc</a></li>
-                    <li><a href="/uses">setup</a></li>
-                    <li><a href="/friends">friends</a></li>
-                </ul>
-            </nav>
+            <Nav />
         </header>
 
         <main>
@@ -61,33 +51,13 @@ import { SITE_TITLE } from "../consts.ts";
         max-width: 450px;
     }
 
-    header[role="banner"] .hero {
-        font-size: unset;
-        display: inline-block;
-    }
-
-    figcaption {
-        font-size: smaller;
-        font-style: italic;
-    }
-
-    header[role="banner"] .hero,
-    .pfp {
+    header[role="banner"] :global(figure) {
         width: 200px;
     }
 
-    nav {
-        margin-top: 1em;
-        font-family: var(--heading-font);
-        font-weight: lighter;
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    nav.related {
-        font-size: 85%;
+    header[role="banner"] :global(figure figcaption p) {
+        font-size: smaller;
+        text-align: left !important;
     }
 
     main {
@@ -103,24 +73,16 @@ import { SITE_TITLE } from "../consts.ts";
             grid-template-columns: auto;
         }
 
-        header[role="banner"] .hero {
-            width: unset;
-        }
-
-        .pfp {
-            display: none;
-        }
-
         header[role="banner"] {
             text-align: center;
         }
 
-        main {
-            max-width: unset;
+        header[role="banner"] :global(figure) {
+            display: none;
         }
 
-        nav ul li {
-            margin-right: 0;
+        main {
+            max-width: unset;
         }
     }
 </style>

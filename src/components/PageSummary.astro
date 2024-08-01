@@ -3,23 +3,36 @@ import renderInlineMarkdown from "../util/render-inline-md.ts";
 import DateAndTags from "./DateAndTags.astro";
 
 interface Props {
-    link: string;
+    link?: string;
     title: string;
     description?: string | undefined;
     date?: Date | undefined;
     tags?: string[] | undefined;
+    level?: 1 | 2;
 }
 
-const { link, title, description, date, tags } = Astro.props;
+const { link, title, description, date, tags, level } = Astro.props;
+const titleHtml = await renderInlineMarkdown(title);
 ---
 
-<article>
-    <header class="title-with-meta">
-        <h2>
-            <a href={link} set:html={await renderInlineMarkdown(title)} />
-        </h2>
-        <DateAndTags {date} {tags} />
-    </header>
+<header>
+    {
+        (() => {
+            const headingContent = link ? (
+                <a href={link} set:html={titleHtml} />
+            ) : (
+                <Fragment set:html={titleHtml} />
+            );
+
+            return level === 2 ? (
+                <h2>{headingContent}</h2>
+            ) : (
+                <h1>{headingContent}</h1>
+            );
+        })()
+    }
+
+    <DateAndTags {date} {tags} />
 
     {
         description ? (
@@ -28,4 +41,24 @@ const { link, title, description, date, tags } = Astro.props;
             <Fragment />
         )
     }
-</article>
+</header>
+
+<style define:vars={{ marginBottom: level === 1 ? "2em" : "1em" }}>
+    header {
+        margin-bottom: var(--marginBottom);
+    }
+
+    h1 a,
+    h2 a {
+        text-decoration: none;
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 0.25em;
+    }
+
+    p {
+        margin-top: 1em;
+    }
+</style>

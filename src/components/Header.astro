@@ -1,7 +1,14 @@
 ---
-import { SITE_TITLE } from "../consts";
+import Hero from "./Hero.astro";
 ---
 
 <header role="banner">
-    <a href="/" class="hero">{SITE_TITLE}</a>
+    <Hero />
 </header>
+
+<style>
+    header {
+        margin: 5em 0;
+        text-align: center;
+    }
+</style>

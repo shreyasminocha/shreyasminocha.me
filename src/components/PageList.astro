@@ -10,7 +10,7 @@ interface Props<C extends keyof AnyEntryMap, E extends CollectionEntry<C>> {
 const { items, reversed } = Astro.props;
 ---
 
-<ol class="item-list" {reversed}>
+<ol {reversed}>
     {
         items.map((item: any) => {
             const description = item.data.description || undefined;
@@ -25,9 +25,21 @@ const { items, reversed } = Astro.props;
                         {description}
                         {date}
                         {tags}
+                        level={2}
                     />
                 </li>
             );
         })
     }
 </ol>
+
+<style>
+    ol {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 3em;
+    }
+</style>

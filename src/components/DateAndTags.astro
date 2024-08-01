@@ -22,3 +22,60 @@ const { date, tags } = Astro.props;
         <Fragment />
     )
 }
+
+<style>
+    :global(time)::before,
+    .tags::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        background-size: cover;
+        margin-right: 0.5em;
+        vertical-align: -2px;
+    }
+
+    :global(time)::before {
+        background-image: url("/img/icons/calendar.svg");
+        width: 1rem;
+    }
+
+    .tags {
+        list-style: none;
+        display: block;
+        padding-left: 0;
+        line-height: 1.75;
+    }
+
+    @media (min-width: 500px) {
+        .tags {
+            display: inline;
+        }
+
+        :global(time) {
+            margin-right: 1em;
+        }
+
+        :global(time)::before {
+            margin-right: 0.25em;
+        }
+    }
+
+    .tags::before {
+        background-image: url("/img/icons/tags.svg");
+        width: 1.25rem;
+    }
+
+    .tags li {
+        display: inline;
+        border-radius: 3px;
+        margin-right: 0.25em;
+    }
+
+    .tags li::before {
+        content: "#";
+    }
+
+    .tags li:last-child {
+        margin-right: 0;
+    }
+</style>

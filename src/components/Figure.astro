@@ -5,17 +5,26 @@ interface Props {
     src: string;
     alt?: string; // todo: make this mandatory
     caption?: string;
-    link?: string;
+    link?: string; // todo: do we even use this anywhere?
+    // todo: make the attribution stuff a child?
     attribution?: string;
     attributionLink?: string;
+    width?: number;
+    height?: number;
 }
 
-const { src, alt, caption, link, attribution, attributionLink } = Astro.props;
+const { src, alt, caption, link, attribution, attributionLink, width, height } =
+    Astro.props;
 ---
 
 <figure>
     <a href={link}>
-        <img {src} alt={alt || caption || "Alt text coming soon, sorry"} />
+        <img
+            {src}
+            alt={alt || caption || "Alt text coming soon, sorry"}
+            width={width?.toString()}
+            height={height?.toString()}
+        />
 
         {
             caption || attribution ? (
@@ -52,3 +61,29 @@ const { src, alt, caption, link, attribution, attributionLink } = Astro.props;
         }
     </a>
 </figure>
+
+<style>
+    figure {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+
+    figcaption {
+        margin-top: 0.5em;
+    }
+
+    figcaption p {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+
+    .attribution {
+        font-style: normal;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
