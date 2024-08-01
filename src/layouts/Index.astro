@@ -68,6 +68,10 @@ import { SITE_TITLE } from "../consts.ts";
         text-align: left;
     }
 
+    :global(a.heading-anchor) {
+        display: none;
+    }
+
     @media print, screen and (max-width: 760px) {
         html body {
             grid-template-columns: auto;

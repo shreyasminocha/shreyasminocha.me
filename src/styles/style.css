@@ -212,12 +212,12 @@ th:last-child {
     padding-right: 0;
 }
 
-.header-anchor {
+.heading-anchor {
     display: none;
 }
 
 @media (min-width: 760px) {
-    .header-anchor {
+    .heading-anchor {
         position: absolute;
         left: -3rem;
         text-align: right;
@@ -226,11 +226,11 @@ th:last-child {
         display: block;
     }
 
-    .header-anchor:link,
-    .header-anchor:visited,
-    .header-anchor:hover,
-    .header-anchor:active,
-    .header-anchor:focus {
+    .heading-anchor:link,
+    .heading-anchor:visited,
+    .heading-anchor:hover,
+    .heading-anchor:active,
+    .heading-anchor:focus {
         color: inherit;
     }
 }

@@ -15,7 +15,7 @@ export default defineConfig({
                 {
                     behavior: "prepend",
                     properties: {
-                        className: ["header-anchor"],
+                        className: ["heading-anchor"],
                     },
                     content: (heading) => headingToLinkContent(heading),
                 },
