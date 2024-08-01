@@ -5,7 +5,7 @@ date: 2020-09-05
 tags: [programming]
 ---
 
-import Figure from "../../components/Figure.astro";
+import Figure from "@components/Figure.astro";
 
 I needed to set up [Duo](https://duo.com)-based Two Factor Authentication (2FA) for my University's Single Sign-On. Duo has a mobile app option, which functions almost identically to ordinary HOTP 2FA. They insist on having users install [their mobile app](https://guide.duo.com/android). Since I already used [andOTP](https://github.com/andOTP/andOTP) for 2FA, however, I figured I could use that for this too. To my surprise, andOTP didn't recognize the QR code or the secret that Duo generated. I eventually gave up and set up a [security key](https://en.wikipedia.org/wiki/Universal_2nd_Factor), skipping the mobile-based OTP option altogether.
 

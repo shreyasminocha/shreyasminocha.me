@@ -1,8 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 
-import Base from "../../layouts/Base.astro";
-import PageList from "../../components/PageList.astro";
+import Base from "@layouts/Base.astro";
+import PageList from "@components/PageList.astro";
 
 const games = (await getCollection("gaming")).sort((a, b) =>
     a.slug.localeCompare(b.slug),

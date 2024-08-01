@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import type { APIContext } from "astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@src/consts";
 
 export async function GET(
     context: APIContext<
