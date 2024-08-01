@@ -1,0 +1,13 @@
+---
+interface Props {
+    link: string;
+    linkTitle: string;
+    iconSvg: string;
+}
+
+const { link, linkTitle, iconSvg } = Astro.props;
+---
+
+<a href={link} target="_blank" rel="noreferrer nofollower me" title={linkTitle}>
+    <Fragment set:html={iconSvg} />
+</a>

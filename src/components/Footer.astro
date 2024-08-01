@@ -1,4 +1,6 @@
 ---
+import FooterIcon from "./FooterIcon.astro";
+
 import SourceHut from "@media/icons/sourcehut.svg?raw";
 import GitHub from "@media/icons/github.svg?raw";
 import Wikipedia from "@media/icons/wikipedia.svg?raw";
@@ -6,65 +8,45 @@ import OpenStreetMap from "@media/icons/openstreetmap.svg?raw";
 import InternetArchive from "@media/icons/ia.svg?raw";
 
 const today = new Date();
+
+const ICONS = [
+    {
+        link: "https://sr.ht/~shreyasminocha",
+        linkTitle: "~shreyasminocha on sourcehut",
+        iconSvg: SourceHut,
+    },
+    {
+        link: "https://github.com/shreyasminocha",
+        linkTitle: "@shreyasminocha on GitHub",
+        iconSvg: GitHub,
+    },
+    {
+        link: "https://en.wikipedia.org/wiki/User:ShreyasMinocha",
+        linkTitle: "User:ShreyasMinocha on English Wikipedia",
+        iconSvg: Wikipedia,
+    },
+    {
+        link: "https://www.openstreetmap.org/user/श्र",
+        linkTitle: "श्र on OpenStreetMap",
+        iconSvg: OpenStreetMap,
+    },
+    {
+        link: "https://archive.org/details/@eabf4fdb0f7a",
+        linkTitle: "@eabf4fdb0f7a on archive.org",
+        iconSvg: InternetArchive,
+    },
+];
 ---
 
 <footer role="contentinfo">
-    <!-- TODO: Use a component to minimize repetition  -->
     <ul>
-        <li>
-            <a
-                href="https://sr.ht/~shreyasminocha"
-                target="_blank"
-                rel="noreferrer nofollower me"
-                title="~shreyasminocha on sourcehut"
-            >
-                <Fragment set:html={SourceHut} />
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="https://github.com/shreyasminocha"
-                target="_blank"
-                rel="noreferrer nofollower me"
-                title="@shreyasminocha on GitHub"
-            >
-                <Fragment set:html={GitHub} />
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="https://en.wikipedia.org/wiki/User:ShreyasMinocha"
-                target="_blank"
-                rel="noreferrer nofollower me"
-                title="User:ShreyasMinocha on English Wikipedia"
-            >
-                <Fragment set:html={Wikipedia} />
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="https://www.openstreetmap.org/user/श्र"
-                target="_blank"
-                rel="noreferrer nofollower me"
-                title="श्र on OpenStreetMap"
-            >
-                <Fragment set:html={OpenStreetMap} />
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="https://archive.org/details/@eabf4fdb0f7a"
-                target="_blank"
-                rel="noreferrer nofollower me"
-                title="@eabf4fdb0f7a on archive.org"
-            >
-                <Fragment set:html={InternetArchive} />
-            </a>
-        </li>
+        {
+            ICONS.map(({ link, linkTitle, iconSvg }) => (
+                <li>
+                    <FooterIcon {link} {linkTitle} {iconSvg} />
+                </li>
+            ))
+        }
     </ul>
 
     <p>
@@ -110,13 +92,13 @@ const today = new Date();
         margin-right: 0;
     }
 
-    li a {
+    li :global(a) {
         text-decoration: none;
         content: "";
         background-size: cover;
     }
 
-    li a :global(svg) {
+    li :global(a svg) {
         width: 27px;
         color: var(--body-color);
     }
