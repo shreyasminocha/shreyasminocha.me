@@ -10,6 +10,15 @@ const blog = defineCollection({
     }),
 });
 
+const resources = defineCollection({
+    type: "content",
+    schema: z.object({
+        title: z.string(),
+        description: z.optional(z.string()),
+        tags: z.optional(z.array(z.string())),
+    }),
+});
+
 const miscellaneous = defineCollection({
     type: "content",
     schema: z.object({
@@ -58,4 +67,11 @@ const papers = defineCollection({
     }),
 });
 
-export const collections = { blog, miscellaneous, gaming, papers, coauthors };
+export const collections = {
+    blog,
+    resources,
+    miscellaneous,
+    gaming,
+    papers,
+    coauthors,
+};
