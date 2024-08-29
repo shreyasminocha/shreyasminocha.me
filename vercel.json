@@ -7,7 +7,11 @@
             "destination": "/blog/feed.xml",
             "permanent": false
         },
-        { "source": "/sitemap.xml", "destination": "/sitemap-index.xml" }
+        { "source": "/sitemap.xml", "destination": "/sitemap-index.xml" },
+        {
+            "source": "/miscellaneous/isc-notes/:path*",
+            "destination": "/resources/isc-notes/:path*"
+        }
     ],
     "trailingSlash": false,
     "github": {
