@@ -10,7 +10,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 -   [VSCodium](https://vscodium.com/)
     -   [Material Theme](https://marketplace.visualstudio.com/items?itemName=equinusocio.vsc-community-material-theme)
     -   [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
--   [Konsole](https://konsole.kde.org/)
+-   [Kitty](https://sw.kovidgoyal.net/kitty/)
 -   [fish](https://fishshell.com/)
 -   [Fira Code](https://github.com/tonsky/FiraCode)
 -   [Codeberg](https://codeberg.org/)
@@ -19,7 +19,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 
 -   [Framework Laptop DIY (i5-1135G7)](https://frame.work)
 -   [Arch Linux](https://archlinux.org/)
--   [KDE Plasma](https://kde.org/plasma-desktop/)
+-   [Hyprland](https://hyprland.org/)
 -   [LibreWolf](https://librewolf-community.gitlab.io/)
     -   [uBlock Origin](https://github.com/gorhill/uBlock/)
     -   [Stylus](https://add0n.com/stylus.html)
