@@ -5,9 +5,10 @@ import "@styles/fonts.css"; // todo: preload?
 
 interface Props {
     title: string;
+    description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <head>
@@ -21,7 +22,7 @@ const { title } = Astro.props;
     <title>{title}</title>
 
     <meta name="author" content="Shreyas Minocha" />
-    <!-- todo: meta description -->
+    <meta name="description" content={description} />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />

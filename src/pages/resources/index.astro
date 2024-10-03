@@ -9,6 +9,9 @@ const pages = (await getCollection("resources")).sort((a, b) =>
 );
 ---
 
-<Base title="resources">
+<Base
+    title="resources"
+    description="An index of pages I hope will be especially useful to people."
+>
     <PageList items={pages} />
 </Base>

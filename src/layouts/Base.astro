@@ -7,14 +7,15 @@ import { SITE_TITLE } from "@src/consts.ts";
 
 interface Props {
     title: string;
+    description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-    <Head title={`${title} · ${SITE_TITLE}`} />
+    <Head title={`${title} · ${SITE_TITLE}`} {description} />
 
     <body>
         <Header />

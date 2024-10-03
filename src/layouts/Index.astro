@@ -5,10 +5,17 @@ import Figure from "@components/Figure.astro";
 import Nav from "@components/Nav.astro";
 
 import { SITE_TITLE } from "@src/consts.ts";
+
+interface Props {
+    frontmatter: { title?: string; description: string };
+}
+
+const title = Astro.props.frontmatter?.title || SITE_TITLE;
+const { description } = Astro.props.frontmatter;
 ---
 
 <html lang="en">
-    <Head title={SITE_TITLE} />
+    <Head {title} {description} />
 
     <body>
         <header role="banner">

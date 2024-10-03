@@ -3,19 +3,24 @@ import Base from "./Base.astro";
 import PageSummary from "@components/PageSummary.astro";
 
 interface Props {
-    frontmatter?: { title: string };
+    frontmatter?: { title: string; description?: string };
     title?: string;
+    description?: string;
     showAuthor?: boolean;
     date?: Date | undefined;
     tags?: string[] | undefined;
 }
 
 const title = Astro.props.frontmatter?.title || Astro.props.title || "Untitled";
+const description =
+    Astro.props.frontmatter?.description ||
+    Astro.props.description ||
+    `A page titled "${title}" on Shreyas Minocha's web site.`;
 
 const { showAuthor, date, tags } = Astro.props;
 ---
 
-<Base {title}>
+<Base {title} {description}>
     <article class="single">
         <PageSummary {title} {date} {tags} level={1} />
 

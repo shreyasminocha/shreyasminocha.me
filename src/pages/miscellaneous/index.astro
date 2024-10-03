@@ -9,6 +9,9 @@ const pages = (await getCollection("miscellaneous")).sort((a, b) =>
 );
 ---
 
-<Base title="Miscellaneous">
+<Base
+    title="Miscellaneous"
+    description="An index of pages that don't really fit anywhere else."
+>
     <PageList items={pages} />
 </Base>

@@ -9,6 +9,9 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<Base title="Blog">
+<Base
+    title="Blog"
+    description="Shreyas's blog about software, technology, and more."
+>
     <PageList items={posts} reversed />
 </Base>
