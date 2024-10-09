@@ -18,33 +18,38 @@ const { description } = Astro.props.frontmatter;
     <Head {title} {description} />
 
     <body>
-        <header role="banner">
-            <Hero width={200} />
+        <div class="container">
+            <header role="banner">
+                <Hero width={200} />
 
-            <Figure
-                src="/img/cmc.jpeg"
-                alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign"
-                width={200}
-                height={150}
-                caption="DEF CON 30, Las Vegas, US"
-            />
+                <Figure
+                    src="/img/cmc.jpeg"
+                    alt="A selfie of me in front of a neon 'Crypto means Cryptography' sign"
+                    width={200}
+                    height={150}
+                    caption="DEF CON 30, Las Vegas, US"
+                />
 
-            <Nav />
-        </header>
+                <Nav />
+            </header>
 
-        <main>
-            <slot />
-        </main>
+            <main>
+                <slot />
+            </main>
+        </div>
     </body>
 </html>
 
 <style>
     /* precedence issue with style.css. todo: why isn't this scoped? */
     html body {
-        display: grid;
-        grid-template-columns: max-content auto;
         max-width: 90%;
         margin: 1rem auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: max-content auto;
     }
 
     header[role="banner"],
@@ -80,7 +85,7 @@ const { description } = Astro.props.frontmatter;
     }
 
     @media print, screen and (max-width: 760px) {
-        html body {
+        .container {
             grid-template-columns: auto;
         }
 
