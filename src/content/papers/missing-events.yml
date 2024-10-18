@@ -9,6 +9,7 @@ author:
 date: 2025-04-27
 
 url: /papers/missing-events.pdf
+artifactUrl: https://github.com/niMgnoeSeeL/ChaoMI
 
 parent:
     type: conference

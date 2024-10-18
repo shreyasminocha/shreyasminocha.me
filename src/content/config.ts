@@ -61,6 +61,7 @@ const papers = defineCollection({
         author: coauthor.or(z.array(coauthor)),
         date: z.coerce.date(),
         url: z.optional(z.string()),
+        artifactUrl: z.optional(z.string()),
         parent: z.object({
             type,
             title,
