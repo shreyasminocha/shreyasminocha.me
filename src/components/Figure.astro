@@ -38,36 +38,40 @@ const captionText =
         )
     }
 
-    {
-        (caption || attribution) && (
-            <>
-                {caption &&
-                    (typeof caption === "string" ? (
-                        captionText
-                    ) : (
-                        <>{caption}</>
-                    ))}
-
-                {attribution && (
+    <figcaption>
+        {
+            (caption || attribution) && (
+                <>
                     <p>
-                        <small class="attribution">
-                            Source:
-                            {attributionLink ? (
-                                <a
-                                    href={attributionLink}
-                                    rel="nofollow noreferrer"
-                                >
-                                    {attribution}
-                                </a>
+                        {caption &&
+                            (typeof caption === "string" ? (
+                                captionText
                             ) : (
-                                attribution
-                            )}
-                        </small>
+                                <>{caption}</>
+                            ))}
                     </p>
-                )}
-            </>
-        )
-    }
+
+                    {attribution && (
+                        <p>
+                            <small class="attribution">
+                                Source:
+                                {attributionLink ? (
+                                    <a
+                                        href={attributionLink}
+                                        rel="nofollow noreferrer"
+                                    >
+                                        {attribution}
+                                    </a>
+                                ) : (
+                                    attribution
+                                )}
+                            </small>
+                        </p>
+                    )}
+                </>
+            )
+        }
+    </figcaption>
 </figure>
 
 <style>
