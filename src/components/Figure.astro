@@ -1,10 +1,11 @@
 ---
 import renderInlineMarkdown from "@util/render-inline-md.ts";
+import type { JsxElement } from "typescript";
 
 interface Props {
-    src: string;
+    src?: string;
     alt?: string; // todo: make this mandatory
-    caption?: string;
+    caption?: string | JsxElement;
     // todo: make the attribution stuff a child?
     attribution?: string;
     attributionLink?: string;
@@ -14,22 +15,38 @@ interface Props {
 
 const { src, alt, caption, attribution, attributionLink, width, height } =
     Astro.props;
+
+const captionText =
+    typeof caption === "string" ? await renderInlineMarkdown(caption) : null;
 ---
 
 <figure>
-    <img
-        {src}
-        alt={alt || caption || "Alt text coming soon, sorry"}
-        width={width?.toString()}
-        height={height?.toString()}
-    />
+    {
+        src ? (
+            <img
+                {src}
+                alt={
+                    alt ||
+                    (typeof caption === "string" ? caption : null) ||
+                    "Missing alt text, sorry"
+                }
+                width={width?.toString()}
+                height={height?.toString()}
+            />
+        ) : (
+            <slot />
+        )
+    }
 
     {
         (caption || attribution) && (
-            <figcaption>
-                {caption && (
-                    <p set:html={await renderInlineMarkdown(caption)} />
-                )}
+            <>
+                {caption &&
+                    (typeof caption === "string" ? (
+                        captionText
+                    ) : (
+                        <>{caption}</>
+                    ))}
 
                 {attribution && (
                     <p>
@@ -48,7 +65,7 @@ const { src, alt, caption, attribution, attributionLink, width, height } =
                         </small>
                     </p>
                 )}
-            </figcaption>
+            </>
         )
     }
 </figure>

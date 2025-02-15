@@ -1,0 +1,353 @@
+---
+title: Solving a Cube with a Blindfold and a Binary Oracle
+description: Coming up with a method for a unique speedcubing event.
+date: 2025-02-15Z-0500
+---
+
+import Figure from "@components/Figure.astro";
+import FigureGroup from "@components/FigureGroup.astro";
+import "@components/Twisty.astro";
+
+export function TwistyLastLayer({ alg, ...props }) {
+    return (
+        <twisty-player
+            experimental-setup-anchor="end" // causes the inverse of "alg" to be displayed
+            alg={alg}
+            visualization="experimental-2D-LL"
+            hint-facelets="none"
+            background="none"
+            control-panel="none"
+            style="width: 5em; height: 5em; margin: 0 auto"
+            {...props}
+        ></twisty-player>
+    );
+}
+
+export function LastLayerFigure({ alg, caption, ...props }) {
+    return (
+        <Figure
+            alt={`Last layer visualization that is solved by the following moves: ${alg}`}
+            caption={caption}
+        >
+            <TwistyLastLayer alg={alg} {...props} />
+        </Figure>
+    );
+}
+
+export function Signal({ signal, longVersion = false }) {
+    const long = {
+        y: "Yes",
+        n: "No",
+    };
+
+    const quotes = longVersion;
+
+    const stuff = Array.from(signal.toLowerCase())
+        .map((m) => {
+            return m === "y" ? (
+                <span style="color: rebeccapurple">
+                    {longVersion ? "Yes" : "Y"}
+                </span>
+            ) : m === "n" ? (
+                <span style="color: coral">{longVersion ? "No" : "N"}</span>
+            ) : (
+                <span>{m}</span>
+            );
+        })
+        .reduce((prev, curr) =>
+            longVersion ? [prev, " ", curr] : [prev, curr],
+        );
+
+    return (
+        <span>
+            {quotes && "“"}
+            {stuff}
+            {quotes && "”"}
+        </span>
+    );
+
+}
+
+A [recent Atlanta speedcubing competition](https://www.worldcubeassociation.org/competitions/GACubersPBQ2025) had an interesting unofficial event: "Yes/No Teamblind".
+The idea is that partcipants compete in pairs, where one person wears a blindfolds throughout the solve and asks questions, while the other can say only <Signal signal="Y" longVersion /> or <Signal signal="N" longVersion />.
+
+> Yes/No TeamBLD: Like standard TeamBLD, competitors will sign up in pairs.
+> Each pair will do two attempts, switching roles inbetween.
+> Rankings will be determined by the best of the two attempts.
+> Unlike standard TeamBLD, the sighted competitor can only say "yes" and "no".
+> The blindfolded competitor should gain information primarily by asking yes/no questions.
+> However, the sighted competitor may speak outside of answering questions, as long as they do not say anything other than "yes" or "no".
+
+My friend [Joon](https://www.worldcubeassociation.org/persons/2012CHAJ01) and I decided to compete together and came up with a method we're fairly happy with.
+With a few days of practice, we were able to achieve an Ao12 of **1:06.64**, an Ao5 of **1:01.31**, and a best single of **53.76** with Joon as the oracle.
+
+This description of our method assumes that you are broadly familiar with methods for speedsolving 3x3 cubes ([CFOP](https://jperm.net/3x3/cfop) in particular).
+
+## Cross and First Two Layers (F2L)
+
+We solve the cross and the first two layers in a pretty straightforward manner: the oracle dictates encoded moves from an initial orientation of their choice.
+We picked a subset of moves to use, balancing the complexity of signal memorization and "constraindness".
+
+Our final set is R (with R2 and R'), U (with U2 and U'), y, y', F, and D.
+Since R-moves and U-moves are the most "useful" of the lot, we give them the most convenient signals.
+
+-   R-moves: <Signal signal="Y" />, <Signal signal="YY" />, and <Signal signal="YYY" /> for R, R2, and R' respectively
+-   U-moves: <Signal signal="N" />, <Signal signal="NN" />, and <Signal signal="NNN" /> for U, U2, and U' respectively
+-   Rotations: <Signal signal="YN" /> for y and <Signal signal="NY" /> for y'
+-   F: <Signal signal="YNY" />
+-   D: <Signal signal="NYN" />
+
+Once F2L is complete, the oracle signals <Signal signal="YYYYY" longVersion />, indicating the transition to the last layer.
+
+## Orient Last Layer (OLL)
+
+We perform OLL in two steps: edges followed by corners.
+While we're both familiar with most, if not all, one-look OLL cases, 57 is too many cases to try to encode efficiently.
+
+### OLL Edges
+
+The oracle describes the orientation of the edges in top/right/bottom/left order, with a <Signal signal="N" longVersion /> for an unoriented edge and a <Signal signal="Y" longVersion /> for an oriented edge.
+
+<FigureGroup>
+    <LastLayerFigure alg="U2 f R U R' U' f'" experimental-stickering="OLL">
+        <Signal signal="YNNY" longVersion slot="caption" />
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="F R U R' U' F' f R U R' U' f'"
+        experimental-stickering="OLL"
+    >
+        <Signal signal="NNNN" longVersion slot="caption" />
+    </LastLayerFigure>
+</FigureGroup>
+
+### OLL Corners
+
+Similar to the edges, the oracle describes the orientation of the corners in clockwise order starting with the top-left corner.
+Here, there are four non-trivial cases:
+
+-   Plus: H or Pi
+
+    The executor typically asks "H?".
+    If it is H-case, they can ask something like "these two?" to determine how to perform the OLL.
+    If it's not an H-case, they ask about where the Pi bar is e.g. "these two?" followed by "AUF (to get the bar there)?".
+
+    <FigureGroup>
+        <LastLayerFigure
+            alg="R U2 R' U' R U R' U' R U' R'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NNNN" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="U R U2 R' U' R U R' U' R U' R'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NNNN" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="f R U R' U' f' F R U R' U' F'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NNNN" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="U' f R U R' U' f' F R U R' U' F'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NNNN" longVersion slot="caption" />
+        </LastLayerFigure>
+    </FigureGroup>
+
+-   Fish: sune or anti-sune
+
+    This can be disambiguated with a "Sune?".
+
+    <FigureGroup>
+        <LastLayerFigure alg="R U R' U R U2 R'" experimental-stickering="OLL">
+            <Signal signal="NNNY" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="U R' U' R U' R' U2 R"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NNNY" longVersion slot="caption" />
+        </LastLayerFigure>
+    </FigureGroup>
+
+-   L: two ways the unsolved corners could be twisted
+
+    Asking "this one?" while pointing to a facelet of one of the unoriented corners is implicitly asking whether that facelet is the same colour as the upper layer.
+    One question is enough to disambiguate the subcase.
+
+    <FigureGroup>
+        <LastLayerFigure
+            alg="F' r U R' U' r' F R"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NYNY" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="U2 F' r U R' U' r' F R"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="NYNY" longVersion slot="caption" />
+        </LastLayerFigure>
+    </FigureGroup>
+
+-   Shooter: T or U
+
+    Similarly, here the executor can ask either "these two?" or "T?" or "U?".
+    Again, one question is enough.
+
+    <FigureGroup>
+        <LastLayerFigure
+            alg="U r U R' U' r' F R F'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="YYNN" longVersion slot="caption" />
+        </LastLayerFigure>
+        <LastLayerFigure
+            alg="R2 D R' U2 R D' R' U2 R'"
+            experimental-stickering="OLL"
+        >
+            <Signal signal="YYNN" longVersion slot="caption" />
+        </LastLayerFigure>
+    </FigureGroup>
+
+## Permute Last Layer (PLL)
+
+For PLL, we went with 2-look PLL because we figured signalling the 2 PLL steps would be significantly quicker than signalling the exact PLL.
+
+### PLL Corners
+
+We split PLL corners into two (plus one) cases:
+
+-   Adjacent Corner Swap (Bar)
+-   Diagonal Corner Swap (No Bar)
+-   Solved
+
+For the bar case, the oracle describes the corners in the standard order with a <Signal signal="Y" longVersion /> for a corner that's a part of the bar, and a <Signal signal="N" longVersion /> for one that isn't.
+The executor then knows how to align the upper face to solve the edges with a **T-perm**.
+
+<FigureGroup>
+    <LastLayerFigure
+        alg="R U R' U' R' F R2 U' R' U' R U R' F'"
+        experimental-stickering="PLL"
+    >
+        <Signal signal="YNNY" longVersion slot="caption" />
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="U' R U R' U' R' F R2 U' R' U' R U R' F'"
+        experimental-stickering="PLL"
+    >
+        <Signal signal="YYNN" longVersion slot="caption" />
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="U R U R' U' R' F R2 U' R' U' R U R' F'"
+        experimental-stickering="PLL"
+    >
+        <Signal signal="NNYY" longVersion slot="caption" />
+    </LastLayerFigure>
+</FigureGroup>
+
+For the 'no bar' case, the oracle says either <Signal signal="YNYN" /> or the equivalent <Signal signal="NYNY" />.
+This case can be solved with a **Y-perm** from any angle.
+
+<FigureGroup>
+    <LastLayerFigure
+        alg="U' F R U' R' U' R U R' F' R U R' U' R' F R F'"
+        experimental-stickering="PLL"
+    >
+        <Fragment slot="caption">
+            <Signal signal="YNYN" /> or <Signal signal="NYNY" />
+        </Fragment>
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="U x' (L' U L) D' (L' U' L) D (L' U' L) D' (L' U L) D x"
+        experimental-stickering="PLL"
+    >
+        <Fragment slot="caption">
+            <Signal signal="YNYN" /> or <Signal signal="NYNY" />
+        </Fragment>
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="R' (U R U' R') F' U' F (R U R') (F R' F' R) U' R"
+        experimental-stickering="PLL"
+    >
+        <Fragment slot="caption">
+            <Signal signal="YNYN" /> or <Signal signal="NYNY" />
+        </Fragment>
+    </LastLayerFigure>
+</FigureGroup>
+
+When the corners are already permuted, the oracle says <Signal signal="YYYY" />.
+
+### PLL Edges
+
+There are three non-trivial standard cases for PLL edges:
+
+-   Ua- or Ub-perm (three unsolved edges)
+-   H-perm (four unsolved edges)
+-   Z-perm (four unsolved edges)
+-   Solved
+
+For U-perm cases, the oracle says <Signal signal="Y" longVersion /> for a solved edge and <Signal signal="N" longVersion /> for an unsolved edge.
+The excecutor follows up with "Clockwise?", which the oracle simply answers with <Signal signal="Y" longVersion /> (for the Ub case) or <Signal signal="N" longVersion /> (for the Ua case).
+
+The H-perm is either <Signal signal="YNYN" /> or the equivalent <Signal signal="NYNY" />.
+
+Finally, the Z-perm case is either:
+
+-   <Signal signal="YNNY" /> or <Signal signal="NYYN" /> when the right and
+    bottom edges are being swapped
+-   <Signal signal="YYNN" /> or <Signal signal="NNYY" /> when the top and right
+    edges are being swapped
+
+<FigureGroup>
+    <LastLayerFigure
+        alg="M2 U M2 U M' U2 M2 U2 M'"
+        experimental-stickering="PLL"
+    >
+        <Fragment slot="caption">
+            <Signal signal="YNNY" /> or <Signal signal="NYYN" />
+        </Fragment>
+    </LastLayerFigure>
+    <LastLayerFigure
+        alg="U M2 U M2 U M' U2 M2 U2 M'"
+        experimental-stickering="PLL"
+    >
+        <Fragment slot="caption">
+            <Signal signal="YYNN" /> or <Signal signal="NNYY" />
+        </Fragment>
+    </LastLayerFigure>
+</FigureGroup>
+
+The intuition here is that we signal edges that are being swapped with the same symbol (either <Signal signal="Y" longVersion /> or <Signal signal="N" longVersion />).
+
+## Align Upper Face (AUF)
+
+For AUF, the oracle simply signals the move required to complete the solve.
+When an AUF is necessary, this is either <Signal signal="N" longVersion />, <Signal signal="NN" longVersion />, or <Signal signal="NNN" longVersion />.
+When an AUF is not necessary, the oracle says <Signal signal="YYYYY…" longVersion />, signalling that the cube is solved.
+
+## Special Cases
+
+Since the overhead of fully explaining large skips that result in a solved cube is too high, we handle them differently.
+For a PLL skip, or the rare LL skip, the oracle indicates the AUF move (if necessary) immediately followed by a stream of Yes's e.g. <Signal signal="NNYYY…" longVersion />.
+Failing that, they may just jump straight to <Signal signal="YYYYY…" longVersion /> (incurring an acceptable two-second penalty).
+
+Our signal for handling "exceptions", especially after F2L, is five consecutive <Signal signal="N" longVersion />s.
+When this happens, the executor switches to "manual mode" and asks questions to figure out what state the cube is in.
+
+## Results
+
+We completed around 200 solves between the two of us, of which we tracked a little over 150.
+We kept two timer sessions, one for each executor-oracle configuration.
+As I write this just before the competition, we average around 1:15 with Joon as the oracle and around 1:30 with me as the oracle.
+It's hard to tell how this stacks up against the competition or how well we'll perform in the two attempts we get, but we're pretty happy with our prep.
+
+## Reflection
+
+Preparing to participate in this event was a lot of fun!
+Unlike official events or more popular unofficial events, this event probably had most teams actually designing their own methods.
+We're excited to hear about what creative methods other teams came up with.
