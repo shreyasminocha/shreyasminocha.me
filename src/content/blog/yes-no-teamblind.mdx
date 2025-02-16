@@ -128,7 +128,7 @@ Here, there are four non-trivial cases:
 -   Plus: H or Pi
 
     The executor typically asks "H?".
-    If it is H-case, they can ask something like "these two?" to determine how to perform the OLL.
+    If it is an H-case, they can ask something like "these two?" to determine how to perform the OLL.
     If it's not an H-case, they ask about where the Pi bar is e.g. "these two?" followed by "AUF (to get the bar there)?".
 
     <FigureGroup>
@@ -176,7 +176,7 @@ Here, there are four non-trivial cases:
 
 -   L: two ways the unsolved corners could be twisted
 
-    Asking "this one?" while pointing to a facelet of one of the unoriented corners is implicitly asking whether that facelet is the same colour as the upper layer.
+    The executor asks "this one?" while pointing to the front-facing facelet of one of the unoriented corners to determine the orientation.
     One question is enough to disambiguate the subcase.
 
     <FigureGroup>
@@ -289,7 +289,6 @@ There are three non-trivial standard cases for PLL edges:
 -   Ua- or Ub-perm (three unsolved edges)
 -   H-perm (four unsolved edges)
 -   Z-perm (four unsolved edges)
--   Solved
 
 For U-perm cases, the oracle says <Signal signal="Y" longVersion /> for a solved edge and <Signal signal="N" longVersion /> for an unsolved edge.
 The excecutor follows up with "Clockwise?", which the oracle simply answers with <Signal signal="Y" longVersion /> (for the Ub case) or <Signal signal="N" longVersion /> (for the Ua case).
@@ -359,8 +358,6 @@ It's hard to tell how this stacks up against the competition or how well we'll p
     />
 </FigureGroup>
 
-## Reflection
-
-Preparing to participate in this event was a lot of fun!
+Preparing for this event was a lot of fun!
 Unlike official events or more popular unofficial events, this event probably had most teams actually designing their own methods.
 We're excited to hear about what creative methods other teams came up with.
