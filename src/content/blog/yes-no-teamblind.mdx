@@ -45,7 +45,7 @@ export function Signal({ signal, longVersion = false }) {
     const stuff = Array.from(signal.toLowerCase())
         .map((m) => {
             return m === "y" ? (
-                <span style="color: rebeccapurple">
+                <span style="color: #5289eb">
                     {longVersion ? "Yes" : "Y"}
                 </span>
             ) : m === "n" ? (
@@ -59,11 +59,11 @@ export function Signal({ signal, longVersion = false }) {
         );
 
     return (
-        <span>
+        <>
             {quotes && "“"}
             {stuff}
             {quotes && "”"}
-        </span>
+        </>
     );
 
 }
