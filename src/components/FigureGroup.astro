@@ -3,3 +3,19 @@
 ---
 
 <div><slot /></div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    @media screen and (max-width: 600px) {
+        div {
+            flex-direction: column;
+            align-content: space-evenly;
+        }
+    }
+</style>

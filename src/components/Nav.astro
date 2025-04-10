@@ -22,3 +22,25 @@ const LINKS = {
         }
     </ul>
 </nav>
+
+<style>
+    nav {
+        margin-top: 1em;
+        font-family: var(--heading-font);
+        font-weight: lighter;
+    }
+
+    li {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    @media print, screen and (max-width: 760px) {
+        nav ul li {
+            margin-right: 0;
+        }
+    }
+</style>

@@ -39,3 +39,66 @@ const { description } = Astro.props.frontmatter;
         </div>
     </body>
 </html>
+
+<style>
+    /* precedence issue with style.css. todo: why isn't this scoped? */
+    html body {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: max-content auto;
+    }
+
+    header[role="banner"],
+    main {
+        padding: 1rem;
+    }
+
+    header[role="banner"] {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 450px;
+    }
+
+    header[role="banner"] :global(figure) {
+        width: 200px;
+    }
+
+    header[role="banner"] :global(figure figcaption p) {
+        font-size: smaller;
+        text-align: left !important;
+    }
+
+    main {
+        max-width: 70ch;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    :global(a.heading-anchor) {
+        display: none;
+    }
+
+    @media print, screen and (max-width: 760px) {
+        .container {
+            grid-template-columns: auto;
+        }
+
+        header[role="banner"] {
+            text-align: center;
+        }
+
+        header[role="banner"] :global(figure) {
+            display: none;
+        }
+
+        main {
+            max-width: unset;
+        }
+    }
+</style>

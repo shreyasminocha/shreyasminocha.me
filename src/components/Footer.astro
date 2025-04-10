@@ -63,3 +63,36 @@ const ICONS = [
         >.
     </p>
 </footer>
+
+<style>
+    footer {
+        text-align: center;
+        margin: 5em 0 2.5em;
+        font-size: smaller;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    li :global(a) {
+        text-decoration: none;
+        content: "";
+        background-size: cover;
+    }
+
+    li :global(a svg) {
+        width: 27px;
+        color: var(--body-color);
+    }
+</style>
