@@ -50,6 +50,14 @@ import locations from "@src/content/travel/travel.json";
 
         var map = L.map("map").setView([0, 0], 2);
 
+        // todo: patch properly / host ourselves
+        L.Icon.Default.prototype.options.iconUrl =
+            "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png";
+        L.Icon.Default.prototype.options.iconRetinaUrl =
+            "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png";
+        L.Icon.Default.prototype.options.shadowUrl =
+            "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
+
         // todo: host ourselves
         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution:
