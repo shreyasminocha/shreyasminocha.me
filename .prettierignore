@@ -1,3 +1,6 @@
 package.json
 package-lock.json
 *.mp4
+*.jpg
+*.png
+*.log

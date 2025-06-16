@@ -1,0 +1,90 @@
+---
+import "leaflet/dist/leaflet.css";
+
+// todo: use astro collection instead.
+import travel from "@src/content/travel/travel.json";
+
+interface Loc {
+    city: string;
+    countryCode: string;
+    country: string;
+    coords: [number, number];
+}
+
+const locations = travel as Loc[];
+---
+
+<div id="map" data-locations={JSON.stringify(locations)}>
+    <noscript>
+        Here's a (likely incomplete) list of cities I've visited. Enable JS to
+        view this info in map form.
+
+        <ul>
+            {
+                locations.map((location) => (
+                    <li>
+                        {location.city
+                            ? `${location.city}, ${location.countryCode}`
+                            : `${location.country}`}
+                    </li>
+                ))
+            }
+        </ul>
+    </noscript>
+</div>
+
+<!-- todo: host ourselves -->
+<script
+    is:inline
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+<script>
+    interface Location {
+        city: string;
+        countryCode: string;
+        country: string;
+        coords: [number, number];
+    }
+
+    // todo
+    declare const L: any;
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const mapElement = document.querySelector("#map") as HTMLElement;
+        const locations = JSON.parse(
+            mapElement.dataset?.locations ?? "[]",
+        ) as Location[];
+
+        var map = L.map("map").setView([0, 0], 2);
+
+        // todo: host ourselves
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        locations.forEach((location) => {
+            L.marker(location.coords)
+                .addTo(map)
+                .bindPopup(
+                    location.city
+                        ? `${location.city}, ${location.countryCode}`
+                        : `${location.country}`,
+                );
+        });
+    });
+</script>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    #map {
+        height: 600px;
+    }
+</style>

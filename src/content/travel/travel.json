@@ -1,0 +1,305 @@
+[
+    {
+        "city": "Chennai",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [13.084, 80.27]
+    },
+    {
+        "city": "Bengaluru",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [12.962, 77.577]
+    },
+    {
+        "city": "Hyderabad",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [17.406, 78.477]
+    },
+    {
+        "city": "Secunderabad",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [17.439, 78.498]
+    },
+    {
+        "city": "Mumbai",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [18.958, 72.832]
+    },
+    {
+        "city": "Greater Noida",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [28.474, 77.503]
+    },
+    {
+        "city": "Dehradun",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [30.325, 77.688]
+    },
+    {
+        "city": "Agra",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [27.176, 77.815]
+    },
+    {
+        "city": "Panaji",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [15.478, 73.817]
+    },
+    {
+        "city": "Thiruvananthapuram",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [8.499, 76.759]
+    },
+    {
+        "city": "Gurgaon",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [28.422, 76.907]
+    },
+    {
+        "city": "Ooty",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [11.411, 76.672]
+    },
+    {
+        "city": "Chandigarh",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [30.733, 76.779]
+    },
+    {
+        "city": "New Delhi",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [28.613, 77.208]
+    },
+    {
+        "city": "Bengaluru",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [29.963, 77.391]
+    },
+    {
+        "city": "Saharanpur",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [29.963, 77.391]
+    },
+    {
+        "city": "Singapore",
+        "countryCode": "SG",
+        "country": "Singapore",
+        "coords": [1.281, 103.85]
+    },
+    {
+        "city": "San Francisco",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [37.774, -122.419]
+    },
+    {
+        "city": "San Jose",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [37.338, -121.885]
+    },
+    {
+        "city": "Boston",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [42.355, -71.056]
+    },
+    {
+        "city": "Cambridge",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [42.366, -71.105]
+    },
+    {
+        "city": "Cambridge",
+        "countryCode": "GB",
+        "country": "United Kingdom",
+        "coords": [52.195, 0.131]
+    },
+    {
+        "countryCode": "HK",
+        "country": "Hong Kong",
+        "coords": [22.308, 113.923]
+    },
+    {
+        "city": "Houston",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [29.76, -95.37]
+    },
+    {
+        "city": "Chapel Hill",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [35.913, -79.055]
+    },
+    {
+        "city": "Bochum",
+        "countryCode": "DE",
+        "country": "Germany",
+        "coords": [51.481, 7.216]
+    },
+    {
+        "city": "Cologne",
+        "countryCode": "DE",
+        "country": "Germany",
+        "coords": [50.937, 6.96]
+    },
+    {
+        "city": "Düsseldorf",
+        "countryCode": "DE",
+        "country": "Germany",
+        "coords": [51.223, 6.782]
+    },
+    {
+        "city": "Saarbrücken",
+        "countryCode": "DE",
+        "country": "Germany",
+        "coords": [49.238, 6.997]
+    },
+    {
+        "city": "Amsterdam",
+        "countryCode": "NL",
+        "country": "Netherlands",
+        "coords": [52.367, 4.904]
+    },
+    {
+        "city": "Prague",
+        "countryCode": "CZ",
+        "country": "Czechia",
+        "coords": [50.075, 14.437]
+    },
+    {
+        "city": "Paris",
+        "countryCode": "FR",
+        "country": "France",
+        "coords": [48.857, 2.351]
+    },
+    {
+        "city": "Versailles",
+        "countryCode": "FR",
+        "country": "France",
+        "coords": [48.802, 2.129]
+    },
+    {
+        "city": "Austin",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [30.267, -97.743]
+    },
+    {
+        "city": "Galveston",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [29.301, -94.795]
+    },
+    {
+        "city": "Atlanta",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [33.75, -84.388]
+    },
+    {
+        "city": "Cumming",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [34.207, -84.14]
+    },
+    {
+        "city": "Tampa",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [27.951, -82.458]
+    },
+    {
+        "city": "Tempe",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [33.425, -111.94]
+    },
+    {
+        "city": "Seattle",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [47.606, -122.332]
+    },
+    {
+        "city": "Indianapolis",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [39.769, -86.158]
+    },
+    {
+        "city": "Phuket",
+        "countryCode": "TH",
+        "country": "Thailand",
+        "coords": [7.88, 98.392]
+    },
+    {
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [40.678, -73.944]
+    },
+    {
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [40.764, -73.83]
+    },
+    {
+        "city": "Taipa",
+        "countryCode": "MO",
+        "country": "Macao",
+        "coords": [22.159, 113.557]
+    },
+    {
+        "city": "Macon",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [32.836, -83.632]
+    },
+    {
+        "city": "Atlanta",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [33.841, -84.434]
+    },
+    {
+        "city": "Roswell",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [34.023, -84.361]
+    },
+    {
+        "city": "Las Vegas",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [36.125, -115.503]
+    },
+    {
+        "city": "Las Vegas",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [34.018, -119.069]
+    },
+    {
+        "city": "Dalton",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [34.759, -85.278]
+    }
+]
