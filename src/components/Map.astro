@@ -2,16 +2,7 @@
 import "leaflet/dist/leaflet.css";
 
 // todo: use astro collection instead.
-import travel from "@src/content/travel/travel.json";
-
-interface Loc {
-    city: string;
-    countryCode: string;
-    country: string;
-    coords: [number, number];
-}
-
-const locations = travel as Loc[];
+import locations from "@src/content/travel/travel.json";
 ---
 
 <div id="map" data-locations={JSON.stringify(locations)}>
@@ -80,8 +71,8 @@ const locations = travel as Loc[];
 <style>
     html,
     body {
-        margin: 0;
-        height: 100%;
+        margin: 0 !important;
+        height: 100% !important;
     }
 
     #map {
