@@ -301,5 +301,11 @@
         "countryCode": "US",
         "country": "United States",
         "coords": [34.759, -85.278]
+    },
+    {
+        "city": "San Juan",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [18.404, -66.142]
     }
 ]
