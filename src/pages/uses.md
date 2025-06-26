@@ -3,7 +3,7 @@ layout: "@layouts/Page.astro"
 title: Stuff I Use
 ---
 
-My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://codeberg.org/shreyasminocha/dotfiles).
+My very own [`/uses`](https://uses.tech/) page.
 
 ## Dev
 
@@ -18,7 +18,7 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 ## Laptop
 
 -   [Framework Laptop DIY (i5-1135G7)](https://frame.work)
--   [Arch Linux](https://archlinux.org/)
+-   [NixOS](https://nixos.org/) with [Home Manager](https://nix-community.github.io/home-manager/)
 -   [Hyprland](https://hyprland.org/)
 -   [LibreWolf](https://librewolf-community.gitlab.io/)
     -   [uBlock Origin](https://github.com/gorhill/uBlock/)
@@ -28,12 +28,13 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 ## Phone
 
 -   Google Pixel 3
--   [LineageOS with MicroG](https://lineage.microg.org/) 18.1 (rooted)
+-   [LineageOS with MicroG](https://lineage.microg.org/) (rooted)
 -   [Nova Launcher](https://novalauncher.com/)
 -   [Fennec F-Droid](https://f-droid.org/packages/org.mozilla.fennec_fdroid/)
 
 ## Self-hosted
 
+-   [ODROID-H3](https://www.hardkernel.com/shop/odroid-h3/)
 -   [vaultwarden](https://github.com/dani-garcia/vaultwarden)
 -   [NextCloud](https://nextcloud.com/)
 -   [PrivateBin](https://privatebin.info/)
@@ -44,9 +45,6 @@ My very own [`/uses`](https://uses.tech/) page. See also: [my dotfiles](https://
 -   [Mullvad VPN](https://mullvad.net/)
 -   Self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance and [KeePassXC](https://keepassxc.org/)
 -   [Disroot](https://disroot.org/) and [Riseup](https://riseup.net/)
--   [Namecheap](https://www.namecheap.com/)[^1]
+-   [Namecheap](https://www.namecheap.com/) and [Porkbun](https://porkbun.com)
 -   [RamNode](https://ramnode.com/)
--   [Spotify](https://www.spotify.com/)[^1]
--   [MoYu WR M 2021 3x3](https://speedcubeshop.com/products/moyu-weilong-wr-m-2021-3x3-magnetic-lite-version)
-
-[^1]: Not a huge fan.
+-   [GAN 12 3x3](https://www.gancube.com/products/gan12-maglev-3x3-magnetic-speed-cube)
