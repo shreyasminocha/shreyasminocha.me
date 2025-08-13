@@ -8,7 +8,7 @@ interface Props {
 const { id } = Astro.props;
 
 const entry = await getDataEntryById("papers", id);
-const { title, author, parent, url, doiUrl, artifactUrl } = entry.data;
+const { title, author, parent, url, doi, artifactUrl } = entry.data;
 const authorData = await getEntries(Array.isArray(author) ? author : [author]);
 
 const SELF = "Shreyas Minocha";
@@ -47,21 +47,21 @@ const SELF = "Shreyas Minocha";
     }
 
     {
-        (url || doiUrl || artifactUrl) && (
+        (url || doi || artifactUrl) && (
             <ul class="supplementary">
                 {url && (
                     <li>
                         <a href={url}>Paper</a>
                     </li>
                 )}
-                {doiUrl && (
-                    <li>
-                        <a href={doiUrl}>DOI</a>
-                    </li>
-                )}
                 {artifactUrl && (
                     <li>
                         <a href={artifactUrl}>Artifact</a>
+                    </li>
+                )}
+                {doi && (
+                    <li>
+                        <a href={`https://doi.org/${doi}`}>{doi}</a>
                     </li>
                 )}
             </ul>
