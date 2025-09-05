@@ -5,25 +5,23 @@ title: Stuff I Use
 
 My very own [`/uses`](https://uses.tech/) page.
 
-## Dev
-
--   [VSCodium](https://vscodium.com/)
-    -   [Material Theme](https://marketplace.visualstudio.com/items?itemName=equinusocio.vsc-community-material-theme)
-    -   [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
--   [Kitty](https://sw.kovidgoyal.net/kitty/)
--   [fish](https://fishshell.com/)
--   [Fira Code](https://github.com/tonsky/FiraCode)
--   [Codeberg](https://codeberg.org/)
-
 ## Laptop
 
 -   [Framework Laptop DIY (i5-1135G7)](https://frame.work)
--   [NixOS](https://nixos.org/) with [Home Manager](https://nix-community.github.io/home-manager/)
+-   [NixOS](https://nixos.org/) with [Home Manager](https://nix-community.github.io/home-manager/) (public flake coming eventually)
 -   [Hyprland](https://hyprland.org/)
 -   [LibreWolf](https://librewolf-community.gitlab.io/)
     -   [uBlock Origin](https://github.com/gorhill/uBlock/)
     -   [Stylus](https://add0n.com/stylus.html)
     -   [Awesome RSS](https://github.com/shgysk8zer0/awesome-rss)
+
+## Dev
+
+-   [VSCodium](https://vscodium.com/)
+-   [Kitty](https://sw.kovidgoyal.net/kitty/)
+-   [fish](https://fishshell.com/)
+-   [Fira Code](https://github.com/tonsky/FiraCode)
+-   [Codeberg](https://codeberg.org/)
 
 ## Phone
 
