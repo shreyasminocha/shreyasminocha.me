@@ -1,39 +1,33 @@
 ---
 import FooterIcon from "./FooterIcon.astro";
 
-import GitHub from "@media/icons/github.svg?raw";
-import Wikipedia from "@media/icons/wikipedia.svg?raw";
-import OpenStreetMap from "@media/icons/openstreetmap.svg?raw";
-import InternetArchive from "@media/icons/ia.svg?raw";
 import GoogleScholar from "@media/icons/google-scholar.svg?raw";
+import Dblp from "@media/icons/dblp.svg?raw";
+import Orcid from "@media/icons/orcid.svg?raw";
+import GitHub from "@media/icons/github.svg?raw";
 
 const today = new Date();
 
 const ICONS = [
     {
+        link: "https://dblp.org/pid/408/9845.html",
+        linkTitle: "Shreyas Minocha on DBLP",
+        iconSvg: Dblp,
+    },
+    {
+        link: "https://orcid.org/0009-0004-4730-9221",
+        linkTitle: "Shreyas Minocha on ORCID",
+        iconSvg: Orcid,
+    },
+    {
         link: "https://scholar.google.com/citations?view_op=list_works&user=45aREa4AAAAJ",
         linkTitle: "Shreyas Minocha on Google Scholar",
         iconSvg: GoogleScholar,
-    },
+    },    
     {
         link: "https://github.com/shreyasminocha",
         linkTitle: "@shreyasminocha on GitHub",
         iconSvg: GitHub,
-    },
-    {
-        link: "https://en.wikipedia.org/wiki/User:ShreyasMinocha",
-        linkTitle: "User:ShreyasMinocha on English Wikipedia",
-        iconSvg: Wikipedia,
-    },
-    {
-        link: "https://www.openstreetmap.org/user/श्र",
-        linkTitle: "श्र on OpenStreetMap",
-        iconSvg: OpenStreetMap,
-    },
-    {
-        link: "https://archive.org/details/@eabf4fdb0f7a",
-        linkTitle: "@eabf4fdb0f7a on archive.org",
-        iconSvg: InternetArchive,
     },
 ];
 ---
