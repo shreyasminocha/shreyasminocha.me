@@ -15,6 +15,7 @@ Check out these cool websites!
 -   [George Hosono](https://h4ck.dev/)
 -   [commandblockguy](https://commandblockguy.xyz/)
 -   [Kai M. Hung](https://kaimhung.dev/)
+-   [Nishith](https://www.nishith.space/)
 -   [SeniorMars](https://seniormars.com/)
 -   [Shreyansh Pandey](https://isomr.co/)
 -   [Simran Kathpalia](https://simran-kathpalia.github.io/)

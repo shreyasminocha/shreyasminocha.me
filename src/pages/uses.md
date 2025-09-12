@@ -8,7 +8,8 @@ My very own [`/uses`](https://uses.tech/) page.
 ## Laptop
 
 -   [Framework Laptop DIY (i5-1135G7)](https://frame.work)
--   [NixOS](https://nixos.org/) with [Home Manager](https://nix-community.github.io/home-manager/) (public flake coming eventually)
+-   [NixOS](https://nixos.org/) with [Home Manager](https://nix-community.github.io/home-manager/)
+    -   I have a [public NixOS config](https://codeberg.org/shreyasminocha/machines)
 -   [Hyprland](https://hyprland.org/)
 -   [LibreWolf](https://librewolf-community.gitlab.io/)
     -   [uBlock Origin](https://github.com/gorhill/uBlock/)
