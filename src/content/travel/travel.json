@@ -307,5 +307,11 @@
         "countryCode": "US",
         "country": "United States",
         "coords": [18.404, -66.142]
+    },
+    {
+        "city": "Madison",
+        "countryCode": "US",
+        "country": "United States",
+        "coords": [43.074, 89.383]
     }
 ]
