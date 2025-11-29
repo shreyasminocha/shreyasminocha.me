@@ -1,8 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 import BibliographyItem from "./BibliographyItem.astro";
+import reverseChronologicalSort from "@util/reverse-chronological-sort";
 
-const entries = await getCollection("papers");
+const entries = (await getCollection("papers")).sort((a, b) =>
+    reverseChronologicalSort(a.data.date, b.data.date),
+);
 ---
 
 <ol>

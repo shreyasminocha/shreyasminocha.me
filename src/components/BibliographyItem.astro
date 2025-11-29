@@ -17,7 +17,7 @@ const SELF = "Shreyas Minocha";
 <li>
     <p class="title"><strong>{title}</strong></p>
 
-    <p>
+    <p class="authors">
         {
             authorData
                 .map((a) =>
@@ -71,6 +71,14 @@ const SELF = "Shreyas Minocha";
     <style>
         p {
             margin-bottom: 0.25em;
+        }
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        .authors a {
+            text-decoration: none;
         }
 
         p:not(.title),

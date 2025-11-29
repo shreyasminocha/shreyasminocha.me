@@ -1,0 +1,15 @@
+type: article
+
+title: "Papers, Please: A First Look at Age Verification on the Web"
+author:
+    - shreyas-minocha
+    - isaac-sheridan
+    - harry-oppenheimer
+    - paul-pearce
+    - michael-specter
+
+date: 2025-11-14
+
+parent:
+    type: conference
+    title: In Submission
