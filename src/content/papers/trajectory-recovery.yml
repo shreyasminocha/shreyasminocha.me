@@ -1,0 +1,14 @@
+type: article
+
+title: "When AirTags Track Back: Trajectory Recovery Attacks Against Apple's Find My Network"
+author:
+    - george-hosono
+    - shreyas-minocha
+    - akshaya-kumar
+    - michael-specter
+
+date: 2025-11-13
+
+parent:
+    type: conference
+    title: In Submission
