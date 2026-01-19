@@ -312,6 +312,30 @@
         "city": "Madison",
         "countryCode": "US",
         "country": "United States",
-        "coords": [43.074, 89.383]
+        "coords": [43.074, -89.383]
+    },
+    {
+        "city": "Mangalore",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [12.923, 74.77]
+    },
+    {
+        "city": "Bekal",
+        "countryCode": "IN",
+        "country": "India",
+        "coords": [12.414, 74.985]
+    },
+    {
+        "city": "Kathmandu",
+        "countryCode": "NP",
+        "country": "Nepal",
+        "coords": [27.708, 85.284]
+    },
+    {
+        "city": "Pokhara",
+        "countryCode": "NP",
+        "country": "Nepal",
+        "coords": [28.229, 83.874]
     }
 ]
