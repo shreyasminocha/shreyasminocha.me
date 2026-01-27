@@ -26,17 +26,15 @@ My very own [`/uses`](https://uses.tech/) page.
 
 ## Phone
 
--   Google Pixel 3
--   [LineageOS with MicroG](https://lineage.microg.org/) (rooted)
+-   Google Pixel 9a
+-   [GrapheneOS](https://grapheneos.org/)
 -   [Nova Launcher](https://novalauncher.com/)
--   [Fennec F-Droid](https://f-droid.org/packages/org.mozilla.fennec_fdroid/)
 
 ## Self-hosted
 
--   [ODROID-H3](https://www.hardkernel.com/shop/odroid-h3/)
+-   [ODROID-H3](https://www.hardkernel.com/shop/odroid-h3/) running NixOS
 -   [vaultwarden](https://github.com/dani-garcia/vaultwarden)
 -   [NextCloud](https://nextcloud.com/)
--   [PrivateBin](https://privatebin.info/)
 
 ## Miscellaneous
 
@@ -45,5 +43,4 @@ My very own [`/uses`](https://uses.tech/) page.
 -   Self-hosted [vaultwarden](https://github.com/dani-garcia/vaultwarden) instance and [KeePassXC](https://keepassxc.org/)
 -   [Disroot](https://disroot.org/) and [Riseup](https://riseup.net/)
 -   [Namecheap](https://www.namecheap.com/) and [Porkbun](https://porkbun.com)
--   [RamNode](https://ramnode.com/)
 -   [GAN 12 3x3](https://www.gancube.com/products/gan12-maglev-3x3-magnetic-speed-cube)
