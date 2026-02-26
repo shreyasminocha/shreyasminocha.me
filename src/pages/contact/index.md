@@ -7,6 +7,8 @@ You can reach me at `shreyas` (at) [this domain](https://shreyasminocha.me). My 
 
 You can also contact me at `shreyasminocha` (at) [my university's domain](https://gatech.edu).
 
+If you are at GT or otherwise in Atlanta, we can also find a time to meet AFK.
+
 I am:
 
 -   [`@shreyas@x0r.be`](https://x0r.be/@shreyas) on Mastodon
