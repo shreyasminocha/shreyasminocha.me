@@ -8,8 +8,10 @@ author:
     - paul-pearce
     - michael-specter
 
-date: 2025-11-14
+date: 2026-05-18
 
 parent:
     type: conference
-    title: In Submission
+    title:
+        value: 47th IEEE Symposium on Security and Privacy
+        short: IEEE S&P "Oakland" 2026
